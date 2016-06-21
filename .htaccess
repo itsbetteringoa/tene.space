@@ -1,0 +1,52 @@
+#DirectoryIndex index.html index.php
+Options +Indexes
+ErrorDocument 404 http://tene.space/monkey
+ErrorDocument 403 http://tene.space/monkey
+ErrorDocument 500 http://tene.space/monkey
+ 
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^downloads/ - [L,T=application/octet-stream]
+
+## To internally redirect /dir/foo to /dir/foo.php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L]
+
+#RewriteCond %{HTTP_HOST} cacao\.tene\.space$ [NC]
+#RewriteRule ^subdomains/cacao/(.*)$ http://cacao.tene.space/$1 [L,NC,R=301]
+
+#RewriteCond %{HTTP_HOST} cacao.tene.space$
+#RewriteCond %{REQUEST_URI} !^/subdomains/cacao
+#RewriteRule ^(.*)$ /subdomains/cacao/$1 [L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?cacao\.tene\.space$ [NC]
+RewriteRule !subdomains/cacao subdomains/cacao%{REQUEST_URI} [NC,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?benefaction\.tene\.space$ [NC]
+RewriteRule !subdomains/benefaction subdomains/benefaction%{REQUEST_URI} [NC,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?yachts\.tene\.space$ [NC]
+RewriteRule !subdomains/yachts subdomains/yachts%{REQUEST_URI} [NC,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?blueocean\.tene\.space$ [NC]
+RewriteRule !subdomains/blueocean subdomains/blueocean%{REQUEST_URI} [NC,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?images\.tene\.space$ [NC]
+RewriteRule !subdomains/images subdomains/images%{REQUEST_URI} [NC,L]
+
+RewriteCond %{HTTP_HOST} ^tene.space$
+RewriteRule ^$ /monkey [R=301,L]
+
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
