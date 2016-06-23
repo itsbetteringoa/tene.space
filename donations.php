@@ -52,8 +52,8 @@
                       <td>
                         <img class="img-responsive" src="img/credit-card-icon_100.png" alt="credit cards" title="credit cards"></td>
                       <td>
-                        Any bank credit/debit cards
-                        <a href="https://generosity.com/">Generosity.com</a>
+                        Any bank credit/debit cards &mdash; <b>Generosity.com</b>
+                        <a href="https://generosity.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                       </td>
                     </tr>
 
@@ -61,7 +61,7 @@
                       <td>
                         <img class="img-responsive" src="img/bitcoin.png" width="100" alt="bitcoins" title="bitcoins"></td>
                       <td>
-                      Bitcoins <b>1mqVmEh9H65oBQfCZ9ztJqX3HiuYqZVCG</b> 
+                      Bitcoins &mdash; <b>1mqVmEh9H65oBQfCZ9ztJqX3HiuYqZVCG</b> 
                         <a href="bitcoin:1mqVmEh9H65oBQfCZ9ztJqX3HiuYqZVCG?amount=0.02&label=tene.space.monkey"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                         <a class="fancybox-thumbs" data-imagelightbox="c11" href="img/qr_bitcoin_addr.jpg"> <i class="fa fa-qrcode" aria-hidden="true" alt="QR bitcoin address" title="QR bitcoin address"></i>
                         </a>

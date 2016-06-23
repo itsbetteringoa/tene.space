@@ -23,7 +23,7 @@
                                 </h4>
                                 <p>
                                     i wish to just <u>fully Legally rent a piece of land for whole season (6 months)</u> 
-                                    at Arambol (preferrable beach side near drum-circle/sunset point, like 'love temple'/'shakti paradise') and maintain it as OpenSpace.
+                                    at Arambol (preferrable beach side near drum-circle /sunset point, like 'love temple' / 'shakti paradise') and maintain it as OpenSpace.
                                 </p>
                                 <p>
                                     Of course everything at that place would be for FREE and for DONATIONS. <b>No money also honey!</b>
@@ -38,10 +38,10 @@
                                 <li>
                                     host people for free (like i did on
                                     <a href="https://couchsurfing.org/people/tenebrarum" alt="couchsurfing rulezz" title="couchsurfing rulezz" target="_blank">couchsurfing.org</a>
-                                    ) and foster a Community with like-minded people, nonconformists who want to help/share/rejoice/grow/perform/breath/live freely/fully/consciously
+                                    ) and foster a Community with like-minded people, nonconformists who want to help /share /rejoice /grow /perform /breath /live freely /fully /consciously
                                 </li>
                                 <li>
-                                    organize performances/flash-mobs, collaborate with others who have something to say/show/make (kind of 'open mic'/'open video projector'/'open scene'/'open kitchen'/'open space'/'open mind')
+                                    organize performances /flash-mobs, collaborate with others who have something to say /show /make (kind of 'open mic'/'open video projector'/'open scene'/'open kitchen'/'open space'/'open mind')
                                 </li>
                                 <li>
                                     enable people to Legally gather all the time (and not only for sunsets) and spend quality time with soulful atmosphere, interesting entertainments, good vibes + get enriched with new ideas or
@@ -71,9 +71,9 @@ connections
                         <p>
                             <ol>
                                 <li>
-                                    i'm sick/tired of just consuming products/things made by others (mostly FOR MARKET).
+                                    i'm sick/tired of just consuming products /things made by others (mostly FOR MARKET).
                                     <br/>
-                                    i feel my own ability/energy to do/create/grow something FOR PEOPLE
+                                    i feel my own ability /energy to do /create /grow something FOR PEOPLE
                                 </li>
                                 <li>
                                     i don't like situations with lack of choices. i want to have <u>alternative choices</u>
@@ -103,7 +103,7 @@ connections
                                     among many-many people, unlike what it was 6 years ago (when i visited Goa first time)
                                 </li>
                                 <li>
-                                    i noticed some very bad treatment (especially if you are poor/traveller/backpacker). in general it looks like: if you have
+                                    i noticed some very bad treatment (especially if you are poor traveller /backpacker). in general it looks like: if you have
                                     <u>tourist visa</u>
                                     you are just 'FRESH CHICKEN and nobody else
                                 </li>
@@ -154,7 +154,7 @@ connections
                         </h1>
                         <ol>
                             <li>
-                                first of all, you can leave your feedback/ideas/advice/critical comment and spread the word (post/publish/share)
+                                first of all, you can leave your feedback /ideas /advice /critical comment and spread the word (post /publish /share)
                             </li>
                             <li>
                                 if you have a goodwill you can participate by doing some sub-tasks for this big project &mdash; please, contact me for more info
@@ -165,7 +165,7 @@ connections
                                 in Arambol or even north Goa that could be also very-very useful
                             </li>
                             <li>
-                                if you have some approved information/experience about renting place or making business/working visa or organising events in India - that will be also very handy
+                                if you have some approved information /experience about renting place or making business /working visa or organising events in India - that will be also very handy
                             </li>
                             <li>
                                 <a href="https://generosity.com/" alt="drop some coins" title="drop some coins">DROP SOME COINS as well _)</a>
@@ -204,13 +204,13 @@ connections
                                             . from that time i had only nice remeberences of Goa and time spended there.
                                         </p>
                                         <p>
-                                            second time i returned at november 2015 and spend 3 month at Arambol, North Goa. this is very different place than Anjuna/Vagator/Siolim mostly because of people, which made quite famous sunset-point /drum-circle. it's a huge gathering of anybody who are freely doing what they want and what is not bothering others + many curious tourists. it's lovely /soulful /peaceful /harmonical /inspiring /fascinating athmosphere with kind of Unity sense
+                                            second time i returned at november 2015 and spend 3 month at Arambol, North Goa. this is very different place than Anjuna /Vagator /Siolim mostly because of people, which made quite famous sunset-point /drum-circle. it's a huge gathering of anybody who are freely doing what they want and what is not bothering others + many curious tourists. it's lovely /soulful /peaceful /harmonical /inspiring /fascinating athmosphere with kind of Unity sense
                                         </p>
                                         <p>
                                             once i was there and since that time just started coming every single evening because i couldn't imagine any better place to be and time to spend.
                                         </p>
                                         <p>
-                                            all of a sudden i started feeding people at sunset-point with raw foods/vegetables and did it for more than 80 sunsets. i call it
+                                            all of a sudden i started feeding people at sunset-point with raw foods /vegetables and did it for more than 80 sunsets. i call it
                                             <b>'sunset mission'</b>
                                         </p>
                                         <p>
@@ -263,7 +263,7 @@ connections
                                                 . It's so simple and obvious! Of course i (and many others) heard more or less the same so many times and they 'know' that, but in my case i just kind of realize that more clearly.
                                                 <br/>
                                                 <div class="alert alert-success">
-                                                    Yeah, i want to see the world with people who care about everything around, who have a goodwill to help, who are more consious about their greediness,  who are really open to alternative ways of living in our commercial/crooked system, who want to make a difference by acting, not by blah-blahing!
+                                                    Yeah, i want to see the world with people who care about everything around, who have a goodwill to help, who are more consious about their greediness,  who are really open to alternative ways of living in our commercial /crooked system, who want to make a difference by acting, not by blah-blahing!
                                                 </div>
                                                 So why should i still sit at my ass and wait for somebody who will bring me this 'new world'? I have some possibilities to start
                                                 <u>Doing It by Myself</u>

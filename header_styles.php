@@ -24,30 +24,30 @@
 <meta name="interkassa-verification" content="f0feec970dad151ca5599fa62ef8d0f0" />
 <meta name="verify-reformal" content="85977d3d7c22d3d935a1058a" />
 
-    <!-- Custom CSS 
+    <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ 
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts 
+    <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
-    <link href="css/pixelate-style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/pixelate-style.css" rel="stylesheet" type="text/css"> -->
     
     <link rel="stylesheet" type="text/css" href="css/imagelightbox.css" media="screen" /> 
 
      <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
      <link rel="stylesheet" type="text/css" href="css/tablesorter.style.css" />
-     <link rel="stylesheet" type="text/css" href="css/footable.core.css" /> -->
+     <link rel="stylesheet" type="text/css" href="css/footable.core.css" /> 
 <?php 
-$exclude_styles = array(
-        'css/MyFontsWebfontsKit..css', 
-        'css/bootstrap.min.css'        
-    );
+// $exclude_styles = array(
+//         'css/MyFontsWebfontsKit..css', 
+//         'css/bootstrap.min.css'        
+//     );
     ?>
-     <link rel="stylesheet" type="text/css" href="<?php $minified->merge( 'css/master.min.css','css', 'css', $exclude_styles ); ?>">
+     <!-- <link rel="stylesheet" type="text/css" href="<?php $minified->merge( 'css/master.min.css','css', 'css', $exclude_styles ); ?>"> -->
 
-     <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+     <!-- <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css"> -->
+     <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->

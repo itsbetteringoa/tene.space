@@ -4,18 +4,26 @@
         'js/jquery.js',
         'js/bootstrap.min.js', 
         'js/imagelightbox.js',
+         "js/rangy/lib/rangy-core.js",
+    "js/rangy/lib/rangy-classapplier.js",
+    "js/rangy/lib/rangy-textrange.js",
+    'js/min/jquery-progresspiesvg-min.js',
+    "js/min/jquery-progresspiesvg-controlIcons-min.js",
+    "js/freelancer.js"
+        //'js/cloudinary_js-master/js/jquery.cloudinary.js'
 
     );
     $exclude = array(
         //'js/jquery.js', 
-        'js/freelancer.js'
+        //'js/freelancer.js'
         );
     ?>
  
  <script type="text/javascript" src="<?php $minified->merge( 'js/packed.min.js', 'js', 'js', $exclude, $prioritize ); ?>"></script>
-  <script type="text/javascript" src="js/min/jquery-progresspiesvg-min.js"></script>
+
+  <!-- <script type="text/javascript" src="js/min/jquery-progresspiesvg-min.js"></script>
     <script type="text/javascript" src="js/min/jquery-progresspiesvg-controlIcons-min.js"></script>  
-    <script src="js/freelancer.js"></script>
+    <script src="js/freelancer.js"></script> -->
     <!-- jQuery 
     <script src="js/jquery.js"></script>                    
 

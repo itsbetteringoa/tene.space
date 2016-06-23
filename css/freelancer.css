@@ -194,10 +194,24 @@
     border: 1px solid black;
     border-radius: 8px;
 }
+/*
 @media (-webkit-min-device-pixel-ratio:0) {
   .modal-mod a {
     background-color: skyBlue;
     background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-image:
+    -webkit-gradient(linear, left top, right top, from(rehotPink 0%d), to(orange 50%));
+   /* Firefox 3.6 - 15 
+  background-image:
+    -moz-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+
+  /* Opera 11.1 - 12 
+  background-image:
+    -o-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ 
+  background-image:
+    linear-gradient(to right, hotPink 0%, orange 50%, transparent 50%);
     background-position: 100% 0;
     background-size: 200% 200%;
     color: transparent;
@@ -216,7 +230,7 @@
     -webkit-transition: .8s;
     font-size: 25px;
 }
-
+*/
 .modal-mod {
     text-align: left;
 }
@@ -258,7 +272,7 @@
     font-family: Courier New, Courier, monospace;
     font-size: 1.3em;
     line-height: 110%;
-    margin-left: 20px;
+    margin-left: 25%;
     word-wrap: pre;
 }
 
@@ -271,6 +285,7 @@
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    -webkit-backface-visibility: hidden;
 }
 .flag_counter:hover {
     right: 0px;
@@ -361,6 +376,7 @@
     max-width: 400px;
     margin: 0 auto;
     cursor: default;
+    font-family: 'Courier New', monospace, sans-serif !important;
 }
 #ascii_logo::selection {
     color: black;
@@ -402,13 +418,11 @@
     background-image: url(../img/flags/gb.png );
 }
 .fader { display: inline-block; }
-.fader img:last-child {
-    position: absolute;
-    top: 0px; 
-    display: none;
+body {
+    background: ffffff !important;
 }
 .caption {
-    position: relative;
+
     margin: 0 auto;
     bottom: 100px;
 }
@@ -432,14 +446,14 @@ padding: 0px !important;
 }
 /* Sepia */
 .hover09  img {
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
+  -webkit-filter: sepia(100%) blur(3px);
+  filter: sepia(100%) blur(3px);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 .hover09:hover img {
-  -webkit-filter: sepia(0);
-  filter: sepia(0);
+  -webkit-filter: sepia(0) blur(0);
+  filter: sepia(0) blur(0);
 }
 .hover09 {
   margin-top: 0px;
@@ -461,7 +475,10 @@ padding: 0px !important;
     text-align: center;
 }
 @media(max-width: 390px) {
-    
+    .pr.around span.outer {
+        line-height: 22px;
+        top: -57px !important;
+    }
     .cacao_gallery img {
         float: left;
         width: 80px;
@@ -549,7 +566,7 @@ padding: 0px !important;
             padding: 15px 0 !important;
         }
     }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
    .navbar-nav>li {
     font-size: 14px !important;
    }
@@ -576,7 +593,12 @@ padding: 0px !important;
     }
 }
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
+.caret {
+    border-top: 4px solid !important;
+}
+.share42init span {
+    -webkit-backface-visibility: hidden;
+}
 @media(max-width:768px) {
     .navbar-middle {
         top: -60px !important;
@@ -623,13 +645,13 @@ padding: 0px !important;
         margin-bottom: 1px !important;
     }
     .nihil {
-        font-size: 1.1em !important;
+        font-size: 1.1em ;
     }
     .modal-body p {
         font-size: 16px !important;
     }
     .portfolio-modal .modal-content h2 {
-        font-size: 26px !important;
+        font-size: 23px !important;
     }
     .about_blah {
         font-size: 16px !important;
@@ -657,11 +679,12 @@ padding: 0px !important;
         text-align: center;
     }
     .caption p {
-        font-size: 58px;
+        font-size: 40px;
     }
     
     #ascii_logo {
-        font: 4px/2px monospace;
+        font: 4px/2px monospace !important;
+        font-family: 'Courier New', monospace, sans-serif !important;
     }
     #logo_moto {
     	font-size: 48px;
@@ -756,9 +779,13 @@ padding: 0px !important;
         font-size: 16px !important;
     }
 }
-@media all and (max-width: 364px) and (min-width: 321px) {
-    
+@media (max-width: 500px) and (min-width: 391px) {
+    .nihil {
+        font-size: 0.6em !important;
+        font-family: monospace, sans-serif !important;
+    }    
 }
+
 i.fa.fa-external-link {
     color: skyBlue;
 }
@@ -1034,7 +1061,7 @@ header {
     text-align: center;
     color: #fff;
     background: #18bc9c;
-    margin: 0 -30px;
+    margin: 0 0px;
 }
 
 header .container {
@@ -1255,7 +1282,9 @@ section.success a.active {
 #portfolio * {
     z-index: 2;
 }
-
+.navbar-right li {
+    text-align: center !important;
+}
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
@@ -1267,9 +1296,10 @@ section.success a.active {
 .dropdown ul.dropdown-menu {
     border-radius:4px;
     box-shadow:none;
-    margin-top:20px;
+    margin-top:0px;
     width:170px;
 }
+
 .dropdown ul.dropdown-menu:before {
     content: "";
     border-bottom: 10px solid #fff;
@@ -1309,7 +1339,12 @@ section.success a.active {
     color: #18bc9c;
     background: #fff;
 }
-
+.hover09 img {
+    margin: 0 auto !important;
+}
+.modal-open .modal {
+    overflow-y: scroll !important;
+}
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
@@ -1535,7 +1570,7 @@ footer .footer-below {
     margin-top: -5px !Important;
 }
 footer.text-center {
-    margin: 0 -30px;
+    margin: 0 0px;
 }
 footer .container {
     width: 100% !important;
@@ -1734,9 +1769,24 @@ table.donation_table tr td {
 table.donation_table thead {
     text-align: center;
 }
+/*
   table.donation_table tr td a, .proj_details_my a {
     background-color: skyBlue;
     background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+     background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+    background-image:
+    -webkit-gradient(linear, left top, right top, from(rehotPink 0%d), to(orange 50%));
+   /* Firefox 3.6 - 15 
+  background-image:
+    -moz-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+
+  /* Opera 11.1 - 12 
+  background-image:
+    -o-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);
+
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ 
+  background-image:
+    linear-gradient(to right, hotPink 0%, orange 50%, transparent 50%);
     background-position: 100% 0;
     background-size: 200% 200%;
     color: transparent;
@@ -1748,10 +1798,10 @@ table.donation_table thead {
     color: transparent;
     transition: .4s 0;
 }
-
+*/
 table.donation_table tr td a, .proj_details_my a {
 
-    -webkit-transition: .8s;
+   /* -webkit-transition: .8s; */
     font-size: 21px;
 }
 
@@ -1919,8 +1969,3 @@ color: #5bc0de;
 
 .left-pull p { font-style: italic; color: #d5d5d5; }
 .left-pull .ref { font-size: 22px; }
-
-body {
-    background:#f0f0f0;
-}
-

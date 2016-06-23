@@ -4,7 +4,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<!-- <script type="text/javascript" src="firebug/build/firebug-lite.js"></script> -->
+<!-- <script type="text/javascript" src="firebug/build/firebug-lite.js"></script> 
     <script type="text/javascript" src="js/rangy/lib/rangy-core.js"></script>
     <script type="text/javascript" src="js/rangy/lib/rangy-classapplier.js"></script>
     <script type="text/javascript" src="js/rangy/lib/rangy-textrange.js"></script>
@@ -19,10 +19,11 @@
         '18bc9c',
         //'c8ff00',
         'c90079',
-        'ffc800',
+        'ffffff',
         '916e5c',
         'c60056',
-        'e74363' 
+        'e74363',
+        
         ];
 
     var select_colors_hex=[
@@ -36,6 +37,7 @@
         '0000ff', //blue
         '3f3f3f', //darkgray
         '808000'  //olive
+
         ];  
 
         function click1(x, y)
@@ -91,7 +93,7 @@ catch (e) {
 
             $("div#ascii_logo").removeClass("op_color"+prev_n).addClass("op_color"+curNumber);
           
-            click1(1,250);
+            click1(1,259);
             
             var range = rangy.createRange();
             // select again
@@ -126,4 +128,4 @@ catch (e) {
             changeColor_sel(0);
         };
 
-    </script>
+    </script> -->

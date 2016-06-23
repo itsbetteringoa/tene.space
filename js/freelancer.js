@@ -4,6 +4,125 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ 
+    var colors_hex = [
+        '18bc9c',
+        'ffa600',
+        'ef00c7',
+        '7b00c7',
+        '18bc9c',
+        //'c8ff00',
+        'c90079',
+        'ffffff',
+        '916e5c',
+        'c60056',
+        'e74363',
+        
+        ];
+
+    var select_colors_hex=[
+        'ffff00', //yellow
+        'dcd2d3', //lightgray
+        'c44032', //aqua
+        'f85b07', //orange
+        'ff0000', //red
+        'ffffff', //white
+        '800080', //violet
+        '0000ff', //blue
+        '3f3f3f', //darkgray
+        '808000'  //olive
+
+        ];  
+
+        function click1(x, y)
+        {
+            try {
+ var ev = new MouseEvent('click', {
+                'view': window,
+                'bubbles': true,
+                'cancelable': true,
+                'screenX': x,
+                'screenY': y
+                });
+}
+catch (e) {
+  ev = document.createEvent('MouseEvents');
+  ev.initEvent("click", true, true);
+}
+
+            
+
+            var el = document.elementFromPoint(x, y);
+            //console.warn(el);
+            el.dispatchEvent(ev);
+        }
+
+        function changeColor(curNumber){            
+            curNumber++;
+            if(curNumber > 9){
+                curNumber = 1;
+            }
+            $('header').animate({backgroundColor: '#' + colors_hex[curNumber]});
+            //console.warn(curNumber);
+            setTimeout(function(){changeColor(curNumber)}, 4000);   
+        }
+
+        function changeColor_sel(curNumber){            
+            curNumber++;
+
+            if(curNumber > 9){
+                curNumber = 1;                
+            }
+            if(curNumber==1) prev_n=9;
+            else prev_n=curNumber-1;            
+
+            var range1 = rangy.createRange();
+            // select again
+            var sel1 = rangy.getSelection();      
+            var containerElement = gEBI("ascii_logo");
+            range1.selectCharacters(containerElement, 2058, 3078);
+            sel1.removeAllRanges();
+            sel1.setSingleRange(range1);
+            sel1.collapse(document.body, 0);
+
+            $("div#ascii_logo").removeClass("op_color"+prev_n).addClass("op_color"+curNumber);
+          
+            click1(1,259);
+            
+            var range = rangy.createRange();
+            // select again
+            var sel = rangy.getSelection();      
+
+            range.selectCharacters(containerElement, 7068, 8402);
+            sel.removeAllRanges();
+            sel.setSingleRange(range);            
+                                
+            setTimeout(function(){changeColor_sel(curNumber)}, 2000);  
+        }
+
+        function gEBI(id) {
+            return document.getElementById(id);
+        }
+
+        function initSaveRestore() {
+
+            var containerElement = gEBI("ascii_logo");
+            var range = rangy.createRange();
+            range.selectCharacters(containerElement, 7068, 8402);
+            // select again
+            var sel = rangy.getSelection();
+            sel.removeAllRanges();
+            sel.setSingleRange(range);
+        }
+
+        window.onload = function() {
+            rangy.init();
+            initSaveRestore();
+            changeColor(0);
+            changeColor_sel(0);
+        };
+
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
 
@@ -55,15 +174,17 @@ $('.navbar-collapse ul li a').click(function(e) {
 
 $(document).ready(function(){  
     
-    $('#link_feedback').on('click',function(e){
-        if(window.screen.width<761) 
-        {
+    // $('#link_feedback').on('click',function(e){
+    //     if(window.screen.width<761) 
+    //     {
 
-            window.location.href = 'http://feedback.tene.space'
-        }
-    })
+    //         window.location.href = 'http://feedback.tene.space'
+    //     }
+    // })
 
-    
+   //$("img").unveil();
+   $('img.lazy').jail();
+   
 
     $('.navbar .dropdown').hover(function() {
           $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
@@ -83,30 +204,50 @@ $(document).ready(function(){
         console.warn(e)
     })
     var bl_width, bl_height, classname
-    if(window.screen.width<361)
+   var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+
+//alert("Browser inner window width: " + w + ", height: " + h + ".");
+    if(w<361)
     {
-        bl_width=83
-            bl_height=-186
+        bl_width=-7
+            bl_height=-215
             font_size='14px'
             classname='balloon-logo-mob'
+            img_w='28px'
+            img_h='36px'
+            image='tongue_2'
             $('#feedback').hide();
+            //$('.nihil').css('font-size','0.4em !important')
+            //$('#ascii_logo').css('font', '4px/2px monospace !important')
         //$('#other_stuff_st').hide()
     }
-    else if(window.screen.width<769) 
+    else if(w<769) 
         {
-            bl_width=83
-            bl_height=-186
+            bl_width=-7
+            bl_height=-215
             font_size='14px'
             classname='balloon-logo-mob'
+            img_w='28px'
+            img_h='36px'
+            image='tongue_2'
             $('#feedback').hide();
 
         }
     else
         {
-            bl_width=155
-            bl_height=-280    
+            bl_width=35
+            bl_height=-325    
             font_size='18px'        
-            classname='balloon-logo'
+            image='tongue_1'
+            img_w='44px'
+            img_h='56px'
         }
     $('#spacemonkey_logo').balloon({
         css: {
@@ -115,27 +256,37 @@ $(document).ready(function(){
             }
         })
     $('#ascii_logo').balloon({
-      html: true,
-      tipSize: 0, offsetY: bl_height, offsetX: bl_width,
-      showDuration: 0, hideDuration: 0,
-      classname: classname,
-      minLifetime: 0,
-      css: null /* prevent default */
+        tipSize: 0,
+        offsetY: bl_height,
+        offsetX: bl_width,
+        css: {
+            width: img_w, 
+            height: img_h,
+            lineHeight: '153px',
+            background: 'url(../img/'+image+'.png) center center no-repeat transparent',
+            color: '#fff', 
+            fontSize: '150%', 
+            fontWeight: 'bold', 
+            textAlign: 'center',
+            border: 'none',
+            boxShadow: 'none',
+            zIndex: '1'
+        }
     });    
     
-    $('.fader').hover(function() {
-        $(this).find("img:last").fadeToggle(800,'linear');
-    });
+    // $('.fader').hover(function() {
+    //     $(this).find("img:last").fadeToggle(800,'linear');
+    // });
 
     $('.donation_table').tablesorter({headers: { 0: { sorter: false}}});
     
 
     $('.ribbon').on('mouseenter', function(e) {
-        if(window.screen.width>641) $('.donate_bg').css('background-image','url(img/donate_bg_80.png) ');
+        if(w>641) $('.donate_bg').css('background-image','url(img/donate_bg_80.png) ');
         else $('.donate_bg').css('background-image','url(img/donate_bg_62.png) ');
     })
     $('.ribbon').on('mouseleave', function(e) {
-        if(window.screen.width>641) $('.donate_bg').css('background-image','url(img/donate_bg_pix_80.png) ');
+        if(w>641) $('.donate_bg').css('background-image','url(img/donate_bg_pix_80.png) ');
          else $('.donate_bg').css('background-image','url(img/donate_bg_pix_62.png) ');
     })
 
@@ -187,7 +338,7 @@ $(document).ready(function(){
     
         var videoData = [
         {
-            'videoURL':'http://vimeo.com/27027307'
+            'videoURL':'http://vimeo.com/170254118'
         }];
 
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -206,7 +357,7 @@ $(document).ready(function(){
         $('#OpenSpace').modal('show');
         var videoData = [
         {
-            'videoURL':'http://vimeo.com/27027307'
+            'videoURL':'http://vimeo.com/169057943'
         }];
 
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -223,6 +374,7 @@ $(document).ready(function(){
     } 
     if(window.location.href.indexOf('#cacao') != -1) {
         $('#cacao').modal('show');
+        
         var map = L.map( 'sulya', {
             center: [12.7559,75.6882],
             minZoom: 2,
@@ -241,7 +393,7 @@ $(document).ready(function(){
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
 
-        setTimeout(function(){ map.invalidateSize()}, 400);
+        setTimeout(function(){ map.invalidateSize(),$('img.lazy').jail();}, 400);
     }   
 
 
@@ -321,7 +473,7 @@ $(document).click(function(e) {
         $('#spacemonkey_blah').modal('show');
           var videoData = [
         {
-            'videoURL':'http://vimeo.com/27027307'
+            'videoURL':'http://vimeo.com/170254118'
         }];
 
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -352,7 +504,7 @@ $(document).click(function(e) {
             $('#OpenSpace').modal('show');
             var videoData = [
             {
-                'videoURL':'http://vimeo.com/27027307'
+                'videoURL':'http://vimeo.com/169057943'
             }];
 
             $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -369,6 +521,7 @@ $(document).click(function(e) {
         }
     if($(obj).attr('id')=='img_cacao' || txt=='Cacao') {
         $('#cacao').modal('show');
+        
         var map = L.map( 'sulya', {
             center: [12.7559,75.6882],
             minZoom: 2,
@@ -387,7 +540,7 @@ $(document).click(function(e) {
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
 
-        setTimeout(function(){ map.invalidateSize()}, 400);
+        setTimeout(function(){ map.invalidateSize(),$('img.lazy').jail();}, 400);
     }
 });
 

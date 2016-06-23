@@ -20,7 +20,7 @@
                                 . i'm life-explorer & life-experimentator & post-backpacker. i left my hometown at 2008 and since that time never came back. so i'm kinda bum/hobo/nomad, whose purpose of life is to clearly realize pure nature of mind.
                             </p>
                             <p>
-                                since 2008 i was visiting few countries in south asia and indian ocean. i faced some breathtaking adventures and quite miracolous situations and only good-hearting/helpful/kind/interesting/awesome peoples and places. maybe one day will write a best-seller. ha-ha _)
+                                since 2008 i was visiting few countries in south asia and indian ocean. i faced some breathtaking adventures and quite miracolous situations and only good-hearting /helpful /kind /interesting /awesome peoples and places. maybe one day will write a best-seller. ha-ha _)
                             </p>
                             <p>
                                 of course, many people keep asking about my income - i was never worked at office and sustained myself by doing some odd jobs like fisherman, farm-worker, courrier, childrens caretaker, yacht crew, translator, teacher and laborer
