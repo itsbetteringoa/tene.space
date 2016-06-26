@@ -9,6 +9,7 @@
     "js/rangy/lib/rangy-textrange.js",
     'js/min/jquery-progresspiesvg-min.js',
     "js/min/jquery-progresspiesvg-controlIcons-min.js",
+     "js/jquery.lazy.min.js",
     "js/freelancer.js"
         //'js/cloudinary_js-master/js/jquery.cloudinary.js'
 

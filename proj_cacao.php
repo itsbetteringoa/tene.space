@@ -38,7 +38,7 @@
                 <div class="bs-callout bs-callout-warning">
                   <h4>Cacao for DONATIONS</h4>
                         <a class="fancybox-thumbs" data-imagelightbox="c12" href="img/cacao_infographic.jpg">
-                          <img src="img/cacao_infographic_800.jpg"  alt="cacao for donations" title="cacao for donations" class="img-responsive"></a>
+                          <img data-src="img/cacao_infographic_800.jpg"  alt="cacao for donations" title="cacao for donations" class="lazy img-responsive"></a>
                   <p>
                     it was
                     <b>pure experiment</b>
@@ -392,39 +392,39 @@
               <hr class="star-primary">    
               <p class="cacao_gallery">
                 <a class="fancybox-thumbs" data-imagelightbox="c1" href="img/cacao/4_b.jpg">
-                  <img class="" src="img/cacao/4_s.jpg" alt="this is dry unfermented cacao bean by itself" title="this is dry unfermented cacao bean by itself" />    
+                  <img class="lazy" data-src="img/cacao/4_s.jpg" alt="this is dry unfermented cacao bean by itself" title="this is dry unfermented cacao bean by itself" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/3_b.jpg">
-                  <img class="" src="img/cacao/3_s.jpg" alt="beans with stucking paper on them" title="beans with stucking paper on them" />    
+                  <img class="lazy" data-src="img/cacao/3_s.jpg" alt="beans with stucking paper on them" title="beans with stucking paper on them" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/2_b.jpg">
-                  <img class="" src="img/cacao/2_s.jpg" alt="was my big mistake to dry beans on newspapers. they was completely stucked on it!" title="was my big mistake to dry beans on newspapers. they was completely stucked on it!"/>    
+                  <img class="lazy" data-src="img/cacao/2_s.jpg" alt="was my big mistake to dry beans on newspapers. they was completely stucked on it!" title="was my big mistake to dry beans on newspapers. they was completely stucked on it!"/>    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/1_b.jpg">
-                  <img class="" src="img/cacao/1_s.jpg" alt="cacao beans drying on roof top at Goa [2016]" title="cacao beans drying on roof top at Goa [2016]" />    
+                  <img class="lazy" data-src="img/cacao/1_s.jpg" alt="cacao beans drying on roof top at Goa [2016]" title="cacao beans drying on roof top at Goa [2016]" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/5_b.jpg">
-                  <img class="" src="img/cacao/5_s.jpg" alt="my first cacao-pods which i got from farmer in india. second in lifetime" title="my first cacao-pods which i got from farmer in india. second in lifetime" />    
+                  <img class="lazy" data-src="img/cacao/5_s.jpg" alt="my first cacao-pods which i got from farmer in india. second in lifetime" title="my first cacao-pods which i got from farmer in india. second in lifetime" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/6_b.jpg">
-                  <img class="" src="img/cacao/6_s.jpg" alt="inside a pod beans are covered with very tasty sweet cover (mucilage). it's yummy and remind me a bit of litchi taste" title="inside a pod beans are covered with very tasty sweet cover (mucilage). it's yummy and remind me a bit of litchi taste" />    
+                  <img class="lazy" data-src="img/cacao/6_s.jpg" alt="inside a pod beans are covered with very tasty sweet cover (mucilage). it's yummy and remind me a bit of litchi taste" title="inside a pod beans are covered with very tasty sweet cover (mucilage). it's yummy and remind me a bit of litchi taste" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/7_b.jpg">
-                  <img class="" src="img/cacao/7_s.jpg" alt="that farmer have 2 different types of cacao: Forastero and Trinitario" title="that farmer have 2 different types of cacao: Forastero and Trinitario" />    
+                  <img class="lazy" data-src="img/cacao/7_s.jpg" alt="that farmer have 2 different types of cacao: Forastero and Trinitario" title="that farmer have 2 different types of cacao: Forastero and Trinitario" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/8_b.jpg">
-                  <img class="" src="img/cacao/8_s.jpg"  alt="i guess this is Trinitario (but i could be wrong)" title="i guess this is Trinitario (but i could be wrong)" />    
+                  <img class="lazy" data-src="img/cacao/8_s.jpg"  alt="i guess this is Trinitario (but i could be wrong)" title="i guess this is Trinitario (but i could be wrong)" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/9_b.jpg">
-                  <img class="" src="img/cacao/9_s.jpg" alt="and i'm pretty sure this is Forastero" title="and i'm pretty sure this is Forastero" />    
+                  <img class="lazy" data-src="img/cacao/9_s.jpg" alt="and i'm pretty sure this is Forastero" title="and i'm pretty sure this is Forastero" />    
                 </a>
               </p>
 

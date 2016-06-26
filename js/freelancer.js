@@ -56,25 +56,26 @@ catch (e) {
             //console.warn(el);
             el.dispatchEvent(ev);
         }
+window.curNumber, window.curNumber_sel
 
         function changeColor(curNumber){            
-            curNumber++;
-            if(curNumber > 9){
-                curNumber = 1;
+            window.curNumber++;
+            if(window.curNumber > 9){
+                window.curNumber = 1;
             }
-            $('header').animate({backgroundColor: '#' + colors_hex[curNumber]});
-            //console.warn(curNumber);
-            setTimeout(function(){changeColor(curNumber)}, 4000);   
+            $('header').css('backgroundColor','#' + colors_hex[window.curNumber])//.animate({backgroundColor: '#' + colors_hex[curNumber]});
+            //console.warn(window.curNumber);
+            //setTimeout(function(){changeColor(curNumber)}, 4000);   
         }
 
-        function changeColor_sel(curNumber){            
-            curNumber++;
+        function changeColor_sel(curNumber_sel){            
+            window.curNumber_sel++;
 
-            if(curNumber > 9){
-                curNumber = 1;                
+            if(window.curNumber_sel > 9){
+                window.curNumber_sel = 1;                
             }
-            if(curNumber==1) prev_n=9;
-            else prev_n=curNumber-1;            
+            if(window.curNumber_sel==1) prev_n=9;
+            else prev_n=window.curNumber_sel-1;            
 
             var range1 = rangy.createRange();
             // select again
@@ -85,7 +86,7 @@ catch (e) {
             sel1.setSingleRange(range1);
             sel1.collapse(document.body, 0);
 
-            $("div#ascii_logo").removeClass("op_color"+prev_n).addClass("op_color"+curNumber);
+            $("div#ascii_logo").removeClass("op_color"+prev_n).addClass("op_color"+window.curNumber_sel);
           
             click1(1,259);
             
@@ -97,7 +98,7 @@ catch (e) {
             sel.removeAllRanges();
             sel.setSingleRange(range);            
                                 
-            setTimeout(function(){changeColor_sel(curNumber)}, 2000);  
+            //setTimeout(function(){changeColor_sel(window.curNumber_sel)}, 2000);  
         }
 
         function gEBI(id) {
@@ -118,8 +119,12 @@ catch (e) {
         window.onload = function() {
             rangy.init();
             initSaveRestore();
-            changeColor(0);
-            changeColor_sel(0);
+            window.curNumber=0
+            window.curNumber_sel=0
+            setInterval(function(){changeColor(window.curNumber)}, 4000); 
+            if(navigator.userAgent.search("Firefox")==-1) setInterval(function(){changeColor_sel(window.curNumber_sel)}, 2000);  
+            //changeColor(0);
+            //changeColor_sel(0);
         };
 
 
@@ -172,8 +177,41 @@ $('.navbar-collapse ul li a').click(function(e) {
 =            TENE            =
 ============================*/
 
+ 
+ function hideModals(cur) {
+    var modals=  [
+    '#donation',
+    '#other_stuff',
+    '#cacao',
+    '#OpenSpace',
+    '#spacemonkey_blah',
+    '#spacemonkey_brief'
+    ]
+    $.each(modals,function(key, value){
+        //console.warn(value,cur)
+        if(value!=cur) $(value).modal('hide')
+    })
+}
+
 $(document).ready(function(){  
-    
+ 
+// $(window).on("navigate", function (event, data) {
+//     var direction = data.state.direction;
+//     if ( !! direction) {
+//         console.warn(direction);
+
+//     }
+// });
+
+
+window.onhashchange = function() {
+    //console.warn(window.location)
+    hideModals(window.location.hash)
+        if (window.location.hash != '' && window.location.hash!='#') {
+            $(window.location.hash).modal('show')
+            //$(window.location.hash).modal('handleUpdate')
+        } 
+}   
     // $('#link_feedback').on('click',function(e){
     //     if(window.screen.width<761) 
     //     {
@@ -183,7 +221,14 @@ $(document).ready(function(){
     // })
 
    //$("img").unveil();
-   $('img.lazy').jail();
+   $('img.lazy').lazy({
+    delay: 800,
+    //visibleOnly: true,
+    threshold: 200,
+    afterLoad: function(element) {
+            //console.warn(element)
+        },
+   });
    
 
     $('.navbar .dropdown').hover(function() {
@@ -393,7 +438,7 @@ var h = window.innerHeight
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
 
-        setTimeout(function(){ map.invalidateSize(),$('img.lazy').jail();}, 400);
+        setTimeout(function(){ map.invalidateSize()}, 400);
     }   
 
 
@@ -540,7 +585,7 @@ $(document).click(function(e) {
             subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
 
-        setTimeout(function(){ map.invalidateSize(),$('img.lazy').jail();}, 400);
+        setTimeout(function(){ map.invalidateSize()}, 400);
     }
 });
 

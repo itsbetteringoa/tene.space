@@ -156,7 +156,7 @@ $website_root_path=__DIR__;
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Projects</h2>
+                <h2>My Projects</h2>
                 <hr class="star-primary"></div>
         </div>
         <div class="row">
@@ -166,7 +166,7 @@ $website_root_path=__DIR__;
                 <div class="hover09  text-center">
                     <a href="#OpenSpace" class="portfolio-link" title="OpenSpace in arambol, Goa for season '16-'17" alt="OpenSpace in arambol, Goa for season '16-'17">
                         
-                            <img id="img_openspace" data-src="img/portfolio/openspace.jpg" src="img/preloader2.gif" title="OpenSpace in arambol, Goa for season '16-'17" width=360 height=260 class="lazy img-responsive" alt="OpenSpace project">
+                            <img id="img_openspace" data-src="img/portfolio/openspace.jpg" title="OpenSpace in arambol, Goa for season '16-'17" width=360 height=260 class="lazy img-responsive" alt="OpenSpace project">
                             <!-- <img id="img_openspace" src="img/portfolio/openspace.jpg" width=360 height=260 class="img-responsive" title="OpenSpace in arambol, Goa for season '16-'17" alt="OpenSpace project"></div> -->
                         
                         <div class="caption carousel-caption">
@@ -183,7 +183,7 @@ $website_root_path=__DIR__;
                 <div class="hover09  text-center">
                     <a href="#cacao" id="cacao_modal" class="portfolio-link" title="Experiments with pure cacao from pods" alt="Cacao project" >
                         
-                            <img id="img_cacao" data-src="img/portfolio/cacao.jpg" src="img/preloader2.gif" width=360 height=260 class="lazy img-responsive" alt="Cacao project" title="Experiments with pure cacao from pods">
+                            <img id="img_cacao" data-src="img/portfolio/cacao.jpg" width=360 height=260 class="lazy img-responsive" alt="Cacao project" title="Experiments with pure cacao from pods">
                             <!-- <img  id="img_cacao" src="img/portfolio/cacao.jpg" width=360 height=260 class="img-responsive" alt="Cacao project" title="Experiments with pure cacao from pods"></div> -->
                         
                         <div class="caption carousel-caption">
@@ -200,7 +200,7 @@ $website_root_path=__DIR__;
                 <div class="hover09  text-center">
                     <a href="http://images.tene.space" alt="Images from journeys" title="images from journeys"  class="portfolio-link" >
                         
-                            <img id="img_images" data-src="img/portfolio/photos.jpg" src="img/preloader2.gif" width=360 height=260 class="lazy img-responsive" alt="Images from journeys" title="images from journeys">
+                            <img id="img_images" data-src="img/portfolio/photos.jpg" width=360 height=260 class="lazy img-responsive" alt="Images from journeys" title="images from journeys">
                             <!-- <img  id="img_images" src="img/portfolio/photos.jpg" width=360 height=260 class="img-responsive" alt="Images from journeys" title="images from journeys"></div> -->
                        
                         <div class="caption carousel-caption">
@@ -216,7 +216,7 @@ $website_root_path=__DIR__;
                 <div class="hover09  text-center">
                     <a href="#other_stuff" class="portfolio-link" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
                         
-                            <img id="img_other_stuff" data-src="img/portfolio/other_stuff.jpg" src="img/preloader2.gif" width=360 height=260 class="lazy img-responsive" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
+                            <img id="img_other_stuff" data-src="img/portfolio/other_stuff.jpg" width=360 height=260 class="lazy img-responsive" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
                             <!-- <img  id="img_other_stuff" src="img/portfolio/other_stuff.jpg" width=360 height=260 class="img-responsive" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet"></div> -->
                         
                         <div class="caption carousel-caption">

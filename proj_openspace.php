@@ -114,7 +114,7 @@ connections
                         </p>
 
                         <h1>
-                            Why Fundrising?
+                            Why fundraising?
                             <i class="fa fa-globe" aria-hidden="true"></i>
                             <small>Cost Break-up</small>
                         </h1>
@@ -168,7 +168,7 @@ connections
                                 if you have some approved information /experience about renting place or making business /working visa or organising events in India - that will be also very handy
                             </li>
                             <li>
-                                <a href="https://generosity.com/" alt="drop some coins" title="drop some coins">DROP SOME COINS as well _)</a>
+                                <a href="https://www.generosity.com/projects/openspace-in-arambol-goa-india-2016-2017" alt="drop some coins" title="drop some coins">DROP SOME COINS as well _)</a>
                             </li>
                         </ol>
 
