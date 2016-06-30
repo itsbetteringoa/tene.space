@@ -8,33 +8,33 @@ AWSTATS DATA FILE 7.4 (build 20150714)
 # update).
 BEGIN_MAP 28
 POS_GENERAL 1971                
-POS_TIME 2643                
-POS_VISITOR 16891               
-POS_DAY 20125               
-POS_DOMAIN 3589                
-POS_LOGIN 4108                
-POS_ROBOT 4263                
-POS_WORMS 4972                
-POS_EMAILSENDER 5103                
-POS_EMAILRECEIVER 5246                
-POS_SESSION 20806               
-POS_SIDER 21018               
-POS_FILETYPES 5381                
-POS_DOWNLOADS 5717                
-POS_OS 5765                
-POS_BROWSER 6022                
-POS_SCREENSIZE 6867                
-POS_UNKNOWNREFERER 6941                
-POS_UNKNOWNREFERERBROWSER 7393                
-POS_ORIGIN 7557                
-POS_SEREFERRALS 7701                
-POS_PAGEREFS 7856                
-POS_SEARCHWORDS 8439                
-POS_KEYWORDS 8615                
-POS_MISC 2305                
-POS_ERRORS 8700                
-POS_CLUSTER 3964                
-POS_SIDER_404 8874                
+POS_TIME 2638                
+POS_VISITOR 17048               
+POS_DAY 20657               
+POS_DOMAIN 3607                
+POS_LOGIN 4170                
+POS_ROBOT 4325                
+POS_WORMS 5067                
+POS_EMAILSENDER 5198                
+POS_EMAILRECEIVER 5341                
+POS_SESSION 21437               
+POS_SIDER 21650               
+POS_FILETYPES 5476                
+POS_DOWNLOADS 5812                
+POS_OS 5860                
+POS_BROWSER 6130                
+POS_SCREENSIZE 7024                
+POS_UNKNOWNREFERER 7098                
+POS_UNKNOWNREFERERBROWSER 7550                
+POS_ORIGIN 7714                
+POS_SEREFERRALS 7858                
+POS_PAGEREFS 8013                
+POS_SEARCHWORDS 8596                
+POS_KEYWORDS 8772                
+POS_MISC 2300                
+POS_ERRORS 8857                
+POS_CLUSTER 4026                
+POS_SIDER_404 9031                
 END_MAP
 
 # LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
@@ -46,14 +46,14 @@ END_MAP
 # MonthHostsKnown   = Number of hosts known
 # MonthHostsUnKnown = Number of hosts unknown
 BEGIN_GENERAL 8
-LastLine 20160626050818 584 211245 22771792159802
+LastLine 20160630042011 48 9729 10139614367771
 FirstTime 0
-LastTime 20160626050818
-LastUpdate 20160626062956 584 0 584 0 0
-TotalVisits 250                 
-TotalUnique 73                  
+LastTime 20160630041818
+LastUpdate 20160630062952 48 0 48 0 0
+TotalVisits 273                 
+TotalUnique 83                  
 MonthHostsKnown 0                   
-MonthHostsUnknown 74                  
+MonthHostsUnknown 84                  
 END_GENERAL
 
 # Misc ID - Pages - Hits - Bandwidth
@@ -63,7 +63,7 @@ JavaEnabled 0 0 0
 JavascriptDisabled 0 0 0
 PDFSupport 0 0 0
 WindowsMediaPlayerSupport 0 0 0
-AddToFavourites 0 197 0
+AddToFavourites 0 205 0
 RealPlayerSupport 0 0 0
 TotalMisc 0 0 0
 DirectorSupport 0 0 0
@@ -72,37 +72,37 @@ END_MISC
 
 # Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
 BEGIN_TIME 24
-0 3 3 102 1197 1220 50425545
-1 2 2 155075 181 202 687300
+0 13 13 1636297 1203 1234 50914674
+1 5 5 592707 181 204 702594
 2 3 3 468834 1508 1521 480912
-3 12 12 1917887 382 391 74574
-4 13 300 6047460 514 524 84880
+3 12 12 1917887 396 407 1322574
+4 17 304 6642405 520 531 243561
 5 232 985 12041476 910 925 644649
-6 634 1482 16859826 1098 1111 730988
-7 268 1680 44002186 592 610 738951
-8 320 2541 80537818 37 90 2626181
-9 250 1727 65429964 334 361 25658702
-10 269 2481 80347953 591 600 20581555
-11 594 2276 79978742 531 663 29742403
-12 483 4351 119444683 56 82 327601
-13 307 2682 93711364 101 115 5404215
-14 575 2325 40011763 545 608 42535030
-15 259 1497 49145454 28 102 814625
-16 488 2201 75582925 261 318 1746573
-17 213 2049 48521738 408 426 15970828
-18 351 2317 63001761 705 715 426018
-19 626 2811 60003989 687 722 452996
-20 138 381 2326828 1183 1189 977670
-21 8 8 1212294 31 37 952563
-22 28 462 9960198 884 903 511818
+6 634 1482 16859826 1105 1119 1348376
+7 282 1697 45563824 592 610 738951
+8 339 2560 83264933 49 107 3553351
+9 255 1732 66175626 338 368 26014805
+10 288 2500 83166269 593 608 20783779
+11 601 2283 81125201 535 674 30128838
+12 485 4353 119728044 64 95 1008898
+13 307 2682 93711364 104 119 5713197
+14 577 2327 40342535 547 611 42689741
+15 260 1498 49299725 32 108 1123767
+16 498 2211 76945430 270 333 2520008
+17 214 2050 48676009 410 428 16128373
+18 351 2317 63001761 708 719 735000
+19 628 2813 60287350 699 737 1395396
+20 145 433 3835247 1189 1198 1616756
+21 8 8 1212294 278 293 20709491
+22 28 462 9960198 1239 1259 27986296
 23 4 4 620920 392 401 243260
 END_TIME
 
 # Domain - Pages - Hits - Bandwidth
 # The 10 first Pages must be first (order not required for others)
-BEGIN_DOMAIN 20
-in 5893 32236 900414615
-us 113 460 25367707
+BEGIN_DOMAIN 23
+in 5979 32370 913028081
+us 128 475 27753118
 mu 14 306 6982010
 ru 13 40 1830305
 id 13 300 6355910
@@ -112,11 +112,14 @@ my 4 4 620920
 ro 4 4 154152
 dm 2 2 310460
 tr 1 1 154098
+jp 1 1 154271
 cn 2 2 283096
 ip 0 1177 6123108
-fr 1 1 1005
+is 1 1 154142
+fr 2 2 155276
 ch 2 2 155144
 gb 1 1 1005
+th 2 2 283361
 ca 2 2 308196
 nl 1 1 1005
 ir 2 2 310460
@@ -134,18 +137,19 @@ END_LOGIN
 
 # Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
 # The 10 first Hits must be first (order not required for others)
-BEGIN_ROBOT 16
-mj12bot 6313 190925646 20160625133627 0
+BEGIN_ROBOT 17
+mj12bot 6674 246173615 20160630033721 0
 facebook 22 328508 20160613080414 0
 googlebot 20 3290682 20160622173409 0
 no_user_agent 13 1550837 20160622173410 0
 yandex 5 3897 20160614223833 0
+bingbot 4 313594 20160629175041 0
 slurp 4 314754 20160622075601 0
 bot[\s_+:,\.\;\/\\-] 3 249772 20160621150058 0
 dataprovider\.com 2 308196 20160623201856 0
-bingbot 2 2010 20160611193747 0
 ips\-agent 2 3048 20160617041940 0
 libwww 1 154186 20160622172739 0
+curl 1 157313 20160630041816 0
 robot 1 1005 20160615061227 0
 surveybot 1 1005 20160615203049 0
 wordpress 1 0 20160623143421 0
@@ -170,18 +174,18 @@ END_EMAILRECEIVER
 
 # Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
 BEGIN_FILETYPES 13
+css 1417 166852474 0 0
 eot 1 20127 0 0
-css 1413 166275951 0 0
-png 1563 13810188 0 0
+png 1567 13839930 0 0
 ttf 18 817272 0 0
-woff2 514 9290296 0 0
-woff 677 5624588 0 0
-json 2 5473 0 0
-php 3369 110405668 0 0
-html 203 7800934 0 0
-js 1723 225312538 0 0
-jpg 23760 333964503 0 0
-Unknown 1296 77914326 0 0
+woff2 516 9326352 0 0
+woff 679 5640096 0 0
+json 3 6243 0 0
+php 3405 114983688 0 0
+html 208 8036323 0 0
+js 1726 226036563 0 0
+jpg 23797 334492912 0 0
+Unknown 1356 86934806 0 0
 gif 41 89376 0 0
 END_FILETYPES
 
@@ -190,41 +194,44 @@ BEGIN_DOWNLOADS 0
 END_DOWNLOADS
 
 # OS ID - Hits
-BEGIN_OS ID - Hits - Pages 13
-linuxandroid 4101 498
-winxp 135 42
-macosx11 33 6
+BEGIN_OS ID - Hits - Pages 14
+linuxandroid 4123 520
+macosx11 87 15
+winlong 2 2
+winxp 136 43
 winphone 2835 277
 ios_iphone 2457 222
 win2000 2 2
-linux 33 33
-win7 22718 4896
+linux 39 39
+win7 22785 4960
 macosx9 4 4
+win10 5 5
 win8.1 37 10
-win10 3 3
 Unknown 2216 81
 ios_ipad 6 6
 END_OS
 
 # Browser ID - Hits - Pages
-BEGIN_BROWSER 40
+BEGIN_BROWSER 43
 firefox44.0 3 3
-android 3628 390
+android 3636 398
 chrome39.0.2171.95 4 4
 safari5.0.2 11 11
-chrome46.0.2490.76 126 63
-chrome51.0.2704.81 93 18
+chrome39.0.0.0 2 2
+msie8.0 3 3
+chrome46.0.2490.76 136 73
+chrome51.0.2704.81 95 20
 safari10.0.9.2372 1023 75
 chrome11.0.696.34 5 5
 firefox43.0 847 94
-chrome37.0.2062.120 8 8
-chrome50.0.2661.102 21476 4724
 chrome17.0.1025.133 1 1
-chrome51.0.2704.84 31 4
+chrome50.0.2661.102 21528 4773
 safari9.1.1 2 2
-chrome27.0.1453 18 18
+chrome37.0.2062.120 10 10
+chrome51.0.2704.84 31 4
+chrome27.0.1453 20 20
 safari8.0 742 80
-msie9.0 31 4
+msie9.0 32 5
 chrome49.0.2623.112 2 2
 Unknown 1179 2
 chrome47.0.2526.83 49 6
@@ -238,13 +245,14 @@ firefox42.0 1 1
 chrome48.0.2564.23 198 14
 safari7.2.1.0 12 2
 firefox21.0 1 1
+firefox46.0 2 2
 chrome30.0.1599.69 1 1
-firefox47.0 40 13
-safari5.1.7 30 30
-chrome51.0.2704.103 306 19
+safari5.1.7 32 32
+firefox47.0 42 15
+chrome51.0.2704.103 362 30
 msie11.0 2 2
 safari9.0 1710 137
-mozilla 10 10
+mozilla 20 20
 netscape5.0 8 5
 safari5.0.4 132 39
 msie10.0 2835 277
@@ -271,11 +279,11 @@ END_UNKNOWNREFERERBROWSER
 
 # Origin - Pages - Hits 
 BEGIN_ORIGIN 6
-From0 472 1682
-From1 2 2
+From0 515 1725
+From1 4 4
 From2 1 1
-From3 66 66
-From4 5539 32829
+From3 68 68
+From4 5598 32936
 From5 0 0
 END_ORIGIN
 
@@ -289,12 +297,12 @@ END_SEREFERRALS
 BEGIN_PAGEREFS 12
 http://www.responsinator.com 36 36
 http://tene.sp/test/test.php 10 10
-http://pizza-tycoon.com 4 4
+http://pizza-tycoon.com 5 5
+http://burger-imperia.com 3 3
 http://mobiletest.me/nokia_lumia_920_emulator/ 3 3
 http://quirktools.com/screenfly/ 3 3
 http://mobiletest.me/samsung_galaxy_y_emulator/ 2 2
 http://web-sniffer.net 2 2
-http://burger-imperia.com 2 2
 http://idea.informer.com/profile.php 1 1
 http://hvd-store.com 1 1
 http://mobiletest.me/nokia_lumia_920_emulator 1 1
@@ -318,11 +326,11 @@ END_KEYWORDS
 BEGIN_ERRORS 7
 403 13 418469
 401 10 16432
-302 6781 1368088
+302 7166 1448168
 206 15 34046
 500 4 1942
 404 214 1940725
-301 203 52799
+301 219 56511
 END_ERRORS
 
 # URL with 404 errors - Hits - Last URL referrer
@@ -403,14 +411,14 @@ END_SIDER_404
 # Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
 # [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
 # The 10 first Hits must be first (order not required for others)
-BEGIN_VISITOR 74
-183.87.138.182 2318 12831 337913829 20160623143753
-111.119.248.60 891 4564 126057048 20160623143948
+BEGIN_VISITOR 84
+183.87.138.182 2324 12837 338814018 20160627125309
+111.119.248.60 894 4567 126469371 20160628191620
 111.119.197.139 810 4500 105973667 20160616142222
-111.119.248.61 775 4153 125116260 20160623144007
-111.119.248.36 613 4133 111362552 20160623142044
+111.119.248.61 776 4154 125245351 20160627090538
+111.119.248.36 620 4142 111852841 20160628191618
 120.60.134.81 133 437 26038574 20160625083732
-111.119.197.145 68 84 7731942 20160623144007
+111.119.197.145 70 87 8108284 20160628070029
 111.119.197.138 60 108 7662457 20160623143942
 120.60.129.227 55 483 16410659 20160624095947
 120.60.150.190 54 95 7976219 20160618142806
@@ -421,8 +429,8 @@ BEGIN_VISITOR 74
 120.60.176.113 2 2 1872 20160605191929
 1.39.46.155 16 91 2915182 20160624073020
 64.74.215.130 39 132 9673282 20160624114304
+120.60.134.128 53 487 13696290 20160626085157
 197.227.153.108 6 186 3116002 20160623141030
-120.60.134.128 28 462 10119897 20160625221418
 2a03:6f00:1::5c35:723b 0 1177 6123108 
 37.187.129.166 1 1 1005 20160613043136
 171.49.203.246 2 2 310460 20160623203848
@@ -433,16 +441,19 @@ BEGIN_VISITOR 74
 54.217.235.156 20 228 6701350 20160613175410
 188.245.221.255 2 2 310460 20160623145533
 41.212.157.91 2 2 310460 20160623143950
-65.19.167.132 1 1 154139 20160625011504
 66.249.88.198 6 6 638962 20160622173351
+65.19.167.132 1 1 154139 20160625011504
 104.145.85.115 1 1 936 20160607011445
 66.102.9.50 1 1 153992 20160623111847
 66.102.9.72 1 1 156362 20160623111848
 64.79.100.23 3 3 102 20160619004243
 78.135.115.145 1 1 154098 20160623180701
 23.101.61.176 1 2 695703 20160623111733
+120.60.132.20 10 10 1362505 20160629163300
+23.239.208.210 2 2 308542 20160628040722
 148.251.45.185 3 30 913521 20160613164031
 64.79.100.18 3 3 468834 20160620023429
+113.53.168.31 2 2 283361 20160628012658
 114.125.60.192 2 2 310460 20160623125019
 109.68.162.161 6 6 582450 20160618161457
 72.5.65.215 11 11 1788930 20160626034035
@@ -454,22 +465,29 @@ BEGIN_VISITOR 74
 176.10.99.204 1 1 154139 20160624202315
 123.136.112.28 2 2 310460 20160623124650
 40.78.146.128 1 1 154098 20160624093023
+1.39.46.60 2 2 330772 20160626140135
 142.4.218.156 1 1 154098 20160623201902
 64.233.173.76 2 2 310460 20160623215450
+72.5.65.132 11 11 1790466 20160628000254
 110.227.243.120 2 2 310460 20160623153454
 66.249.88.193 6 6 633314 20160622173351
 79.139.147.17 5 32 1225590 20160624080854
+120.60.159.0 30 75 5035562 20160626204606
+66.102.8.228 2 2 286403 20160630041818 20160630041817 /js/063f8f6c245d92130445844ab458cba32fb710aa.js.php
 104.209.188.207 1 2 695703 20160623111535
 185.100.85.101 1 1 154098 20160624083106
 120.60.164.83 32 32 4010471 20160619113114
 1.39.63.188 2 2 310460 20160623192451
 195.245.112.158 1 1 1005 20160612143950
+79.134.234.247 1 1 154142 20160626091450
 66.102.9.55 2 18 470999 20160623111919
-154.71.96.235 4 116 3245088 20160626050818 20160626050814 /themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
+154.71.96.235 4 116 3245088 20160626050818
 198.96.155.3 1 1 154098 20160623191553
 212.24.63.21 2 2 107 20160602140122
 171.216.116.136 2 2 283096 20160625044412
+37.59.42.55 1 1 154271 20160628154514
 176.226.162.59 1 1 1005 20160613044557
+150.70.188.172 1 1 154271 20160628012823
 104.153.251.137 2 2 310460 20160623173537
 58.146.104.211 2 2 283096 20160625183836
 139.162.151.130 1 1 1005 20160610064412
@@ -481,7 +499,7 @@ BEGIN_VISITOR 74
 END_VISITOR
 
 # Date - Pages - Hits - Bandwidth - Visits
-BEGIN_DAY 24
+BEGIN_DAY 28
 20160601 4 4 72 2
 20160602 7 7 2572 5
 20160603 1 1 936 1
@@ -505,30 +523,34 @@ BEGIN_DAY 24
 20160623 238 640 37424610 48
 20160624 251 1204 57559925 12
 20160625 48 769 17477052 8
-20160626 13 99 3916725 2
+20160626 71 202 13013594 7
+20160627 10 10 1466784 7
+20160628 26 29 3532361 9
+20160629 10 10 1362505 1
+20160630 2 2 286403 1
 END_DAY
 
 # Session range - Number of visits
 BEGIN_SESSION 7
-1h+ 85
-5mn-15mn 15
-0s-30s 94
-30s-2mn 14
+1h+ 87
+5mn-15mn 16
+0s-30s 111
 2mn-5mn 11
 15mn-30mn 12
+30s-2mn 17
 30mn-1h 18
 END_SESSION
 
 # URL - Pages - Bandwidth - Entry - Exit
 # The 10 first Pages must be first (order not required for others)
-BEGIN_SIDER 320
-/ws.php 1646 1196803 8 12
-/admin.php 1215 47128767 27 24
-/monkey 597 52134931 103 50
-/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 509 9176252 12 16
-/admin/themes/default/fontello/font/fontello.woff 333 4115880 9 12
-/plugins/AdminTools/template/fontello/font/fontello-ato.woff 323 1016804 7 12
-/ 163 7008878 29 16
+BEGIN_SIDER 328
+/ws.php 1647 1197052 8 12
+/admin.php 1218 47179100 27 25
+/monkey 656 61130909 120 62
+/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 511 9212308 13 16
+/admin/themes/default/fontello/font/fontello.woff 334 4128240 9 12
+/plugins/AdminTools/template/fontello/font/fontello-ato.woff 324 1019952 7 13
+/ 168 7244267 31 16
 /index/categories/posted-monthly-calendar-2016-6 37 924249 2 0
 /js/c1a6e577f34e1ae8530a5c7fc7f1fc990547b5ed.js.php 36 5629032 1 21
 /index/category/23-abkhazia_010113_150613_ 36 1475643 0 0
@@ -542,7 +564,7 @@ BEGIN_SIDER 320
 /picture/IMGP3667/category/15-15_colombo_northern_part_of_sri_lanka_110116_170216_ 1 26351 0 0
 /picture/IMGP3865/category/16-16_madurai_ramasagar_india_170216_290216_ 2 51141 0 0
 /picture/DSC08880/category/23-abkhazia_010113_150613_ 2 63759 1 0
-/js/941344f3b3e5e59531a8bc94934e0c298bc75d7b.js.php 11 1715661 0 5
+/js/941344f3b3e5e59531a8bc94934e0c298bc75d7b.js.php 13 1973575 0 5
 /picture/DSC09003/tags/18-postcards 2 51497 1 0
 /picture/0_ebb38_6c0e54b9_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29392 0 0
 /index/categories/created-monthly-calendar-2015 22 1056310 0 0
@@ -577,13 +599,13 @@ BEGIN_SIDER 320
 /index/contact/ 24 532792 1 0
 /js/45498cbcf31fe0ec1c2111c185bccbf0374f3652.js.php 7 699888 1 5
 /plugins/rv_autocomplete/suggestions.php 3 16744 0 0
-/js/47cd1a22b8a2d54768808d52956c969afa2d5bc5.js.php 1 176343 0 0
 /index/categories/posted-weekly-list-2016-24-1 1 51014 0 0
-/index/category/1-1_kazakhstan_china_lao_thailand_101014_211014_/created-monthly-calendar-2014-10 7 293012 0 0
+/js/47cd1a22b8a2d54768808d52956c969afa2d5bc5.js.php 1 176343 0 0
 /js/f7eb2cd94387104101bffd46c3baebc91d01c21d.js.php 1 127942 0 0
+/index/category/1-1_kazakhstan_china_lao_thailand_101014_211014_/created-monthly-calendar-2014-10 7 293012 0 0
 /js/10f8e5d47eaa32268b3e862aca77b661551fb3ef.js.php 2 354978 1 0
-/index/categories/posted-monthly-list-2016 3 154444 0 0
 /index/category/19-baikal_russia_abkhazia_160912_021012_/created-monthly-calendar-2012 1 31241 0 0
+/index/categories/posted-monthly-list-2016 3 154444 0 0
 /search_rules.php 1 7717 0 0
 /css/05b13441b29c5acc741362a65d713a55a5d575e0.css.php 5 106720 0 0
 /index/category/8-8_belitong_sebesi_krakatao_indonesia_120515_100615_ 3 119370 0 0
@@ -612,7 +634,7 @@ BEGIN_SIDER 320
 /js/e3f4f8dfd1994805f2c24f9e862ba94004f03cef.js.php 1 134492 0 0
 /css/c1e8bd11801e495f15073b0b6f5ccd1f96235646.css.php 8 372496 0 0
 /css/4bb51e85269123f3593dc9ed7c335a6c4070560e.css.php 2 93196 1 0
-/plugins/rv_akismet/csi.php 28 1204 2 3
+/plugins/rv_akismet/csi.php 29 1247 2 3
 /index/category/21-volgograd_kalmykia_russia_250414_030514_ 13 711086 0 1
 /category/info/ 1 46116 0 0
 /picture/0_eba8f_b58599ba_XL/category/17-moscow_baikal_russia_150812_050912_ 1 33830 0 0
@@ -633,19 +655,20 @@ BEGIN_SIDER 320
 /index/category/11-11_mauritius_island_mauritius_seychelles_220715_141015_ 4 204768 2 2
 /about.php 2 32371 0 0
 /css/7f97983a26c2ffff7fd6ea733ab93d9650a9d0fb.css.php 3 63894 0 0
-/index/most_visited 1 30248 0 0
+/index/most_visited 2 54750 0 1
 /activities/champagne-sunset-sail/ 1 48832 0 0
 /index/categories/created-monthly-list-2014 1 52303 0 0
 /index/tags/8-sri_lanka/created-monthly-calendar-2016 1 28916 0 0
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list-2014-any 1 59800 0 0
 /picture/0_ebb3b_c57ae0f6_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29480 0 0
+/js/3fa36e13f059783ceb35caf9e603c8ddcdd0ca87.js.php 4 515788 0 0
 /picture/DSC09835/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 1 39113 0 0
 /index/category/23-abkhazia_010113_150613_/posted-weekly-list-2016 1 49534 0 0
 /index/category/19-baikal_russia_abkhazia_160912_021012_/created-monthly-list 1 51350 0 0
 /index/categories 6 163913 0 0
 /header_logo.php 8 447052 0 0
-/index/category/23-abkhazia_010113_150613_/posted-monthly-calendar-2016-6-10 1 46076 0 1
 /index/categories/startcat-12 2 50538 0 0
+/index/category/23-abkhazia_010113_150613_/posted-monthly-calendar-2016-6-10 1 46076 0 1
 /index/category/23-abkhazia_010113_150613_/posted-monthly-calendar 1 29576 0 0
 /index/categories/created-monthly-calendar-2012-9-3 2 54463 0 1
 /index/categories/startcat-20 1 24477 0 0
@@ -679,12 +702,14 @@ BEGIN_SIDER 320
 /index/categories/created-monthly-calendar 13 362206 2 0
 /js/8f4fc7737ffc5f3921716c766e5c9a27eb28b7e9.js.php 2 268562 0 0
 /js/580ba5b2f7318995a52e3a4873cd57be901d2606.js.php 2 259904 0 0
+/js/dae1f079e585c1b862090e8f92d3177b94ac6e66.js.php 4 515780 0 0
 /js/0a8a1cc17ba20f159581c21f7f6d735107348af7.js.php 1 99747 0 0
 /js/1129d7d68703971905cc19a26007f188b5f2d0b1.js.php 3 882858 0 0
 /index/categories/created-monthly-calendar-2012-9 4 132545 0 0
 /index/categories/posted-monthly-calendar-2016 2 54318 0 0
 /picture/0_ebb3c_211930cc_XL/category/19-baikal_russia_abkhazia_160912_021012_ 2 71666 0 0
 /picture/IMGP3622/category/14-14_chennai_india_030116_110116_ 1 38609 0 0
+/js/063f8f6c245d92130445844ab458cba32fb710aa.js.php 10 1588248 2 4
 /subdomains/images/index.php 1 6581 0 0
 /picture/IMGP3879/category/16-16_madurai_ramasagar_india_170216_290216_ 1 25442 0 0
 /index/category/1-1_kazakhstan_china_lao_thailand_101014_211014_/created-monthly-list 9 565691 1 0
@@ -699,11 +724,13 @@ BEGIN_SIDER 320
 /js/476b708bc1eab127997c29db316dbbfb11398dab.js.php 3 529020 0 0
 /picture/0_ebaf2_9220e653_XL/category/18-baikal_lake_russia_060912_150912_ 1 15184 0 0
 /js/794df6bc07d1481bc23fde2f1725a7d12fc7eada.js.php 3 383988 0 0
+/js/74d792d686a28c7fa3fe6211b69a3e8840991493.js.php 2 258112 0 0
 /picture/DSC09195/category/23-abkhazia_010113_150613_ 1 26792 0 0
 /index/category/23-abkhazia_010113_150613_/posted-monthly-calendar-2016 1 29576 0 0
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list-2014 6 376981 0 0
 /picture/IMGP3646/categories/created-monthly-list-2016-1 4 142920 0 0
 /css/5540bc68821f381713026c66eab48ee759c894a4.css.php 2 93196 0 0
+/js/072b0460ae703072c7daa1fe333931b36d51113a.js.php 2 250370 0 0
 /picture/DSC08398/tags/18-postcards 1 37511 0 0
 /picture/IMGP3640/category/14-14_chennai_india_030116_110116_ 2 77031 0 0
 /picture/0_ebb37_b42b83ad_XL/category/19-baikal_russia_abkhazia_160912_021012_ 10 394907 0 0
@@ -743,7 +770,7 @@ BEGIN_SIDER 320
 /index/categories/created-monthly-calendar-2014-10-16 1 28855 0 0
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list 10 572629 1 4
 /picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_ 1 40119 0 0
-/favicon/manifest.json 1 770 0 0
+/favicon/manifest.json 2 1540 0 0
 /category/cruising-area/africa-asia/ 2 92260 0 1
 /picture/DSC07442/category/23-abkhazia_010113_150613_ 1 14699 0 0
 /install.php 3 25079 2 0
@@ -770,7 +797,7 @@ BEGIN_SIDER 320
 /picture/DSC09238/category/23-abkhazia_010113_150613_ 1 26313 0 0
 /js/d70e85812a5438e9dc7ab9edffabc8b53cebc185.js.php 1 127932 0 0
 /index/category/2-2_lao_thailand_malaysia_211014_181114_ 3 155985 0 0
-/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff 21 491904 0 1
+/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff 21 491904 0 2
 /index/categories/created-monthly-calendar-2013 10 319936 0 0
 /js/888d215dad3ef204bd6f1813e4a9e9fda050575f.js.php 1 175690 0 0
 /index/tags/26-tenespacemonkey 3 93988 0 1
@@ -790,6 +817,7 @@ BEGIN_SIDER 320
 /i.php 1 7212 0 0
 /index/most_commented 1 23200 0 0
 /js/e936717e77092e3eaa579573bd62dc5f25505845.js.php 2 257778 0 0
+/js/69627223ca91dfb0eeceebe7ad77f61424af1420.js.php 1 129091 1 1
 /admin/user_list_backend.php 9 1944 0 0
 /index/category/23-abkhazia_010113_150613_/created-weekly-list-2013 1 45942 0 0
 /css/7331f723b4b5e823d7f086e55d3499406b7f5b28.css.php 2 200 0 0
@@ -822,6 +850,7 @@ BEGIN_SIDER 320
 /picture/DSC09830/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 1 39113 0 1
 /index/categories/created-monthly-calendar-2013-1-10 1 28696 0 0
 /js/langpack/th.json 1 4703 0 0
+/js/1efafc88e92a73202939473696f38984ea13a02a.js.php 1 128947 0 0
 /index/created-monthly-calendar 8 184656 0 0
 /search.php 16 573496 0 0
 /plugins/LocalFilesEditor/show_default.php 1 37565 0 0
@@ -834,6 +863,7 @@ BEGIN_SIDER 320
 /css/d70e85812a5438e9dc7ab9edffabc8b53cebc185.css.php 5 232855 0 0
 /picture/DSC07345/category/23-abkhazia_010113_150613_ 3 89311 0 0
 /index/category/15-15_colombo_northern_part_of_sri_lanka_110116_170216_ 2 87501 0 0
+/js/d1fa3023282c83b3ee5cce9c44a661ac565793fc.js.php 5 883145 0 2
 /index/categories/created-monthly-calendar-2016-2 2 65624 0 0
 /index/category/4-4_thailand_malaysia_281214_120115_ 2 58868 0 0
 /index.php 11 141145 0 0

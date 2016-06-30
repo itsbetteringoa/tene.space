@@ -88,7 +88,7 @@ window.curNumber, window.curNumber_sel
 
             $("div#ascii_logo").removeClass("op_color"+prev_n).addClass("op_color"+window.curNumber_sel);
           
-            click1(1,259);
+            click1(2,2);
             
             var range = rangy.createRange();
             // select again
@@ -202,7 +202,9 @@ $(document).ready(function(){
 
 //     }
 // });
-
+$('*[data-dismiss="modal"]').on('click',function(){
+    window.location.hash = ''
+});
 
 window.onhashchange = function() {
     //console.warn(window.location)

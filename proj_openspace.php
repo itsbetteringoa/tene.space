@@ -11,7 +11,7 @@
                     <div class="modal-body modal-mod">
                         <!-- <iframe src="https://player.vimeo.com/video/142642893" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="display: block; margin: 0 auto;"></iframe>
                     -->
-                    <div id="openspace_video" class="embed-container"></div>
+                    <div id="openspace_video" class="embed-container"><img class="lazy img-responsive" src="img/video_OpenSpace.jpg"></div>
                     <br/>
                     <h2>OpenSpace in Arambol, Goa '16-'17</h2>
                     <hr class="star-primary">

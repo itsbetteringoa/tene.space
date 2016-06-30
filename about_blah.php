@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body modal-mod">
-                        <div id="about_video" class="embed-container"></div>
+                        <div id="about_video" class="embed-container"><img class="lazy img-responsive" src="img/video_spacemonkey.jpg"></div>
                         <br/>
                         <h2>tene.space.monkey</h2>
                         <hr class="star-primary">
