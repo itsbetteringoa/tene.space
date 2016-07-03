@@ -10,13 +10,16 @@
     'js/min/jquery-progresspiesvg-min.js',
     "js/min/jquery-progresspiesvg-controlIcons-min.js",
      "js/jquery.lazy.min.js",
-    "js/freelancer.js"
+    'js/js.cookie.js',
+    'ClickMap/js/clickmap.js'
+   
         //'js/cloudinary_js-master/js/jquery.cloudinary.js'
 
     );
     $exclude = array(
+        'js/jquery-lang.js',
         //'js/jquery.js', 
-        //'js/freelancer.js'
+        'js/freelancer.js'
         );
     ?>
  
@@ -24,7 +27,23 @@
 
   <!-- <script type="text/javascript" src="js/min/jquery-progresspiesvg-min.js"></script>
     <script type="text/javascript" src="js/min/jquery-progresspiesvg-controlIcons-min.js"></script>  
-    <script src="js/freelancer.js"></script> -->
+   --> 
+<script src="js/jquery-lang.js"></script>
+   <script src="js/freelancer.js"></script>
+   <script type="text/javascript">
+    var reformalOptions = {
+        project_id: 974252,
+        show_tab: false,
+        project_host: "feedbacks.tene.space"
+    };
+    
+    (function() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript'; script.async = true;
+        script.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'media.reformal.ru/widgets/v3/reformal.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    })();
+</script>
     <!-- jQuery 
     <script src="js/jquery.js"></script>                    
 

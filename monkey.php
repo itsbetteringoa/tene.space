@@ -24,23 +24,25 @@ $website_root_path=__DIR__;
 //die();
 ?>
 <!DOCTYPE html>
-<html lang="en" debug="true">
+<html >
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-    <meta name="description" lang-switch="en" content="BE THE CHANGE you wish to see in the world">
+    <meta name="description" lang="en" content="fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas">
     <meta name="author" content="tene.space.monkey">
     <meta property="og:image" content="http://tene.space/img/site_preview.jpg" />
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
 <meta http-equiv="Cache-control" content="public">
  <!--    <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />  -->
 
-    <title lang="en">"BE THE CHANGE you wish to see in the world"&copy;Gandhiji</title>
+    <title lang="en">"BE THE CHANGE you wish to see in the world"(c)Gandhiji</title>
 
     <?php include('header_styles.php'); ?>
 
@@ -61,27 +63,27 @@ $website_root_path=__DIR__;
                     <span class="icon-bar"></span>
                 </button>
 
-                <!-- languages block 
+                <!-- languages block -->
                 <form>
                     <div class="btn-group lang_buttons" data-toggle="buttons">
                         <label class="btn btn-default ">
-                            <span class="lang_switch rus"></span>
+                            <span class="lang_switch ru"></span>
                             <input name="lang" value="rus" type="radio"><span class="lang_txt">RUS</span></label>
                         <label class="btn btn-default active">
-                            <span class="lang_switch eng"></span>
+                            <span class="lang_switch en"></span>
                             <input name="lang" value="eng" type="radio"><span class="lang_txt">ENG</span></label>
 
                     </div>
                 </form>
-                -->
+                
             </div>
-
+            <div id="hidden" style="display: none;"></div>
             <!-- donaton block with ribbon -->
             <div class="navbar-middle" >
                 <a href="#donation"  id="donation_link" class="portfolio-link" >
-                    <div class="donate_bg" alt="donate" title="Yeeeaaaahhhh"></div>
+                    <div class="donate_bg" lang="en" alt="donate"  title="Yeeeaaaahhhh"></div>
                 </a>
-                <div class="ribbon" title="Yeeeaaaahhhh"> <i><span>
+                <div class="ribbon" lang="en" title="Yeeeaaaahhhh"> <i><span>
                             <s></s>
                             <div lang="en">donate</div>
                             <s></s>
@@ -105,7 +107,7 @@ $website_root_path=__DIR__;
                 -->
                 <li class="dropdown">
                     <a href="#" id="menu_about" data-target="#collapsable_menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        About <b class="caret"></b>
+                        <span lang="en">About</span> <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu" id="collapsable_menu">
                         <li>
@@ -125,7 +127,7 @@ $website_root_path=__DIR__;
                 <li class="page-scroll">
                     <a href="#news" lang="en">News</a>
                 </li>
-                <li class="page-scroll">
+                <li class="page-scroll" id="link_fdb">
                     <a href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>
                 </li>
             </ul>
@@ -144,7 +146,8 @@ $website_root_path=__DIR__;
                 <?php include('header_logo.php'); ?>
 
                 <div class="intro-text">
-                    <h1 id="logo_moto">be the change</h1>
+                    <h1 id="logo_moto_en" >BE THE CHANGE</h1>
+                    <h1 id="logo_moto_ru" style="display:none;">БУДЬ ИЗmЕHЕHИEм</h1>
                 </div>
             </div>
         </div>
@@ -156,7 +159,7 @@ $website_root_path=__DIR__;
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>My Projects</h2>
+                <h2 lang="en">My Projects</h2>
                 <hr class="star-primary"></div>
         </div>
         <div class="row">
@@ -164,13 +167,13 @@ $website_root_path=__DIR__;
             <!-- openspace start -->
             <div class="col-sm-4 portfolio-item">
                 <div class="hover09  text-center">
-                    <a href="#OpenSpace" class="portfolio-link" title="OpenSpace in arambol, Goa for season '16-'17" alt="OpenSpace in arambol, Goa for season '16-'17">
+                    <a href="#OpenSpace" lang="en" class="portfolio-link" title="OpenSpace in arambol, Goa for season 16-17" alt="OpenSpace in arambol, Goa for season 16-17">
                         
-                            <img id="img_openspace" data-src="img/portfolio/openspace.jpg" title="OpenSpace in arambol, Goa for season '16-'17" width=360 height=260 class="lazy img-responsive" alt="OpenSpace project">
+                            <img id="img_openspace" lang="en" data-src="img/portfolio/openspace.jpg" title="OpenSpace in arambol, Goa for season 16-17" width=360 height=260 class="lazy img-responsive" alt="OpenSpace project">
                             <!-- <img id="img_openspace" src="img/portfolio/openspace.jpg" width=360 height=260 class="img-responsive" title="OpenSpace in arambol, Goa for season '16-'17" alt="OpenSpace project"></div> -->
                         
                         <div class="caption carousel-caption">
-                            <p>OpenSpace</p>
+                            <p lang="en">OpenSpace</p>
                         </div>
                     </a>
 
@@ -181,13 +184,13 @@ $website_root_path=__DIR__;
             <!-- cacao start -->
             <div class="col-sm-4 portfolio-item">
                 <div class="hover09  text-center">
-                    <a href="#cacao" id="cacao_modal" class="portfolio-link" title="Experiments with pure cacao from pods" alt="Cacao project" >
+                    <a href="#cacao" id="cacao_modal" lang="en" class="portfolio-link" title="Experiments with pure cacao from pods" alt="Cacao project" >
                         
-                            <img id="img_cacao" data-src="img/portfolio/cacao.jpg" width=360 height=260 class="lazy img-responsive" alt="Cacao project" title="Experiments with pure cacao from pods">
+                            <img id="img_cacao" lang="en" data-src="img/portfolio/cacao.jpg" width=360 height=260 class="lazy img-responsive" alt="Cacao project" title="Experiments with pure cacao from pods">
                             <!-- <img  id="img_cacao" src="img/portfolio/cacao.jpg" width=360 height=260 class="img-responsive" alt="Cacao project" title="Experiments with pure cacao from pods"></div> -->
                         
                         <div class="caption carousel-caption">
-                            <p>Cacao</p>
+                            <p lang="en">Cacao</p>
                         </div>
                     </a>
 
@@ -198,13 +201,13 @@ $website_root_path=__DIR__;
             <!-- images start -->
             <div class="col-sm-4 portfolio-item">
                 <div class="hover09  text-center">
-                    <a href="http://images.tene.space" alt="Images from journeys" title="images from journeys"  class="portfolio-link" >
+                    <a href="http://images.tene.space" lang="en" alt="Images from journeys" title="Images from journeys"  class="portfolio-link" >
                         
-                            <img id="img_images" data-src="img/portfolio/photos.jpg" width=360 height=260 class="lazy img-responsive" alt="Images from journeys" title="images from journeys">
+                            <img id="img_images" lang="en" data-src="img/portfolio/photos.jpg" width=360 height=260 class="lazy img-responsive" alt="Images from journeys" title="Images from journeys">
                             <!-- <img  id="img_images" src="img/portfolio/photos.jpg" width=360 height=260 class="img-responsive" alt="Images from journeys" title="images from journeys"></div> -->
                        
                         <div class="caption carousel-caption">
-                            <p>Images</p>
+                            <p lang="en">Images</p>
                         </div>
                     </a>
                 </div>
@@ -214,13 +217,13 @@ $website_root_path=__DIR__;
             <!-- other_stuff start -->
             <div class="col-sm-4 portfolio-item">
                 <div class="hover09  text-center">
-                    <a href="#other_stuff" class="portfolio-link" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
+                    <a href="#other_stuff" lang="en" class="portfolio-link" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
                         
-                            <img id="img_other_stuff" data-src="img/portfolio/other_stuff.jpg" width=360 height=260 class="lazy img-responsive" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
+                            <img id="img_other_stuff" lang="en" data-src="img/portfolio/other_stuff.jpg" width=360 height=260 class="lazy img-responsive" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet">
                             <!-- <img  id="img_other_stuff" src="img/portfolio/other_stuff.jpg" width=360 height=260 class="img-responsive" alt="Ohter projects" title="Many different ideas and concepts which unrealized yet"></div> -->
                         
                         <div class="caption carousel-caption">
-                            <p>Other_stuff</p>
+                            <p lang="en">Other_stuff</p>
                         </div>
                     </a>
 
@@ -236,7 +239,7 @@ $website_root_path=__DIR__;
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>What's goin' on?</h2>
+                <h2 lang="en">What's goin' on?</h2>
                 <hr class="star-primary"></div>
         </div>
         <div class="row">
@@ -244,20 +247,25 @@ $website_root_path=__DIR__;
             <div class="news_block ">
                 <div class="modal-mod">
                     
-                    <div class = "bs-callout bs-callout-warning">
+                    <div class = "bs-callout bs-callout-success" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>30/06/16</b>
+                        &mdash; <span lang="en">Russian version of whole site and videos released!</span>
+                    </div>
+                    <div class = "bs-callout bs-callout-warning" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>18/06/16</b>
-                        &mdash; Thanks to our friend <a href="http://gogetshop.ru/" target="_blank" title="Denis" alt="Denis">Denis</a> for his <b>hosting-support!</b>
+                        &mdash; <span lang="en" data-lang-token="news1">Thanks to our friend <a href="http://ibudni.ru/" target="_blank" title="Denis" alt="Denis">Denis</a> for his <b>hosting-support!</b></span>
                     </div>
-                    <div class = "bs-callout bs-callout-success">
+                    <div class = "bs-callout bs-callout-success" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>18/06/16</b>
-                        &mdash; Main site started ! english versioin with responsive design
+                        &mdash; <span lang="en" data-lang-token="news2">Main site started ! english versioin with responsive design</span>
                     </div>
-                    <div class = "bs-callout bs-callout-info">
+                    <div class = "bs-callout bs-callout-info" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>14/06/16</b>
-                        &mdash; Gallery with travel images started (in english version for now)
+                        &mdash; <span lang="en" data-lang-token="news3">Gallery with travel images started (in english version for now)</span>
                     </div>
                 </div>
                 <!-- <div class = "alert alert-warning">Warning ! Dont submit this.</div>
@@ -288,16 +296,20 @@ $website_root_path=__DIR__;
 <div class="footer-col col-md-12 ">
     <div class="col-md-1">
         <!--  -->
-        <a href="mailto:monkey@tene.space?subject=[web-site]%20feedback" alt="monkey@tene.space" title="monkey@tene.space">
-            <img src="img/23 email.png" title="email" alt="email" height ="40"></a>
+        <a href="mailto:monkey@tene.space?subject=[web-site]%20feedback" alt="monkey@tene.space" title="monkey@tene.space" target="_blank">
+            <img src="img/23 email.png" title="email" alt="email" height ="30"></a>
     </div>
     <div class="col-md-1">
-        <a href="skype:tene.space.monkey?chat">
-            <img src="img/23 skype.png" title="skype: tene.space.monkey" alt="skype" height="40"></a>
+        <a href="skype:tene.space.monkey?chat" target="_blank">
+            <img src="img/23 skype.png" title="skype: tene.space.monkey" alt="skype" height="35"></a>
+    </div>
+    <div class="col-md-1">
+        <a href="http://telegram.me/tenespacemonkey" alt='@tenespacemonkey' target="_blank">
+            <img src="img/23 telegram.png" title="@tenespacemonkey" alt="@tenespacemonkey" height="35"></a>
     </div>
     <div class="col-md-1">
         <a href="https://couchsurfing.com/people/tenebrarum" title="couchsurfing profile" alt="couchsurfing profile" target="_blank">
-            <img src="img/cs_logo.png" title="couchsurfing" alt="couchsurfing" height="35"></a>
+            <img src="img/cs_logo.png" title="couchsurfing" alt="couchsurfing" height="32"></a>
     </div>
 </div>
 </div>
@@ -312,7 +324,7 @@ $website_root_path=__DIR__;
        src="img/wtfpl-badge.png"
        width="88" height="31" alt="WTFPL" title="Do What the Fuck You Want to Public License" />
     </a>
-    <span class="pull-center">06 / 2016</span>
+    <span class="pull-center">06/2016</span>
 </div>
 </div>
 </div>
@@ -344,8 +356,9 @@ $website_root_path=__DIR__;
 <?php include('footer_scripts.php'); ?>
 
 <!-- Share42 widget  -->
- <div class="share42init" data-top1="70" data-top2="70" data-margin="0" data-url="http://tene.space/monkey" data-title="BE THE CHANGE you wish to see in the world" data-image="http://tene.space/img/site_preview.jpg" data-description="BE THE CHANGE you wish to see in the world" data-zero-counter="0"></div>
+  <div class="share42init" data-top1="70" lang="en" data-top2="70" data-margin="0" data-url="http://tene.space/monkey" data-title="BE THE CHANGE you wish to see in the world" data-image="http://tene.space/img/site_preview.jpg" data-description="fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas" data-zero-counter="0"></div>
 <script type="text/javascript" src="js/share42.js"></script> 
+
 
 <!-- flag counter -->
 <div class="flag_counter">

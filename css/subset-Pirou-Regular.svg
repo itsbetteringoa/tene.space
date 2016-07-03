@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sat Jun 25 10:23:15 2016
+ By ,,,
+Copyright (c) Quentin Gre'beude, 2014. All rights reserved.
+</metadata>
+<defs>
+<font id="Pirou-Regular" horiz-adv-x="569" >
+  <font-face 
+    font-family="Pirou"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="0 0 5 0 0 0 0 0 0 0"
+    ascent="1638"
+    descent="-410"
+    bbox="61 0 1372 1479"
+    underline-thickness="102"
+    underline-position="-102"
+    unicode-range="U+0009-0045"
+  />
+<missing-glyph horiz-adv-x="1024" 
+ />
+    <glyph glyph-name=".notdef" horiz-adv-x="1024" 
+ />
+    <glyph glyph-name="uni0009" unicode="&#x9;" 
+ />
+    <glyph glyph-name="E" unicode="E" horiz-adv-x="1503" 
+d="M61 45q0 19 13 32t32 13h150v1299h-150q-19 0 -32 13t-13 32t13 32t32 13h1221q19 0 32 -13t13 -32v-187q0 -19 -13 -32t-32 -13t-32 13t-13 32v142h-633v-764h295v145q0 19 13 32t32 13t32 -13t13 -32v-377q0 -19 -13 -32t-32 -13t-32 13t-13 32v142h-295v-445h633v141
+q0 19 13 32t32 13t32 -13t13 -32v-186q0 -19 -13 -32t-32 -13h-1221q-19 0 -32 13t-13 32zM346 90h213v445h-213v-445zM346 625h213v764h-213v-764z" />
+    <glyph glyph-name="NULL" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="uni000D" unicode="&#xd;" 
+ />
+  </font>
+</defs></svg>

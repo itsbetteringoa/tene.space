@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sat Jun 25 10:27:39 2016
+ By ,,,
+Copyright (c) 1990-1996 ParaGraph. All Rights Reserved. ITC Rodchenko is a registered trade mark of International Typeface Corporation.
+</metadata>
+<defs>
+<font id="RodchenkoC" horiz-adv-x="500" >
+  <font-face 
+    font-family="RodchenkoCTT"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    bbox="40 0 538 700"
+    underline-thickness="40"
+    underline-position="-60"
+    unicode-range="U+00C8-00C8"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name="NULL" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="afii10026" unicode="&#xc8;" horiz-adv-x="578" 
+d="M388 700h150v-700h-150v418l-198 -418h-150v550v150h150v-418z" />
+    <glyph glyph-name="afii10026" unicode="&#x418;" horiz-adv-x="578" 
+d="M388 700h150v-700h-150v418l-198 -418h-150v550v150h150v-418z" />
+  </font>
+</defs></svg>

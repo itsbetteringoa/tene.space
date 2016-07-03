@@ -8,33 +8,33 @@ AWSTATS DATA FILE 7.4 (build 20150714)
 # update).
 BEGIN_MAP 28
 POS_GENERAL 1971                
-POS_TIME 2638                
-POS_VISITOR 17048               
-POS_DAY 20657               
-POS_DOMAIN 3607                
-POS_LOGIN 4170                
-POS_ROBOT 4325                
-POS_WORMS 5067                
-POS_EMAILSENDER 5198                
-POS_EMAILRECEIVER 5341                
-POS_SESSION 21437               
-POS_SIDER 21650               
-POS_FILETYPES 5476                
-POS_DOWNLOADS 5812                
-POS_OS 5860                
-POS_BROWSER 6130                
-POS_SCREENSIZE 7024                
-POS_UNKNOWNREFERER 7098                
-POS_UNKNOWNREFERERBROWSER 7550                
-POS_ORIGIN 7714                
-POS_SEREFERRALS 7858                
-POS_PAGEREFS 8013                
-POS_SEARCHWORDS 8596                
-POS_KEYWORDS 8772                
-POS_MISC 2300                
-POS_ERRORS 8857                
-POS_CLUSTER 4026                
-POS_SIDER_404 9031                
+POS_TIME 2642                
+POS_VISITOR 17664               
+POS_DAY 21499               
+POS_DOMAIN 3615                
+POS_LOGIN 4180                
+POS_ROBOT 4335                
+POS_WORMS 5077                
+POS_EMAILSENDER 5208                
+POS_EMAILRECEIVER 5351                
+POS_SESSION 22286               
+POS_SIDER 22499               
+POS_FILETYPES 5486                
+POS_DOWNLOADS 5828                
+POS_OS 5876                
+POS_BROWSER 6163                
+POS_SCREENSIZE 7062                
+POS_UNKNOWNREFERER 7136                
+POS_UNKNOWNREFERERBROWSER 7588                
+POS_ORIGIN 7752                
+POS_SEREFERRALS 7896                
+POS_PAGEREFS 8051                
+POS_SEARCHWORDS 8634                
+POS_KEYWORDS 8810                
+POS_MISC 2304                
+POS_ERRORS 8895                
+POS_CLUSTER 4036                
+POS_SIDER_404 9069                
 END_MAP
 
 # LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
@@ -46,14 +46,14 @@ END_MAP
 # MonthHostsKnown   = Number of hosts known
 # MonthHostsUnKnown = Number of hosts unknown
 BEGIN_GENERAL 8
-LastLine 20160630042011 48 9729 10139614367771
+LastLine 20160701022943 909 246318 9862211843976
 FirstTime 0
-LastTime 20160630041818
-LastUpdate 20160630062952 48 0 48 0 0
-TotalVisits 273                 
-TotalUnique 83                  
+LastTime 20160630213922
+LastUpdate 20160701062850 909 0 908 0 0
+TotalVisits 286                 
+TotalUnique 90                  
 MonthHostsKnown 0                   
-MonthHostsUnknown 84                  
+MonthHostsUnknown 91                  
 END_GENERAL
 
 # Misc ID - Pages - Hits - Bandwidth
@@ -63,7 +63,7 @@ JavaEnabled 0 0 0
 JavascriptDisabled 0 0 0
 PDFSupport 0 0 0
 WindowsMediaPlayerSupport 0 0 0
-AddToFavourites 0 205 0
+AddToFavourites 0 253 0
 RealPlayerSupport 0 0 0
 TotalMisc 0 0 0
 DirectorSupport 0 0 0
@@ -84,45 +84,45 @@ BEGIN_TIME 24
 9 255 1732 66175626 338 368 26014805
 10 288 2500 83166269 593 608 20783779
 11 601 2283 81125201 535 674 30128838
-12 485 4353 119728044 64 95 1008898
-13 307 2682 93711364 104 119 5713197
+12 490 4445 124830978 65 105 1393783
+13 307 2682 93711364 143 159 7148252
 14 577 2327 40342535 547 611 42689741
-15 260 1498 49299725 32 108 1123767
-16 498 2211 76945430 270 333 2520008
-17 214 2050 48676009 410 428 16128373
-18 351 2317 63001761 708 719 735000
-19 628 2813 60287350 699 737 1395396
-20 145 433 3835247 1189 1198 1616756
-21 8 8 1212294 278 293 20709491
+15 324 1562 57803239 38 125 1291081
+16 578 2345 87143580 270 348 2746298
+17 245 2081 51975948 411 434 16204035
+18 420 2413 70599715 709 730 886092
+19 643 3060 65709542 699 738 1410482
+20 210 498 10216373 1192 1207 1707968
+21 42 69 5288307 279 294 20871423
 22 28 462 9960198 1239 1259 27986296
-23 4 4 620920 392 401 243260
+23 4 4 620920 399 409 891820
 END_TIME
 
 # Domain - Pages - Hits - Bandwidth
 # The 10 first Pages must be first (order not required for others)
 BEGIN_DOMAIN 23
-in 5979 32370 913028081
-us 128 475 27753118
+in 6297 32802 952548447
+us 131 478 28238995
+ru 53 393 12120506
 mu 14 306 6982010
-ru 13 40 1830305
 id 13 300 6355910
 be 6 6 582450
 de 5 32 1221455
 my 4 4 620920
 ro 4 4 154152
+ir 4 4 595838
 dm 2 2 310460
 tr 1 1 154098
 jp 1 1 154271
-cn 2 2 283096
 ip 0 1177 6123108
+cn 2 2 283096
 is 1 1 154142
 fr 2 2 155276
-ch 2 2 155144
 gb 1 1 1005
+ch 2 2 155144
 th 2 2 283361
 ca 2 2 308196
 nl 1 1 1005
-ir 2 2 310460
 sk 1 1 154139
 END_DOMAIN
 
@@ -138,8 +138,8 @@ END_LOGIN
 # Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
 # The 10 first Hits must be first (order not required for others)
 BEGIN_ROBOT 17
-mj12bot 6674 246173615 20160630033721 0
-facebook 22 328508 20160613080414 0
+mj12bot 6716 248256190 20160630234012 0
+facebook 23 490440 20160630210757 0
 googlebot 20 3290682 20160622173409 0
 no_user_agent 13 1550837 20160622173410 0
 yandex 5 3897 20160614223833 0
@@ -152,7 +152,7 @@ libwww 1 154186 20160622172739 0
 curl 1 157313 20160630041816 0
 robot 1 1005 20160615061227 0
 surveybot 1 1005 20160615203049 0
-wordpress 1 0 20160623143421 0
+wordpress 2 0 20160630124212 0
 twitterbot 1 156189 20160618145623 0
 cfnetwork 1 7148 20160614125620 0
 END_ROBOT
@@ -174,18 +174,18 @@ END_EMAILRECEIVER
 
 # Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
 BEGIN_FILETYPES 13
-css 1417 166852474 0 0
-eot 1 20127 0 0
-png 1567 13839930 0 0
+eot 3 60381 0 0
+css 1453 168522987 0 0
+png 1590 14309103 0 0
 ttf 18 817272 0 0
-woff2 516 9326352 0 0
-woff 679 5640096 0 0
-json 3 6243 0 0
-php 3405 114983688 0 0
-html 208 8036323 0 0
-js 1726 226036563 0 0
-jpg 23797 334492912 0 0
-Unknown 1356 86934806 0 0
+woff 680 5663520 0 0
+woff2 519 9389848 0 0
+json 143 9326603 0 0
+php 3521 128682012 0 0
+html 217 9471129 0 0
+js 1775 229290311 0 0
+jpg 24116 340680257 0 0
+Unknown 1448 101355185 0 0
 gif 41 89376 0 0
 END_FILETYPES
 
@@ -194,68 +194,69 @@ BEGIN_DOWNLOADS 0
 END_DOWNLOADS
 
 # OS ID - Hits
-BEGIN_OS ID - Hits - Pages 14
-linuxandroid 4123 520
-macosx11 87 15
-winlong 2 2
+BEGIN_OS ID - Hits - Pages 15
+linuxandroid 4166 563
 winxp 136 43
-winphone 2835 277
+winlong 2 2
+macosx11 87 15
+macosx6 2 2
 ios_iphone 2457 222
+winphone 2835 277
 win2000 2 2
 linux 39 39
-win7 22785 4960
+win7 23220 5254
 macosx9 4 4
-win10 5 5
-win8.1 37 10
 Unknown 2216 81
-ios_ipad 6 6
+win8.1 37 10
+win10 276 17
+ios_ipad 45 18
 END_OS
 
 # Browser ID - Hits - Pages
 BEGIN_BROWSER 43
 firefox44.0 3 3
-android 3636 398
+android 3641 403
 chrome39.0.2171.95 4 4
 safari5.0.2 11 11
-chrome39.0.0.0 2 2
-msie8.0 3 3
-chrome46.0.2490.76 136 73
-chrome51.0.2704.81 95 20
 safari10.0.9.2372 1023 75
+chrome51.0.2704.81 95 20
+msie8.0 3 3
+chrome46.0.2490.76 171 108
+chrome39.0.0.0 2 2
 chrome11.0.696.34 5 5
-firefox43.0 847 94
-chrome17.0.1025.133 1 1
-chrome50.0.2661.102 21528 4773
-safari9.1.1 2 2
-chrome37.0.2062.120 10 10
+firefox43.0 1021 268
 chrome51.0.2704.84 31 4
+chrome37.0.2062.120 10 10
+safari9.1.1 2 2
+chrome17.0.1025.133 1 1
+chrome50.0.2661.102 21669 4827
 chrome27.0.1453 20 20
 safari8.0 742 80
-msie9.0 32 5
+msie9.0 83 29
 chrome49.0.2623.112 2 2
 Unknown 1179 2
-chrome47.0.2526.83 49 6
-chrome30.0.0.0 6 6
-netscape 2 2
+chrome47.0.2526.83 52 9
 opera38.0.2220.31 2 2
+netscape 2 2
+chrome30.0.0.0 6 6
 msie5.01 2 2
 firefox17.0 1 1
-chrome49.0.2623.87 2 2
 firefox42.0 1 1
+chrome49.0.2623.87 2 2
 chrome48.0.2564.23 198 14
 safari7.2.1.0 12 2
 firefox21.0 1 1
-firefox46.0 2 2
+firefox46.0 4 4
 chrome30.0.1599.69 1 1
-safari5.1.7 32 32
 firefox47.0 42 15
-chrome51.0.2704.103 362 30
+safari5.1.7 55 55
+chrome51.0.2704.103 636 45
 msie11.0 2 2
-safari9.0 1710 137
+safari9.0 1749 149
 mozilla 20 20
-netscape5.0 8 5
 safari5.0.4 132 39
-msie10.0 2835 277
+netscape5.0 11 8
+msie10.0 2875 290
 END_BROWSER
 
 # Screen size - Hits
@@ -267,8 +268,8 @@ BEGIN_UNKNOWNREFERER 5
 Mozilla 20160620023429
 Piwigo 20160610143250
 Mozilla/5.0_(PlayBook;_U;_RIM_Tablet_OS_2.1.0;_en-US)_AppleWebKit/536.2__(KHTML_like_Gecko)_Version/7.2.1.0_Safari/536.2_ 20160613092143
-Mozilla/5.0_(BB10;_Touch)_AppleWebKit/537.10__(KHTML,_like_Gecko)_Version/10.0.9.2372_Mobile_Safari/537.10_ 20160621102519
 Web-sniffer/1.1.0_(_http://web-sniffer.net/) 20160623100628
+Mozilla/5.0_(BB10;_Touch)_AppleWebKit/537.10__(KHTML,_like_Gecko)_Version/10.0.9.2372_Mobile_Safari/537.10_ 20160621102519
 END_UNKNOWNREFERER
 
 # Unknown referer Browser - Last visit date
@@ -279,11 +280,11 @@ END_UNKNOWNREFERERBROWSER
 
 # Origin - Pages - Hits 
 BEGIN_ORIGIN 6
-From0 515 1725
+From0 632 1842
 From1 4 4
 From2 1 1
 From3 68 68
-From4 5598 32936
+From4 5844 33609
 From5 0 0
 END_ORIGIN
 
@@ -324,42 +325,44 @@ END_KEYWORDS
 
 # Errors - Hits - Bandwidth
 BEGIN_ERRORS 7
-403 13 418469
 401 10 16432
-302 7166 1448168
+403 13 418469
+302 7173 1449416
 206 15 34046
 500 4 1942
-404 214 1940725
-301 219 56511
+301 229 58831
+404 223 2325610
 END_ERRORS
 
 # URL with 404 errors - Hits - Last URL referrer
-BEGIN_SIDER_404 71
-/action.php 2 -
-/robots.txt 21 -
+BEGIN_SIDER_404 77
 /wp-content/uploads/2015/11/IMG_1862.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
+/robots.txt 21 -
+/action.php 2 -
 /picture/DSC00450/category/favicon/favicon-96x96.png 1 http://images.tene.space/picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_
-/index/tags/favicon/favicon-96x96.png 1 http://images.tene.space/index/tags/18-postcards
 /wp-content/uploads/2015/11/IMG_1932.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
+/index/tags/favicon/favicon-96x96.png 1 http://images.tene.space/index/tags/18-postcards
 /,hkj 1 -
-/wp-content/uploads/2015/11/IMG_3307.jpg 1 http://blueocean.tene.space/category/info/
+/wp-content/uploads/2015/11/20150310_102539-Version-3.jpg 1 http://blueocean.tene.space/category/activities/
 /wp-content/uploads/2015/11/20150414_181014.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
+/wp-content/uploads/2015/11/IMG_3307.jpg 1 http://blueocean.tene.space/category/info/
 /wp-content/uploads/2015/11/20150420_141134-300x169.jpg 2 http://blueocean.tene.space/category/info/
 /wp-content/uploads/2015/11/IMG_3900_2.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /picture/IMGP3598/tags/favicon/favicon-16x16.png 1 http://images.tene.space/picture/IMGP3598/tags/18-postcards
-/index/categories/favicon/favicon-194x194.png 1 http://images.tene.space/index/categories/startcat-12
 /picture.php 7 -
-/picture/IMGP3598/tags/favicon/spacemonkey_logo_200.png 6 http://images.tene.space/picture/IMGP3598/tags/18-postcards
+/index/categories/favicon/favicon-194x194.png 1 http://images.tene.space/index/categories/startcat-12
 /wp-content/uploads/2015/11/20150410_180534.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
+/picture/IMGP3598/tags/favicon/spacemonkey_logo_200.png 6 http://images.tene.space/picture/IMGP3598/tags/18-postcards
 /index/category/favicon/favicon-96x96.png 1 http://images.tene.space/index/category/16-16_madurai_ramasagar_india_170216_290216_
-/index/tags/favicon/android-chrome-192x192.png 1 http://images.tene.space/index/tags/18-postcards
 /wp-content/uploads/2015/11/IMG_1853.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
+/index/tags/favicon/android-chrome-192x192.png 1 http://images.tene.space/index/tags/18-postcards
 /index/category/favicon/favicon-194x194.png 1 http://images.tene.space/index/category/16-16_madurai_ramasagar_india_170216_290216_
+/wp-content/uploads/2015/11/20150410_150145.jpg 1 http://blueocean.tene.space/
 /picture/IMGP3863/category/favicon/favicon-194x194.png 1 http://images.tene.space/picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_
 /picture/IMGP3598/tags/favicon/favicon-194x194.png 1 http://images.tene.space/picture/IMGP3598/tags/18-postcards
 /picture/IMGP3598/tags/favicon/favicon-96x96.png 1 http://images.tene.space/picture/IMGP3598/tags/18-postcards
-/wp-content/uploads/2015/11/20150412_180303.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /wp-content/uploads/2015/11/20151001_111130-300x169.jpg 2 http://blueocean.tene.space/category/info/
+/wp-content/uploads/2015/11/20150412_180303.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /wp-content/uploads/2015/11/20150412_180928.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /picture/IMGP3863/category/favicon/favicon-16x16.png 1 http://images.tene.space/picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_
 /picture/DSC08907/tags/null../favicon/icons.png 1 http://images.tene.space/picture/DSC08907/tags/59-russia
@@ -368,37 +371,41 @@ BEGIN_SIDER_404 71
 /index/category/favicon/spacemonkey_logo_200.png 7 http://images.tene.space/index/category/16-16_madurai_ramasagar_india_170216_290216_
 /index/category/favicon/android-chrome-192x192.png 1 http://images.tene.space/index/category/16-16_madurai_ramasagar_india_170216_290216_
 /picture/IMGP3863/category/favicon/favicon-96x96.png 1 http://images.tene.space/picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_
-/index/categories/favicon/favicon-16x16.png 1 http://images.tene.space/index/categories/startcat-12
 /wp-content/uploads/2015/11/20151008_071432.jpg 2 http://blueocean.tene.space/category/cruising-area/africa-asia/
-/index/tags/favicon/favicon-16x16.png 1 http://images.tene.space/index/tags/18-postcards
-/index/categories/favicon/spacemonkey_logo_200.png 4 http://images.tene.space/index/categories/startcat-12
-/wp-content/uploads/2015/11/20150416_062248.jpg 2 http://blueocean.tene.space/activities/champagne-sunset-sail/
+/index/categories/favicon/favicon-16x16.png 1 http://images.tene.space/index/categories/startcat-12
 /wp-content/uploads/2015/11/P1140344.jpg 2 http://blueocean.tene.space/category/cruising-area/africa-asia/
+/index/categories/favicon/spacemonkey_logo_200.png 4 http://images.tene.space/index/categories/startcat-12
+/index/tags/favicon/favicon-16x16.png 1 http://images.tene.space/index/tags/18-postcards
+/wp-content/uploads/2015/11/20150416_062248.jpg 3 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /picture/IMGP3863/category/favicon/android-chrome-192x192.png 1 http://images.tene.space/picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_
-/index/tags/favicon/favicon-32x32.png 1 http://images.tene.space/index/tags/18-postcards
 /picture/DSC00450/category/favicon/favicon-16x16.png 1 http://images.tene.space/picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_
+/index/tags/favicon/favicon-32x32.png 1 http://images.tene.space/index/tags/18-postcards
 /index/tags/favicon/favicon-194x194.png 1 http://images.tene.space/index/tags/18-postcards
 /picture/IMGP3863/category/favicon/spacemonkey_logo_200.png 7 http://images.tene.space/picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_
 /index/categories/posted-monthly-calendar-2016/start-160 1 http://images.tene.space/index/categories/posted-weekly-list-2016-24-2/start-160
 /index/category/favicon/favicon-32x32.png 1 http://images.tene.space/index/category/16-16_madurai_ramasagar_india_170216_290216_
 /index/category/favicon/favicon-16x16.png 1 http://images.tene.space/index/category/16-16_madurai_ramasagar_india_170216_290216_
+/wp-content/uploads/2015/11/IMG_3902.jpg 1 http://blueocean.tene.space/category/activities/
 /picture/DSC00450/category/favicon/favicon-32x32.png 1 http://images.tene.space/picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_
 /picture/IMGP3863/category/favicon/favicon-32x32.png 1 http://images.tene.space/picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_
 /picture/DSC08907/tags/null/favicon/icons.png 1 http://images.tene.space/picture/DSC08907/tags/59-russia
-/wp-content/uploads/2015/11/hervey-bay-dolphin-watching-tours-dolphins-bow-riding-770x406.jpg 1 http://blueocean.tene.space/
+/wp-content/uploads/2015/11/hervey-bay-dolphin-watching-tours-dolphins-bow-riding-770x406.jpg 2 http://blueocean.tene.space/
+/wp-content/uploads/2015/11/simpson6.jpg 1 http://blueocean.tene.space/category/activities/
 /index/categories/favicon/android-chrome-192x192.png 1 http://images.tene.space/index/categories/startcat-12
 /picture/DSC00450/category/favicon/android-chrome-192x192.png 1 http://images.tene.space/picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_
 /index/categories/favicon/favicon-96x96.png 1 http://images.tene.space/index/categories/startcat-12
+/wp-content/uploads/2015/11/hervey-bay-dolphin-watching-tours-dolphins-boom-netting-770x406.jpg 1 http://blueocean.tene.space/
 /wp-content/uploads/2015/11/k-CSC_9436.jpg 2 http://blueocean.tene.space/category/cruising-area/africa-asia/
 /wp-content/uploads/2015/11/IMG_1863.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /index/tags/favicon/spacemonkey_logo_200.png 5 http://images.tene.space/index/tags/18-postcards
 /wp-content/uploads/2015/11/IMG_1937.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /wp-content/uploads/2015/11/20150416_061217.jpg 1 http://blueocean.tene.space/activities/champagne-sunset-sail/
 /picture/IMGP3598/tags/favicon/android-chrome-192x192.png 1 http://images.tene.space/picture/IMGP3598/tags/18-postcards
-/wp-content/uploads/2015/11/IMG_1976.jpg 2 http://blueocean.tene.space/category/cruising-area/africa-asia/
-/wp-content/uploads/2015/11/simpson2.jpg 1 http://blueocean.tene.space/
 /picture/DSC00450/category/favicon/favicon-194x194.png 1 http://images.tene.space/picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_
+/wp-content/uploads/2015/11/IMG_1976.jpg 2 http://blueocean.tene.space/category/cruising-area/africa-asia/
+/wp-content/uploads/2015/11/simpson2.jpg 2 http://blueocean.tene.space/
 /picture/IMGP3598/tags/favicon/favicon-32x32.png 1 http://images.tene.space/picture/IMGP3598/tags/18-postcards
+/wp-content/uploads/2015/11/i_45r0305_l450m.jpg 1 http://blueocean.tene.space/
 /wp-content/uploads/2015/11/1019wallpaper-6_1600-300x225.jpg 3 http://blueocean.tene.space/category/cruising-area/africa-asia/
 /wp-content/uploads/2015/11/20151009_094101.jpg 2 http://blueocean.tene.space/category/cruising-area/africa-asia/
 /plugins/download_by_size/action.php 82 -
@@ -411,69 +418,74 @@ END_SIDER_404
 # Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
 # [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
 # The 10 first Hits must be first (order not required for others)
-BEGIN_VISITOR 84
+BEGIN_VISITOR 91
 183.87.138.182 2324 12837 338814018 20160627125309
 111.119.248.60 894 4567 126469371 20160628191620
 111.119.197.139 810 4500 105973667 20160616142222
 111.119.248.61 776 4154 125245351 20160627090538
 111.119.248.36 620 4142 111852841 20160628191618
+120.60.135.87 318 432 39520366 20160630211536
 120.60.134.81 133 437 26038574 20160625083732
 111.119.197.145 70 87 8108284 20160628070029
 111.119.197.138 60 108 7662457 20160623143942
 120.60.129.227 55 483 16410659 20160624095947
-120.60.150.190 54 95 7976219 20160618142806
 41.136.127.42 2 2 310460 20160623231525
-104.45.18.178 2 3 849801 20160623144706
-175.141.178.54 2 2 310460 20160624073118
+213.87.158.44 13 40 2199354 20160630161556
+104.45.18.178 3 4 1011760 20160630152010
 66.249.88.203 6 6 608074 20160622173351
+175.141.178.54 2 2 310460 20160624073118
 120.60.176.113 2 2 1872 20160605191929
 1.39.46.155 16 91 2915182 20160624073020
 64.74.215.130 39 132 9673282 20160624114304
-120.60.134.128 53 487 13696290 20160626085157
 197.227.153.108 6 186 3116002 20160623141030
+120.60.134.128 53 487 13696290 20160626085157
 2a03:6f00:1::5c35:723b 0 1177 6123108 
 37.187.129.166 1 1 1005 20160613043136
-171.49.203.246 2 2 310460 20160623203848
 78.46.220.106 2 2 307934 20160623100628
+171.49.203.246 2 2 310460 20160623203848
 117.201.102.208 2 2 310460 20160623153430
 192.154.110.234 2 2 2010 20160612132411
+120.60.150.190 54 95 7976219 20160618142806
 110.232.68.133 11 298 6045450 20160625040243
 54.217.235.156 20 228 6701350 20160613175410
 188.245.221.255 2 2 310460 20160623145533
 41.212.157.91 2 2 310460 20160623143950
-66.249.88.198 6 6 638962 20160622173351
 65.19.167.132 1 1 154139 20160625011504
-104.145.85.115 1 1 936 20160607011445
+66.249.88.198 6 6 638962 20160622173351
+31.173.86.19 3 3 351928 20160630190234
 66.102.9.50 1 1 153992 20160623111847
+104.145.85.115 1 1 936 20160607011445
 66.102.9.72 1 1 156362 20160623111848
 64.79.100.23 3 3 102 20160619004243
+87.250.7.200 12 271 5736319 20160630194131
 78.135.115.145 1 1 154098 20160623180701
-23.101.61.176 1 2 695703 20160623111733
+95.153.135.143 3 3 351952 20160630171003
 120.60.132.20 10 10 1362505 20160629163300
+23.101.61.176 2 3 857662 20160630152010
 23.239.208.210 2 2 308542 20160628040722
 148.251.45.185 3 30 913521 20160613164031
-64.79.100.18 3 3 468834 20160620023429
 113.53.168.31 2 2 283361 20160628012658
+64.79.100.18 3 3 468834 20160620023429
 114.125.60.192 2 2 310460 20160623125019
-109.68.162.161 6 6 582450 20160618161457
 72.5.65.215 11 11 1788930 20160626034035
+109.68.162.161 6 6 582450 20160618161457
 66.102.9.66 1 14 361125 20160623111910
 120.60.146.249 23 246 8823991 20160617133339
-176.10.99.201 1 1 1005 20160615181959
-66.102.9.44 1 15 539071 20160623111911
 1.39.11.26 1 1 154139 20160625195732
+66.102.9.44 1 15 539071 20160623111911
+176.10.99.201 1 1 1005 20160615181959
 176.10.99.204 1 1 154139 20160624202315
 123.136.112.28 2 2 310460 20160623124650
-40.78.146.128 1 1 154098 20160624093023
+40.78.146.128 2 2 316057 20160630170435
 1.39.46.60 2 2 330772 20160626140135
 142.4.218.156 1 1 154098 20160623201902
 64.233.173.76 2 2 310460 20160623215450
-72.5.65.132 11 11 1790466 20160628000254
 110.227.243.120 2 2 310460 20160623153454
+72.5.65.132 11 11 1790466 20160628000254
 66.249.88.193 6 6 633314 20160622173351
 79.139.147.17 5 32 1225590 20160624080854
 120.60.159.0 30 75 5035562 20160626204606
-66.102.8.228 2 2 286403 20160630041818 20160630041817 /js/063f8f6c245d92130445844ab458cba32fb710aa.js.php
+66.102.8.228 2 2 286403 20160630041818
 104.209.188.207 1 2 695703 20160623111535
 185.100.85.101 1 1 154098 20160624083106
 120.60.164.83 32 32 4010471 20160619113114
@@ -481,21 +493,23 @@ BEGIN_VISITOR 84
 195.245.112.158 1 1 1005 20160612143950
 79.134.234.247 1 1 154142 20160626091450
 66.102.9.55 2 18 470999 20160623111919
+5.198.176.54 2 2 285378 20160630154951
 154.71.96.235 4 116 3245088 20160626050818
-198.96.155.3 1 1 154098 20160623191553
-212.24.63.21 2 2 107 20160602140122
 171.216.116.136 2 2 283096 20160625044412
-37.59.42.55 1 1 154271 20160628154514
-176.226.162.59 1 1 1005 20160613044557
+212.24.63.21 2 2 107 20160602140122
+198.96.155.3 1 1 154098 20160623191553
 150.70.188.172 1 1 154271 20160628012823
-104.153.251.137 2 2 310460 20160623173537
+176.226.162.59 1 1 1005 20160613044557
+37.59.42.55 1 1 154271 20160628154514
 58.146.104.211 2 2 283096 20160625183836
-139.162.151.130 1 1 1005 20160610064412
+104.153.251.137 2 2 310460 20160623173537
 213.87.161.66 5 5 603603 20160618155426
-159.220.78.18 2 2 310460 20160623160352
+139.162.151.130 1 1 1005 20160610064412
 109.163.234.9 3 3 54 20160601195152
+159.220.78.18 2 2 310460 20160623160352
 117.201.102.180 4 4 620920 20160623230208
 85.248.227.165 1 1 154139 20160624213253
+31.173.80.29 9 36 1650648 20160630213922
 END_VISITOR
 
 # Date - Pages - Hits - Bandwidth - Visits
@@ -527,115 +541,117 @@ BEGIN_DAY 28
 20160627 10 10 1466784 7
 20160628 26 29 3532361 9
 20160629 10 10 1362505 1
-20160630 2 2 286403 1
+20160630 365 792 50868225 14
 END_DAY
 
 # Session range - Number of visits
 BEGIN_SESSION 7
-1h+ 87
+1h+ 89
 5mn-15mn 16
-0s-30s 111
+30s-2mn 18
 2mn-5mn 11
-15mn-30mn 12
-30s-2mn 17
-30mn-1h 18
+0s-30s 118
+15mn-30mn 13
+30mn-1h 21
 END_SESSION
 
 # URL - Pages - Bandwidth - Entry - Exit
 # The 10 first Pages must be first (order not required for others)
-BEGIN_SIDER 328
+BEGIN_SIDER 334
 /ws.php 1647 1197052 8 12
 /admin.php 1218 47179100 27 25
-/monkey 656 61130909 120 62
-/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 511 9212308 13 16
+/monkey 744 75382665 132 66
+/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 512 9230336 13 16
 /admin/themes/default/fontello/font/fontello.woff 334 4128240 9 12
 /plugins/AdminTools/template/fontello/font/fontello-ato.woff 324 1019952 7 13
-/ 168 7244267 31 16
+/ 176 7667954 32 16
+/js/langpack/ru.json 140 9320360 0 4
+/js/4892bfaafd09a2ed67904a8c7712587734008c71.js.php 93 11477967 0 2
 /index/categories/posted-monthly-calendar-2016-6 37 924249 2 0
-/js/c1a6e577f34e1ae8530a5c7fc7f1fc990547b5ed.js.php 36 5629032 1 21
-/index/category/23-abkhazia_010113_150613_ 36 1475643 0 0
 /css/52e46cfd2759d4e935c8bf95bf43cb84a5efbdc7.css.php 1 21290 0 0
-/js/7d65d91596756d644931efd656bffd7e133be426.js.php 33 3291651 3 8
 /index/categories/created-monthly-list-2013-3 2 62109 0 0
-/index/category/23-abkhazia_010113_150613_/created-monthly-calendar-2013-1-4 5 161557 0 0
-/index/category/12-12_maharastra_india_141015_181015_ 1 28224 0 1
+/js/7d65d91596756d644931efd656bffd7e133be426.js.php 33 3291651 3 8
 /css/3ab65d28be04bbf79ae196159579f5b41229ce14.css.php 1 37225 0 0
+/index/category/12-12_maharastra_india_141015_181015_ 1 28224 0 1
+/index/category/23-abkhazia_010113_150613_/created-monthly-calendar-2013-1-4 5 161557 0 0
 /picture/0_eba92_8e5e3bb6_XL/category/17-moscow_baikal_russia_150812_050912_ 1 37778 0 0
 /picture/IMGP3667/category/15-15_colombo_northern_part_of_sri_lanka_110116_170216_ 1 26351 0 0
 /picture/IMGP3865/category/16-16_madurai_ramasagar_india_170216_290216_ 2 51141 0 0
 /picture/DSC08880/category/23-abkhazia_010113_150613_ 2 63759 1 0
 /js/941344f3b3e5e59531a8bc94934e0c298bc75d7b.js.php 13 1973575 0 5
-/picture/DSC09003/tags/18-postcards 2 51497 1 0
-/picture/0_ebb38_6c0e54b9_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29392 0 0
 /index/categories/created-monthly-calendar-2015 22 1056310 0 0
+/picture/0_ebb38_6c0e54b9_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29392 0 0
+/picture/DSC09003/tags/18-postcards 2 51497 1 0
 /picture/0_ebaab_652c2172_XL/category/17-moscow_baikal_russia_150812_050912_ 2 76477 0 0
-/js/b45693b5bc3b1428f15a5c657fe262f47dccdf9e.js.php 1 175686 0 0
 /picture/IMGP3863/category/16-16_madurai_ramasagar_india_170216_290216_ 3 90422 0 0
+/js/b45693b5bc3b1428f15a5c657fe262f47dccdf9e.js.php 1 175686 0 0
 /index/categories/posted-weekly-list-2016-24-2/start-160 1 53398 0 0
 /css/f6688aa772459bb2d74751c07fcb88200385dba3.css.php 4 186296 0 4
 /index/categories/created-monthly-calendar-2012-9-2 1 29955 0 0
 /index/categories/posted-weekly-list-2016 3 155347 0 0
 /picture/IMGP1147/category/7-7_kota_batam_island_indonesia_210415_120515_ 1 38772 0 0
-/wp-content/themes/wpbootstrap/css/book_antiqua/tr_book_antiqua-webfont.woff2 2 54880 2 1
+/wp-content/themes/wpbootstrap/css/book_antiqua/tr_book_antiqua-webfont.woff2 3 82320 2 1
 /js/170f92521bf3545ea2cef49715bf17c66cc3a330.js.php 2 352522 0 0
-/index/categories/created-monthly-calendar-2013-1 1 27191 0 0
 /themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf 18 817272 0 2
+/index/categories/created-monthly-calendar-2013-1 1 27191 0 0
 /js/e7cec78c7a73dbd64a810d62f0d802cd1cbb99ef.js.php 3 529809 0 0
 /css/2e8f9dcdee90c0f8a807c4f1c560c5bff074907d.css.php 6 115722 0 0
 /plugins/BatchDownloader/download.php 10 23158478 1 0
-/picture/0_ebac1_67f2642_XL/category/17-moscow_baikal_russia_150812_050912_ 1 32667 0 0
 /index/category/3-3_malaysia_thailand_181114_281214_ 2 81851 0 0
-/js/f150bb30c47350e38be3408a1b4bbd96d731eb4a.js.php 5 879405 0 0
+/picture/0_ebac1_67f2642_XL/category/17-moscow_baikal_russia_150812_050912_ 1 32667 0 0
 /picture/DSC06462/category/23-abkhazia_010113_150613_ 1 34614 0 0
+/js/f150bb30c47350e38be3408a1b4bbd96d731eb4a.js.php 5 879405 0 0
 /picture/0_ebab8_675a946d_XL/category/17-moscow_baikal_russia_150812_050912_ 1 32741 0 0
 /subdomains/images/ws.php 4 224 0 0
 /picture/DSC09010/category/23-abkhazia_010113_150613_ 2 63683 0 0
+/picture/0_ebacc_d7674c66_XL/categories/created-monthly-calendar-2012-9-3 1 36602 0 0
 /index/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 19 862060 1 1
 /picture/DSC09348-1/category/23-abkhazia_010113_150613_ 6 217361 0 0
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-calendar-2014 7 225060 0 0
-/picture/0_ebacc_d7674c66_XL/categories/created-monthly-calendar-2012-9-3 1 36602 0 0
 /picture/0_eba93_8339d4d4_XL/category/17-moscow_baikal_russia_150812_050912_ 1 37904 0 0
 /feed.php 1 887 0 0
 /index/contact/ 24 532792 1 0
 /js/45498cbcf31fe0ec1c2111c185bccbf0374f3652.js.php 7 699888 1 5
 /plugins/rv_autocomplete/suggestions.php 3 16744 0 0
-/index/categories/posted-weekly-list-2016-24-1 1 51014 0 0
 /js/47cd1a22b8a2d54768808d52956c969afa2d5bc5.js.php 1 176343 0 0
-/js/f7eb2cd94387104101bffd46c3baebc91d01c21d.js.php 1 127942 0 0
+/index/categories/posted-weekly-list-2016-24-1 1 51014 0 0
 /index/category/1-1_kazakhstan_china_lao_thailand_101014_211014_/created-monthly-calendar-2014-10 7 293012 0 0
-/js/10f8e5d47eaa32268b3e862aca77b661551fb3ef.js.php 2 354978 1 0
-/index/category/19-baikal_russia_abkhazia_160912_021012_/created-monthly-calendar-2012 1 31241 0 0
+/js/f7eb2cd94387104101bffd46c3baebc91d01c21d.js.php 1 127942 0 0
 /index/categories/posted-monthly-list-2016 3 154444 0 0
+/index/category/19-baikal_russia_abkhazia_160912_021012_/created-monthly-calendar-2012 1 31241 0 0
+/js/10f8e5d47eaa32268b3e862aca77b661551fb3ef.js.php 2 354978 1 0
 /search_rules.php 1 7717 0 0
 /css/05b13441b29c5acc741362a65d713a55a5d575e0.css.php 5 106720 0 0
 /index/category/8-8_belitong_sebesi_krakatao_indonesia_120515_100615_ 3 119370 0 0
 /popuphelp.php 3 22780 0 0
 /js/d7c4bbb681b4487e34a2f5210635361ffdb6dc4c.js.php 2 352686 0 0
 /index/categories/created-monthly-calendar-2016-2-3 4 119236 0 0
-/notification.php 7 128312 0 2
-/picture/0_ebb7c_c686f6d7_XL/category/20-abkhazia_031012_201012_ 2 76323 0 0
 /js/2399c710c84779371aebe6adf782a0cabb618cb3.js.php 2 256012 0 0
+/picture/0_ebb7c_c686f6d7_XL/category/20-abkhazia_031012_201012_ 2 76323 0 0
+/notification.php 7 128312 0 2
 /css/de78811119f860dc28a3ca14492caeaa536d2d7f.css.php 14 270018 0 0
 /index/category/19-baikal_russia_abkhazia_160912_021012_ 5 244444 0 0
-/picture/0_ebb5a_9560aa7_XL/category/20-abkhazia_031012_201012_ 1 37880 0 1
 /picture/IMGP3644/category/14-14_chennai_india_030116_110116_ 2 64234 0 0
+/picture/0_ebb5a_9560aa7_XL/category/20-abkhazia_031012_201012_ 1 37880 0 1
 /picture/IMGP1146/category/7-7_kota_batam_island_indonesia_210415_120515_ 1 38808 0 0
 /index/category/18-baikal_lake_russia_060912_150912_ 3 117323 0 0
 /index/category/23-abkhazia_010113_150613_/created-monthly-list-2013-1 1 37727 0 0
-/picture/DSC09341/category/23-abkhazia_010113_150613_ 13 434383 0 0
+/js/f0d744ed4a2138951f3d5beafffaff962cf46cec.js.php 1 122749 0 0
 /index/category/14-14_chennai_india_030116_110116_ 5 168823 0 0
+/picture/DSC09341/category/23-abkhazia_010113_150613_ 13 434383 0 0
 /css/f34a5c623452452f207e0c35bc26fd30be5a5074.css.php 4 85424 1 1
 /index/categories/posted-weekly-list-2016-24 1 50690 0 1
-/js/5fd8650b9c0170995c24630954ed8d8482b07fa5.js.php 11 1952390 0 2
 /index/categories/created-monthly-calendar-2016-1 3 96330 0 0
+/js/5fd8650b9c0170995c24630954ed8d8482b07fa5.js.php 11 1952390 0 2
 /picture/0_ebb39_ec8bd4ad_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29980 0 0
-/index/category/5-5_koh_lipe_island_thailand_120115_200315_ 1 48286 0 0
+/index/category/5-5_koh_lipe_island_thailand_120115_200315_ 2 96595 0 0
 /picture/0_ebb31_2e3590c1_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 34089 0 0
 /js/e3f4f8dfd1994805f2c24f9e862ba94004f03cef.js.php 1 134492 0 0
 /css/c1e8bd11801e495f15073b0b6f5ccd1f96235646.css.php 8 372496 0 0
 /css/4bb51e85269123f3593dc9ed7c335a6c4070560e.css.php 2 93196 1 0
-/plugins/rv_akismet/csi.php 29 1247 2 3
-/index/category/21-volgograd_kalmykia_russia_250414_030514_ 13 711086 0 1
+/plugins/rv_akismet/csi.php 33 1419 2 4
+/index/category/21-volgograd_kalmykia_russia_250414_030514_ 14 759810 0 2
+/index/category/23-abkhazia_010113_150613_ 36 1475643 0 0
 /category/info/ 1 46116 0 0
 /picture/0_eba8f_b58599ba_XL/category/17-moscow_baikal_russia_150812_050912_ 1 33830 0 0
 /index/category/23-abkhazia_010113_150613_/posted-monthly-list-2016-6-10 1 45393 0 0
@@ -659,26 +675,27 @@ BEGIN_SIDER 328
 /activities/champagne-sunset-sail/ 1 48832 0 0
 /index/categories/created-monthly-list-2014 1 52303 0 0
 /index/tags/8-sri_lanka/created-monthly-calendar-2016 1 28916 0 0
-/index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list-2014-any 1 59800 0 0
 /picture/0_ebb3b_c57ae0f6_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29480 0 0
-/js/3fa36e13f059783ceb35caf9e603c8ddcdd0ca87.js.php 4 515788 0 0
+/index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list-2014-any 1 59800 0 0
 /picture/DSC09835/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 1 39113 0 0
-/index/category/23-abkhazia_010113_150613_/posted-weekly-list-2016 1 49534 0 0
+/js/3fa36e13f059783ceb35caf9e603c8ddcdd0ca87.js.php 4 515788 0 0
 /index/category/19-baikal_russia_abkhazia_160912_021012_/created-monthly-list 1 51350 0 0
-/index/categories 6 163913 0 0
+/index/category/23-abkhazia_010113_150613_/posted-weekly-list-2016 1 49534 0 0
+/js/37d043aa9bc5ea44db350103fd5be4e9198b6ef9.js.php 1 122748 0 0
 /header_logo.php 8 447052 0 0
-/index/categories/startcat-12 2 50538 0 0
+/index/categories 6 163913 0 0
 /index/category/23-abkhazia_010113_150613_/posted-monthly-calendar-2016-6-10 1 46076 0 1
-/index/category/23-abkhazia_010113_150613_/posted-monthly-calendar 1 29576 0 0
+/index/categories/startcat-12 2 50538 0 0
 /index/categories/created-monthly-calendar-2012-9-3 2 54463 0 1
-/index/categories/startcat-20 1 24477 0 0
-/index/tags/59-russia 1 49681 0 0
+/index/category/23-abkhazia_010113_150613_/posted-monthly-calendar 1 29576 0 0
 /index/categories/created-monthly-list-2012-9 1 54869 0 0
+/index/tags/59-russia 1 49681 0 0
+/index/categories/startcat-20 1 24477 0 0
 /index/category/23-abkhazia_010113_150613_/created-monthly-calendar-2013-1-10 3 96512 0 0
 /picture/DSC09348-1/category/23-abkhazia_010113_150613_/created-monthly-list 1 37181 0 0
 /js/207a4d0c9818347b3f0ecc3529e9cd9bf62420d8.js.php 2 352670 0 0
-/index/categories/created-monthly-list-2015-4 1 38046 0 0
 /index/category/20-abkhazia_031012_201012_ 10 406274 0 0
+/index/categories/created-monthly-list-2015-4 1 38046 0 0
 /index/category/23-abkhazia_010113_150613_/created-monthly-calendar-2013-1 23 744835 0 1
 /index/categories/posted-monthly-list-2016-6 8 404953 2 0
 /picture/IMGP3598/category/14-14_chennai_india_030116_110116_ 1 14852 0 0
@@ -693,25 +710,25 @@ BEGIN_SIDER 328
 /index/tags/8-sri_lanka/created-monthly-list 1 43290 0 0
 /js/80df7cad3bd3f3698eaf0e25e577045b8c02e436.js.php 1 129101 0 0
 /js/eff14e10ee85e5232dea6128ff67ca8cfaab1d49.js.php 2 352656 0 0
-/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php 5 0 1 1
+/wp-content/plugins/easy-bootstrap-shortcodes/styles/ebs_dynamic_css.php 6 0 1 2
 /index/category/23-abkhazia_010113_150613_/created-monthly-list-2012 10 317690 0 0
-/js/60d2f663464661efad2d385c0fb840f031b53390.js.php 1 175696 0 0
-/picture/IMGP3671/categories/created-monthly-calendar-2016-2-3 2 75130 0 0
 /index/categories/created-monthly-calendar-2012-8-28 1 27194 0 0
+/picture/IMGP3671/categories/created-monthly-calendar-2016-2-3 2 75130 0 0
+/js/60d2f663464661efad2d385c0fb840f031b53390.js.php 1 175696 0 0
 /index/category/23-abkhazia_010113_150613_/created-monthly-list 10 451266 0 0
-/index/categories/created-monthly-calendar 13 362206 2 0
 /js/8f4fc7737ffc5f3921716c766e5c9a27eb28b7e9.js.php 2 268562 0 0
+/index/categories/created-monthly-calendar 13 362206 2 0
 /js/580ba5b2f7318995a52e3a4873cd57be901d2606.js.php 2 259904 0 0
-/js/dae1f079e585c1b862090e8f92d3177b94ac6e66.js.php 4 515780 0 0
 /js/0a8a1cc17ba20f159581c21f7f6d735107348af7.js.php 1 99747 0 0
-/js/1129d7d68703971905cc19a26007f188b5f2d0b1.js.php 3 882858 0 0
+/js/dae1f079e585c1b862090e8f92d3177b94ac6e66.js.php 4 515780 0 0
 /index/categories/created-monthly-calendar-2012-9 4 132545 0 0
-/index/categories/posted-monthly-calendar-2016 2 54318 0 0
+/js/1129d7d68703971905cc19a26007f188b5f2d0b1.js.php 3 882858 0 0
 /picture/0_ebb3c_211930cc_XL/category/19-baikal_russia_abkhazia_160912_021012_ 2 71666 0 0
+/index/categories/posted-monthly-calendar-2016 2 54318 0 0
 /picture/IMGP3622/category/14-14_chennai_india_030116_110116_ 1 38609 0 0
-/js/063f8f6c245d92130445844ab458cba32fb710aa.js.php 10 1588248 2 4
-/subdomains/images/index.php 1 6581 0 0
+/js/063f8f6c245d92130445844ab458cba32fb710aa.js.php 10 1588248 2 5
 /picture/IMGP3879/category/16-16_madurai_ramasagar_india_170216_290216_ 1 25442 0 0
+/subdomains/images/index.php 1 6581 0 0
 /index/category/1-1_kazakhstan_china_lao_thailand_101014_211014_/created-monthly-list 9 565691 1 0
 /index/category/23-abkhazia_010113_150613_/posted-monthly-list 7 316535 0 0
 /picture/0_eba94_639d09ca_XL/category/17-moscow_baikal_russia_150812_050912_ 1 37784 0 0
@@ -748,6 +765,7 @@ BEGIN_SIDER 328
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-calendar-2014-4 2 63310 0 0
 /css/838ec7037946c21409048866cf66eb61558b4717.css.php 11 234828 1 7
 /picture/IMGP3182/tags/18-postcards 1 32422 0 0
+/js/c1a6e577f34e1ae8530a5c7fc7f1fc990547b5ed.js.php 36 5629032 1 21
 /index/category/20-abkhazia_031012_201012_/posted-monthly-calendar-2016 5 167462 1 0
 /index/categories/posted-monthly-calendar 6 169312 0 0
 /picture/DSC09248/category/23-abkhazia_010113_150613_ 9 294219 0 0
@@ -770,6 +788,7 @@ BEGIN_SIDER 328
 /index/categories/created-monthly-calendar-2014-10-16 1 28855 0 0
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list 10 572629 1 4
 /picture/DSC00450/category/2-2_lao_thailand_malaysia_211014_181114_ 1 40119 0 0
+/category/activities/ 1 1011119 0 0
 /favicon/manifest.json 2 1540 0 0
 /category/cruising-area/africa-asia/ 2 92260 0 1
 /picture/DSC07442/category/23-abkhazia_010113_150613_ 1 14699 0 0
@@ -789,50 +808,51 @@ BEGIN_SIDER 328
 /picture/0_ebb3a_5c39001a_XL/category/19-baikal_russia_abkhazia_160912_021012_ 1 29458 0 0
 /js/7d12b7764b3c1c37a0c051c8159a51e19f5f6014.js.php 2 257692 0 0
 /js/7c6f31f19d54aadeaa7f6dc35a934404f2d51afd.js.php 2 255840 0 0
-/wp-content/themes/wpbootstrap/bootstrap/fonts/glyphicons-halflings-regular.woff2 1 18028 0 0
 /index/categories/created-monthly-calendar-2013-1-4 1 23520 0 0
-/picture/DSC07394/category/23-abkhazia_010113_150613_ 2 29280 0 0
+/wp-content/themes/wpbootstrap/bootstrap/fonts/glyphicons-halflings-regular.woff2 2 36056 0 0
 /action.php 5 701304 0 0
+/picture/DSC07394/category/23-abkhazia_010113_150613_ 2 29280 0 0
 /picture/IMGP3634/category/14-14_chennai_india_030116_110116_ 3 101971 0 0
 /picture/DSC09238/category/23-abkhazia_010113_150613_ 1 26313 0 0
 /js/d70e85812a5438e9dc7ab9edffabc8b53cebc185.js.php 1 127932 0 0
 /index/category/2-2_lao_thailand_malaysia_211014_181114_ 3 155985 0 0
-/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff 21 491904 0 2
+/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.woff 22 515328 0 2
 /index/categories/created-monthly-calendar-2013 10 319936 0 0
 /js/888d215dad3ef204bd6f1813e4a9e9fda050575f.js.php 1 175690 0 0
 /index/tags/26-tenespacemonkey 3 93988 0 1
+/js/ac51e34e2a8f1dd032b32279f3e77d0b471bdc15.js.php 16 1974688 0 0
 /index/category/23-abkhazia_010113_150613_/created-monthly-calendar 17 464684 0 0
 /index/categories/created-weekly-list-2013 2 82226 0 0
 /index/search/7 2 85201 0 0
 /index/category/6-6_malaysia_singapore_indonesia_200315_210415_ 1 37238 0 1
-/css/f7f9b657ebd0df1acba888539e7337cba8acd4a2.css.php 6 128040 1 1
 /css/958e81479ab27b4e13db74ed138dbb542d75e062.css.php 5 232980 0 1
-/picture/DSC09837/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 1 38963 0 0
+/css/f7f9b657ebd0df1acba888539e7337cba8acd4a2.css.php 6 128040 1 1
 /css/1cfab2a31024a13a5df0720cd57dd6f6a8fba1d3.css.php 24 510960 3 2
+/picture/DSC09837/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 1 38963 0 0
 /js/abda797cae8bdc20f0cd3e271a0c14549dec04d2.js.php 2 352620 0 0
-/index/category/13-13_goa_madumalai_india_181015_030116_ 2 33958 0 0
-/subdomains/images/ 7 34676 0 0
 /index/categories/created-monthly-calendar-2015-4 1 28934 0 0
+/subdomains/images/ 7 34676 0 0
+/index/category/13-13_goa_madumalai_india_181015_030116_ 3 65077 0 0
 /comments.php 3 72983 0 0
-/i.php 1 7212 0 0
 /index/most_commented 1 23200 0 0
+/i.php 1 7212 0 0
 /js/e936717e77092e3eaa579573bd62dc5f25505845.js.php 2 257778 0 0
 /js/69627223ca91dfb0eeceebe7ad77f61424af1420.js.php 1 129091 1 1
 /admin/user_list_backend.php 9 1944 0 0
 /index/category/23-abkhazia_010113_150613_/created-weekly-list-2013 1 45942 0 0
-/css/7331f723b4b5e823d7f086e55d3499406b7f5b28.css.php 2 200 0 0
 /picture/IMGP3849/tags/8-sri_lanka 1 37207 0 0
-/index/category/5-5_koh_lipe_island_thailand_120115_200315_/start-80 1 29767 0 0
+/css/7331f723b4b5e823d7f086e55d3499406b7f5b28.css.php 2 200 0 0
 /index/category/20-abkhazia_031012_201012_/posted-monthly-list 4 183768 0 1
+/index/category/5-5_koh_lipe_island_thailand_120115_200315_/start-80 1 29767 0 0
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/created-monthly-list-2014-4 1 46907 0 1
 /js/398e8ccc7d551a5ee1168bd1ebcbf68039cfc613.js.php 1 177490 0 0
 /index/categories/created-monthly-calendar-2016 1 31874 0 0
-/js/8891f3d2b0b2718adca785279b11a39c5214f375.js.php 3 529014 0 0
 /index/categories/created-monthly-calendar-2012-8-29 1 27335 0 0
-/index/categories/created-monthly-list-2012 1 52692 0 0
+/js/8891f3d2b0b2718adca785279b11a39c5214f375.js.php 3 529014 0 0
 /css/315dcfe4b44fa0c4fd66f024be20574fea5e07e4.css.php 5 288850 0 0
+/index/categories/created-monthly-list-2012 1 52692 0 0
 /js/0375e38f159ba5179b5c9ea83804abef14aa84c4.js.php 2 271782 0 0
-/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.eot 1 20127 0 0
+/themes/bootstrapdefault/bootstrap/dist/fonts/glyphicons-halflings-regular.eot 3 60381 0 0
 /index/search/6 1 24104 0 0
 /picture/DSC07442/categories/created-monthly-calendar-2013-1-4 2 58525 0 0
 /picture/0_eba95_92ee5fe6_XL/category/17-moscow_baikal_russia_150812_050912_ 3 38939 0 0
@@ -840,12 +860,12 @@ BEGIN_SIDER 328
 /index/category/23-abkhazia_010113_150613_/created-monthly-calendar-2012 2 61572 0 0
 /picture/IMGP3669/category/15-15_colombo_northern_part_of_sri_lanka_110116_170216_ 1 26628 0 0
 /index/categories/created-weekly-list 4 202679 0 0
-/js/d5a4b2f882dea1a4f0d9dfe95b694807f52bdd6f.js.php 2 290378 0 0
 /index/categories/created-monthly-list-2015 3 153148 0 0
+/js/d5a4b2f882dea1a4f0d9dfe95b694807f52bdd6f.js.php 2 290378 0 0
 /tags.php 6 156667 1 0
 /picture/DSC08486/tags/18-postcards 2 75918 0 0
-/subdomains/images/admin/popuphelp.php 1 7443 0 0
 /index/categories/created-monthly-calendar-2015-1-02 1 27546 0 0
+/subdomains/images/admin/popuphelp.php 1 7443 0 0
 /index/category/19-baikal_russia_abkhazia_160912_021012_/created-weekly-list-2012 1 49927 0 0
 /picture/DSC09830/category/1-1_kazakhstan_china_lao_thailand_101014_211014_ 1 39113 0 1
 /index/categories/created-monthly-calendar-2013-1-10 1 28696 0 0
@@ -857,19 +877,19 @@ BEGIN_SIDER 328
 /index/categories/created-monthly-list-2016-2 1 45002 0 0
 /index/category/23-abkhazia_010113_150613_/posted-monthly-calendar-2016-6 5 139788 0 1
 /index/category/21-volgograd_kalmykia_russia_250414_030514_/start-80 1 36510 0 0
-/js/e1348d13ee6bff64ac03d8b6d51e95c05ee262bd.js.php 2 351772 0 0
 /picture/IMGP3598/tags/18-postcards 3 82567 0 1
+/js/e1348d13ee6bff64ac03d8b6d51e95c05ee262bd.js.php 2 351772 0 0
 /css/6568ef9666651af07cf8c6983df5f36258173a29.css.php 9 191709 1 1
 /css/d70e85812a5438e9dc7ab9edffabc8b53cebc185.css.php 5 232855 0 0
 /picture/DSC07345/category/23-abkhazia_010113_150613_ 3 89311 0 0
 /index/category/15-15_colombo_northern_part_of_sri_lanka_110116_170216_ 2 87501 0 0
 /js/d1fa3023282c83b3ee5cce9c44a661ac565793fc.js.php 5 883145 0 2
 /index/categories/created-monthly-calendar-2016-2 2 65624 0 0
-/index/category/4-4_thailand_malaysia_281214_120115_ 2 58868 0 0
 /index.php 11 141145 0 0
-/index/category/17-moscow_baikal_russia_150812_050912_ 4 169130 0 0
+/index/category/4-4_thailand_malaysia_281214_120115_ 2 58868 0 0
 /index/tags/8-sri_lanka 2 79935 0 0
-/picture/0_ebaaf_609e02ae_XL/category/17-moscow_baikal_russia_150812_050912_ 1 33953 0 0
+/index/category/17-moscow_baikal_russia_150812_050912_ 5 209601 0 0
 /index/categories/created-monthly-list 10 507459 0 0
+/picture/0_ebaaf_609e02ae_XL/category/17-moscow_baikal_russia_150812_050912_ 1 33953 0 0
 /picture/IMGP1149/category/7-7_kota_batam_island_indonesia_210415_120515_ 1 38650 0 0
 END_SIDER

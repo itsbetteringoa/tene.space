@@ -14,56 +14,55 @@
                         <h2>tene.space.monkey</h2>
                         <hr class="star-primary">
                         <div class="modal-mod about_blah">
-                            <p> <b>hello, folks</b>
+                            <p lang="en"  data-lang-token="ab1"> <b>hello, folks</b>
                                 <br/>
                                 my name is dimitry. 30 years old, born in <u>russia</u>
                                 . i'm life-explorer & life-experimentator & post-backpacker. i left my hometown at 2008 and since that time never came back. so i'm kinda bum/hobo/nomad, whose purpose of life is to clearly realize pure nature of mind.
                             </p>
-                            <p>
+                            <p lang="en"  data-lang-token="ab2">
                                 since 2008 i was visiting few countries in south asia and indian ocean. i faced some breathtaking adventures and quite miracolous situations and only good-hearting /helpful /kind /interesting /awesome peoples and places. maybe one day will write a best-seller. ha-ha _)
                             </p>
-                            <p>
-                                of course, many people keep asking about my income - i was never worked at office and sustained myself by doing some odd jobs like fisherman, farm-worker, courrier, childrens caretaker, yacht crew, translator, teacher and laborer
+                            <p lang="en"  data-lang-token="ab3">
+                                of course, many people keep asking about my income &mdash; i was never worked at office and sustained myself by doing some odd jobs like fisherman, farm-worker, courrier, childrens caretaker, yacht crew, translator, teacher and laborer. but mostly i'm doing Freelance jobs about web-site developing 
                             </p>
-                            <p>
+                            <p lang="en"  data-lang-token="ab4">
                                 i'm just follow my own <b>Path and Vision</b>
                                 , anchored with some principles like:
                             </p>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; think out of the box
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">think out of the box
+                        </span><br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">mind your step</span>
                             <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; mind your step
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">keep it real</span>
                             <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; keep it real
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">carpe diem</span>
                             <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; carpe diem
-                            <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; do rather than talk
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">do rather than talk</span>
                             <br/>
                             <div class="">
-                                <blockquote>
+                                <blockquote lang="en"  data-lang-token="ab5">
                                     <p>the things you own end up owning you</p>
                                     <footer>Palahniuk</footer>
                                 </blockquote>
                             </div>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; REducing/REusing/REcycling
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">REducing/REusing/REcycling</span>
                             <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; everything is nothing, nothing is everything
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">everything is nothing, nothing is everything</span>
                             <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; mind is buddha, buddha is mind
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">mind is buddha, buddha is mind</span>
                             <br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; world is just reflection of yourself
+                            &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">world is just reflection of yourself</span>
                             <br/>
                             <div class="">
-                                <blockquote>
+                                <blockquote lang="en"  data-lang-token="ab6">
                                     <p>be the changes you wish to see in the world</p>
                                     <footer>Ghandi</footer>
                                 </blockquote>
                             </div>
 
-                            <div style="margin: 6px; text-align: center; width:100%;font-weight: bold;">... to be continued ...</div>
-                            <p>
+                            <div lang="en" style="margin: 6px; text-align: center; width:100%;font-weight: bold;">... to be continued ...</div>
+                            <p lang="en"  data-lang-token="ab7">
                                 By the way, i've never been using any social networks with exception of <u>CouchSurfing.org</u>
-                                .
                                 <br/>
                                 Here you can see what people are saying
                                 <a href="https://www.couchsurfing.com/people/tenebrarum" target="_blank" alt="couchsurfing profile" title="couchsurfing profile">about me</a>
@@ -72,7 +71,7 @@
                             <p class="button_c">
                             <button type="button" class="btn btn-default" data-dismiss="modal">
                                 <i class="fa fa-times"></i>
-                                Close
+                                <span lang="en">Close</span>
                             </button>
                         </p>
                             </div>

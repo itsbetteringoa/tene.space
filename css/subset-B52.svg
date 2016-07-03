@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sat Jun 25 10:46:13 2016
+ By ,,,
+D-Studio; Dubina Nik., Moskow
+</metadata>
+<defs>
+<font id="B52" horiz-adv-x="500" >
+  <font-face 
+    font-family="B52"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="4 11 5 0 0 0 0 0 0 0"
+    ascent="800"
+    descent="-200"
+    bbox="22 -22 540 593"
+    underline-thickness="10"
+    underline-position="-61"
+    unicode-range="U+0423-0423"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name="NULL" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="FLW211" unicode="&#x423;" horiz-adv-x="563" 
+d="M498 593l42 -46v-13l-42 -27h-25l-21 -21l-12 -2l-15 -26l-3 -48l-22 -26l-14 -51l-6 -7l-12 -56l-24 -19l-18 -101l-33 -42v-50l11 -26v-20h-11l-13 14l-33 -8l-28 -24l-65 -4l-23 -12l-7 2l-54 36l-18 4l-22 32l-8 27v47l30 24l28 10l46 -12l20 -29l-4 -27l-2 -6v-7
+l10 -7l21 7l36 47l13 40l4 57l-18 63l-12 18l-26 87l-31 65l-6 15l-21 23l-4 19l-6 7l-28 -3l-31 13l-8 10l2 7l11 17l20 14l38 4l10 5l28 -5l26 5l47 -9l27 -21v-17l-23 -16l-12 -4l-13 -14v-35l19 -40l2 -31l5 -28l40 -46l8 -2l14 2l24 34l16 17l4 27l-4 25l22 50l-20 34
+l-4 5l-25 -1l-17 27v22l4 6h16l14 -8l19 8l33 6l32 13l29 -9l50 11h23z" />
+  </font>
+</defs></svg>

@@ -255,7 +255,7 @@
                       <br/>    
                       &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">you still can adjust the readyness by opening hatch and checking bean-by-bean oftenly</span>
                       <br/>    
-                      &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">you can use this barbeque stall with grill, charcoal section and cylinder for cooking anything else! like we made tea and roasting cashew nuts! it's very-very handy multi-purposal tool
+                      &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en">you can use this barbeque stall with grill, charcoal section and cylinder for cooking anything else! like we made tea and roasting cashew nuts! it's very-very handy multi-purposal tool</span>
                       <br/>    
                       &nbsp;&nbsp;&nbsp;&nbsp;&mdash; <span lang="en" data-lang-token="ca24">it's not rely on electricity, so you can do it
                       <u>anywhere at anytime</u>
@@ -380,7 +380,7 @@
                           <br>%</span>
                       </span>
                       &mdash; <span lang="en" data-lang-token="ca39">this is now another dream. but it could be very real as soon as i can develop
-                      <abbr title="it's fundrising project to get some help from community and organise new place with different rules and atmosphere">OpenSpace in Arambol</abbr>
+                      <abbr lang="en" title="it's fundrising project to get some help from community and&#013; organise new place with different rules and atmosphere">OpenSpace in Arambol</abbr>
                       (with some community support)
                       <Br/>    
                       i imagine in such place to have "open kitchen", where people can come and make their own cacao mixes with anything they want from roasted/unroasted cacao-beans! also it will be nice place to hang around and exchange with skills and ideas with others and trying it out.</span>
@@ -395,20 +395,20 @@
                   <img class="lazy" data-src="img/cacao/4_s.jpg" lang="en" alt="this is dry unfermented cacao bean by itself" title="this is dry unfermented cacao bean by itself" />    
                 </a>
 
-                <a class="fancybox-thumbs" lang="en" data-imagelightbox="c1"  href="img/cacao/3_b.jpg">
-                  <img class="lazy" data-src="img/cacao/3_s.jpg" alt="beans with stucking paper on them" title="beans with stucking paper on them" />    
+                <a class="fancybox-thumbs"  data-imagelightbox="c1"  href="img/cacao/3_b.jpg">
+                  <img class="lazy" data-src="img/cacao/3_s.jpg" lang="en" alt="beans with stucking paper on them" title="beans with stucking paper on them" />    
                 </a>
 
-                <a class="fancybox-thumbs" data-imagelightbox="c1" lang="en" href="img/cacao/2_b.jpg">
-                  <img class="lazy" data-src="img/cacao/2_s.jpg" alt="was my big mistake to dry beans on newspapers. they was completely stucked on it!" title="was my big mistake to dry beans on newspapers. they was completely stucked on it!"/>    
+                <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/2_b.jpg">
+                  <img class="lazy" data-src="img/cacao/2_s.jpg" lang="en" alt="was my big mistake to dry beans on newspapers. they was completely stucked on it!" title="was my big mistake to dry beans on newspapers. they was completely stucked on it!"/>    
                 </a>
 
-                <a class="fancybox-thumbs" data-imagelightbox="c1" lang="en" href="img/cacao/1_b.jpg">
-                  <img class="lazy" data-src="img/cacao/1_s.jpg" alt="cacao beans drying on roof top at Goa [2016]" title="cacao beans drying on roof top at Goa [2016]" />    
+                <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/1_b.jpg">
+                  <img class="lazy" data-src="img/cacao/1_s.jpg" lang="en" alt="cacao beans drying on roof top at Goa [2016]" title="cacao beans drying on roof top at Goa [2016]" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/5_b.jpg">
-                  <img class="lazy" data-src="img/cacao/5_s.jpg"lang="en" alt="my first cacao-pods which i got from farmer in india. second in lifetime" title="my first cacao-pods which i got from farmer in india. second in lifetime" />    
+                  <img class="lazy" data-src="img/cacao/5_s.jpg" lang="en" alt="my first cacao-pods which i got from farmer in india. second in lifetime" title="my first cacao-pods which i got from farmer in india. second in lifetime" />    
                 </a>
 
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/6_b.jpg">

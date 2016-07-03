@@ -9,14 +9,14 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
               <div class="modal-body">
-                <h2>Thanks for willing to support!</h2>
+                <h2 lang="en">Thanks for willing to support!</h2>
                 <hr class="star-primary">    
                 <table class = "table table-hover table-responsive donation_table">
 
                   <thead>
                     <tr>
-                      <th>method</th>
-                      <th>description</th>
+                      <th lang="en">method</th>
+                      <th lang="en">description</th>
                     </tr>
                   </thead>
 
@@ -25,7 +25,7 @@
                       <td>
                         <img class="lazy img-responsive" data-src="img/yandexmoney_100_eng.png" alt="yandex.money" title="yandex.money"></td>
                       <td>
-                        From another Yandex.Money Wallet or from Bank Cards: <b>Maestro</b>
+                        <span lang="en">From another Yandex.Money Wallet or from Bank Cards:</span> <b>Maestro</b>
                         , <b>Visa</b>
                         ,
                         <b>Master</b>
@@ -38,7 +38,7 @@
                       <td>
                         <img class="lazy img-responsive" data-src="img/webmoney_icon_100.png" alt="webmoney" title="webmoney"></td>
                       <td>
-                        From another WebMoney account
+                        <span lang="en">From another WebMoney account</span>
                         <br/>    
                         <b>WMR</b>
                         &mdash; R018556031093
@@ -52,7 +52,7 @@
                       <td>
                         <img class="lazy img-responsive" data-src="img/credit-card-icon_100.png" alt="credit cards" title="credit cards"></td>
                       <td>
-                        Any bank credit/debit cards &mdash; <b>Generosity.com</b>
+                        <span lang="en">Any bank credit/debit cards</span> &mdash; <b>Generosity.com</b>
                         <a href="https://www.generosity.com/projects/openspace-in-arambol-goa-india-2016-2017"><i class="fa fa-external-link" aria-hidden="true"></i></a>
                       </td>
                     </tr>
@@ -73,7 +73,7 @@
                         <img class="lazy img-responsive" data-src="img/paypal_2014_logo_100l.png" alt="paypal" title="paypal"></td>
                       <td>
                         <div class = "alert alert-danger"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                          Temporarly unavailable. Please, contact me if you want donate by
+                          <span lang="en">Temporarly unavailable. Please, contact me if you want donate by</span>
                           <b>PayPal</b>
                         </div>
                       </td>
@@ -82,7 +82,7 @@
                 </table>
                 <button type="button" class="btn btn-default" data-dismiss="modal">
                   <i class="fa fa-times"></i>
-                  Close
+                  <span lang="en">Close</span>
                 </button>
               </div>
             </div>

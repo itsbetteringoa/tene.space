@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sat Jun 25 10:31:00 2016
+ By ,,,
+Copyright (c) 2012 by Borislav Alexandrov. All rights reserved.
+</metadata>
+<defs>
+<font id="StiffStaff-Heavy" horiz-adv-x="1941" >
+  <font-face 
+    font-family="Stiff Staff"
+    font-weight="900"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="2 0 5 3 0 0 0 2 0 4"
+    ascent="1536"
+    descent="-512"
+    bbox="35 0 1886 1079"
+    underline-thickness="102"
+    underline-position="-102"
+    unicode-range="U+0045-043C"
+  />
+<missing-glyph horiz-adv-x="1024" 
+ />
+    <glyph glyph-name=".notdef" horiz-adv-x="1024" 
+ />
+    <glyph glyph-name="e" unicode="e" horiz-adv-x="1277" 
+d="M35 250v426l444 403h744v-467l-271 -252h271v-360h-914zM432 360h393v359h-393v-359z" />
+    <glyph glyph-name="afii10030" unicode="&#x41c;" 
+d="M55 0v676l447 403h1384v-1079h-397v719h-320v-719h-397v719h-319v-719h-398z" />
+    <glyph glyph-name="afii10078" unicode="&#x43c;" 
+d="M55 0v676l447 403h1384v-1079h-397v719h-320v-719h-397v719h-319v-719h-398z" />
+    <glyph glyph-name="E" unicode="E" horiz-adv-x="1277" 
+d="M35 250v426l444 403h744v-467l-271 -252h271v-360h-914zM432 360h393v359h-393v-359z" />
+  </font>
+</defs></svg>

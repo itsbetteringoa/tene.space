@@ -200,9 +200,11 @@ var Lang = (function () {
 		while (arrCount--) {
 			elem = $(arr[arrCount]);
 			this._processElement(elem);
+
 		}
 	};
-	
+
+
 	Lang.prototype._processElement = function (elem) {
 		// Only store data if the element is set to our default language
 		if (elem.attr('lang') === this.defaultLang) {
@@ -278,16 +280,17 @@ var Lang = (function () {
 	 */
 	Lang.prototype._getTextNodes = function (elem) {
 		var nodes = elem.contents(), nodeObjArray = [], nodeObj = {},
-			nodeArr, that = this, map = Array.prototype.map;
+			nodeArr, that = this, map = Array.prototype.map, data;
 
         $.each(nodes, function (index, node) {
             if ( node.nodeType !== 3 ) {
-                return;
+                if(node.lastChild!==null) data=node.lastChild.data
             }
+            else data=node.data
 
 			nodeObj = {
 				node : node,
-				langDefaultText : node.data
+				langDefaultText : data
 			};
 
 			nodeObjArray.push(nodeObj);
@@ -295,10 +298,11 @@ var Lang = (function () {
 		
 		// If element has only one text node and data-lang-token is defined
 		// set langContentKey property to use as a token
-		if(nodes.length == 1){
+		if(nodes.length >= 1){
 			nodeObjArray[0].langToken = elem.data('langToken');
 		}
-		
+		//console.warn(nodeObjArray);
+
 		return nodeObjArray;
 	};
 
@@ -311,39 +315,54 @@ var Lang = (function () {
 	 */
 	Lang.prototype._setTextNodes = function (elem, nodes, lang) {
 		var index,
+			index1=-1,
 			textNode,
 			defaultText,
 			translation,
 			langNotDefault = lang !== this.defaultLang;
 		
 		for (index = 0; index < nodes.length; index++) {
+			if($.trim(nodes[index].node.data)=='' && typeof(nodes[index].node.data)!="undefined")
+			{
+				continue;
+			}
+			index1++;
 			textNode = nodes[index];
+			if(index>0) defaultText = nodes[0].langToken || $.trim(nodes[0].langDefaultText);
 			
 			if (langNotDefault) {
 				// If langToken is set, use it as a token
-				defaultText = textNode.langToken || $.trim(textNode.langDefaultText);
+				if(index==0) defaultText = textNode.langToken || $.trim(textNode.langDefaultText);
 				
 				if (defaultText) {
 					// Translate the langDefaultText
-					translation = this.translate(defaultText, lang);
+					translation = this.translate(defaultText, lang, index1);
 					
 					if (translation) {
 						try {
 							// Replace the text with the translated version
-							textNode.node.data = textNode.node.data.split($.trim(textNode.node.data)).join(translation);
+							if(textNode.node.nodeType!==3) textNode.node.lastChild.data=translation//textNode.node.data.split($.trim(textNode.node.data)).join(translation);
+							else textNode.node.data = translation//textNode.node.data.split($.trim(textNode.node.data)).join(translation);
 						} catch (e) {
 							
 						}
 					} else {
+						if(textNode.node.nodeType!==3) 
+							{
+								console.warn(textNode.node)
+								textNode.node.lastChild.data = '';
+							}	
+							else textNode.node.data = '';
 						if (console && console.log) {
-							console.log('Translation for "' + defaultText + '" not found!');
+							//console.log('Translation for "' + defaultText + '" not found!');
 						}
 					}
 				}
 			} else {
 				// Replace with original text
 				try {
-					textNode.node.data = textNode.langDefaultText;
+					if(textNode.node.nodeType!==3) textNode.node.lastChild.data=textNode.langDefaultText
+					else textNode.node.data = textNode.langDefaultText;
 				} catch (e) {
 					
 				}
@@ -437,6 +456,7 @@ var Lang = (function () {
 			if (nodes) {
 				this._setTextNodes(elem, nodes, lang);
 			}
+
 		}
 	};
 
@@ -500,10 +520,15 @@ var Lang = (function () {
 				elem = $(arr[arrCount]);
 	
 				if (elem.attr('lang') !== lang) {
+					
 					this._translateElement(elem, lang);
 				}
+				var txt=elem.text()
+				//elem.html(txt)
 			}
 			
+
+
 			if (fireAfterUpdate) {
 				this.afterUpdate(currLang, lang);
 			}
@@ -543,25 +568,48 @@ var Lang = (function () {
 	 * @param {String} lang The two-letter language code to translate to.
 	 * @returns {*}
 	 */
-	Lang.prototype.translate = function (text, lang) {
+	Lang.prototype.translate = function (text, lang, index) {
 		lang = lang || this.currentLang;
-		
+		index = typeof index !== 'undefined' ? index : 0;
 		if (this.pack[lang]) {
 			var translation = '';
 	
 			if (lang != this.defaultLang) {
 				// Check for a direct token translation
 				translation = this.pack[lang].token[text];
-	
+				if(translation) {
+					$('#hidden').text(translation)
+					var data_=$('#hidden').text()
+					$('#hidden').html(data_)
+					var cont=$('#hidden').contents()
+					
+					// var txt=translation.replace('&lt;','<')
+					// txt=txt.replace('&gt','>')
+					// txt=txt.replace('&amp;','&')
+					// console.warn(txt)
+					if(typeof(cont[index])!=="undefined") {
+						if( cont[index].localName=='br') 
+							data_="<br/>"
+					else if( cont[index].nodeType==3) data_=cont[index].data
+						else if(cont[index].lastChild!==null) data_=cont[index].lastChild.data
+
+					translation=data_
+					}
+				}
 				if (!translation) {
 					// No token translation was found, test for regex match
 					translation = this._regexMatch(text, lang);
 				}
 				
 				if (!translation) {
-					if (console && console.log) {
-						console.log('Translation for "' + text + '" not found in language pack: ' + lang);
+					if(typeof(text)!="undefined" && text.indexOf('literally')==0) return 'буквально Акт разДавания бесплатной еды (преимущественно сырых овощей и фруктов)\r\n на Арамбольском пляже (Гоа, Индия) во время закатов (сансетов).\r\n проведено порядка 80 раз'
+					else if (typeof(text)!="undefined" && text.indexOf("it's fundrising project to get")==0) return "проект по сбору средств в интернете для организация нового Плейса \r\nс другим подходом /правилами и атмосферой"
+
+					else if (console && console.log) {
+						//console.log('Translation for "' + text + '" not found in language pack: ' + lang);
 					}
+
+					return false;
 				}
 	
 				return translation || text;

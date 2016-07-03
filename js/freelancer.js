@@ -3,8 +3,20 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
- 
+var lang = new Lang();
+        lang.dynamic('ru', 'js/langpack/ru.json');
+        lang.init({
+            defaultLang: 'en'
+        });
+ lang.loadPack('ru', function (err) {
+    if (!err) {
+        console.warn('langpack is loaded')
+    } else {
+        console.warn('langpack is not loaded')
+    }
+});
+ Lang.prototype.attrList.push('data-description');
+ Lang.prototype.attrList.push('data-title');
     var colors_hex = [
         '18bc9c',
         'ffa600',
@@ -63,9 +75,10 @@ window.curNumber, window.curNumber_sel
             if(window.curNumber > 9){
                 window.curNumber = 1;
             }
-            $('header').css('backgroundColor','#' + colors_hex[window.curNumber])//.animate({backgroundColor: '#' + colors_hex[curNumber]});
+            //$('header').css('backgroundColor','#' + colors_hex[window.curNumber])//.animate({backgroundColor: '#' + colors_hex[curNumber]});
+            $('#ascii_logo').css('color','#' + colors_hex[window.curNumber])//.animate({backgroundColor: '#' + colors_hex[curNumber]});
             //console.warn(window.curNumber);
-            //setTimeout(function(){changeColor(curNumber)}, 4000);   
+            setTimeout(function(){changeColor(curNumber)}, 4000);   
         }
 
         function changeColor_sel(curNumber_sel){            
@@ -98,7 +111,7 @@ window.curNumber, window.curNumber_sel
             sel.removeAllRanges();
             sel.setSingleRange(range);            
                                 
-            //setTimeout(function(){changeColor_sel(window.curNumber_sel)}, 2000);  
+            setTimeout(function(){changeColor_sel(window.curNumber_sel)}, 2000);  
         }
 
         function gEBI(id) {
@@ -121,8 +134,13 @@ window.curNumber, window.curNumber_sel
             initSaveRestore();
             window.curNumber=0
             window.curNumber_sel=0
-            setInterval(function(){changeColor(window.curNumber)}, 4000); 
-            if(navigator.userAgent.search("Firefox")==-1) setInterval(function(){changeColor_sel(window.curNumber_sel)}, 2000);  
+            changeColor(window.curNumber)
+            //setInterval(function(){changeColor(window.curNumber)}, 4000); 
+            if(navigator.userAgent.search("Firefox")==-1 && navigator.userAgent.search("MSIE")==-1) 
+                    {
+                        changeColor_sel(window.curNumber_sel)
+                    //setInterval(function(){changeColor_sel(window.curNumber_sel)}, 2000);  
+                    }
             //changeColor(0);
             //changeColor_sel(0);
         };
@@ -165,7 +183,7 @@ $('body').scrollspy({
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function(e) {
     console.warn(e);
-    if($(e.target).attr('id')=='menu_about') 
+    if($(e.target).attr('id')=='menu_about' || $(e.target).closest('a').attr('id')=='menu_about') 
         {
             e.preventDefault();
             e.stopPropagation(); 
@@ -176,9 +194,7 @@ $('.navbar-collapse ul li a').click(function(e) {
 /*============================
 =            TENE            =
 ============================*/
-
- 
- function hideModals(cur) {
+function hideModals(cur) {
     var modals=  [
     '#donation',
     '#other_stuff',
@@ -192,9 +208,95 @@ $('.navbar-collapse ul li a').click(function(e) {
         if(value!=cur) $(value).modal('hide')
     })
 }
+var language = window.navigator.userLanguage || window.navigator.language
+if(language.indexOf('ru')==0) {
+    Cookies.set('langCookie','ru')
+    change_lang('ru')
+}
+else 
+    {
+        Cookies.set('langCookie','en')
+        change_lang('en')
+    }
 
+// Create a closure
+(function(){
+    // Your base, I'm in it!
+    var originalAddClassMethod = jQuery.fn.addClass;
+
+    jQuery.fn.addClass = function(){
+        // Execute the original method.
+        var result = originalAddClassMethod.apply( this, arguments );
+
+        // trigger a custom event
+        jQuery(this).trigger('cssClassChanged');
+
+        // return the original result
+        return result;
+    }
+})();
+
+var video_os, video_sm, map_title, circle
 $(document).ready(function(){  
- 
+
+    // Listen for resize changes
+window.addEventListener("resize", function() {
+    // Get screen size (inner/outerWidth, inner/outerHeight)
+      var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+console.warn('resize>>'+w)
+      if(w>769)  
+      {
+                  bl_width=35
+            bl_height=-325    
+            font_size='18px'        
+            image='tongue_1'
+            img_w='44px'
+            img_h='56px'
+        }
+    else {
+            bl_width=-7
+            bl_height=-215
+            font_size='14px'
+            classname='balloon-logo-mob'
+            img_w='28px'
+            img_h='36px'
+            image='tongue_2'
+            //$('#feedback').hide();
+
+        }
+$('#ascii_logo').hideBalloon();
+//  $("div").filter(function() {
+//     var $this = $(this);
+//     var bck=$this.css("background")
+//     if(bck.indexOf('tongue_')!=-1) $(this).hide()
+//     return false       
+// }); 
+//$('#ascii_logo').data('balloon').remove()
+
+    $('#ascii_logo').balloon({
+        tipSize: 0,
+        offsetY: bl_height,
+        offsetX: bl_width,
+        css: {
+            width: img_w, 
+            height: img_h,
+            lineHeight: '153px',
+            background: 'url(../img/'+image+'.png) center center no-repeat transparent',
+            color: '#fff', 
+            fontSize: '150%', 
+            fontWeight: 'bold', 
+            textAlign: 'center',
+            border: 'none',
+            boxShadow: 'none',
+            zIndex: '1'
+        }
+    });   
+      
+}, false);
+
+ $(document).saveClicks(); 
 // $(window).on("navigate", function (event, data) {
 //     var direction = data.state.direction;
 //     if ( !! direction) {
@@ -202,6 +304,13 @@ $(document).ready(function(){
 
 //     }
 // });
+$(".btn.btn-default").bind('cssClassChanged', function(e){ 
+        console.warn('class changed')
+        var txt=e.target.textContent
+        txt=$.trim(txt)
+        if(txt=="RUS") change_lang('ru')
+        else change_lang('en')
+    });
 $('*[data-dismiss="modal"]').on('click',function(){
     window.location.hash = ''
 });
@@ -213,7 +322,8 @@ window.onhashchange = function() {
             $(window.location.hash).modal('show')
             //$(window.location.hash).modal('handleUpdate')
         } 
-}   
+}
+
     // $('#link_feedback').on('click',function(e){
     //     if(window.screen.width<761) 
     //     {
@@ -221,12 +331,43 @@ window.onhashchange = function() {
     //         window.location.href = 'http://feedback.tene.space'
     //     }
     // })
+var lang=Cookies.get('langCookie')
+var btn=$('.lang_switch.'+lang).closest('.btn')
 
+btn.button('toggle')
+if(lang=='en') 
+    {
+        $('meta[property="og:title"]').attr('content', 'BE THE CHANGE you want to see in the world');
+        $('meta[property="og:description"]').attr('content', 'fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas');
+        window.video_os='169057943'
+        window.video_sm='170254118'
+        $('#logo_moto_ru').hide()
+        $('#logo_moto_en').show()
+        $('section h2').removeClass('rus')
+        $('.caption p').removeClass('rus')
+        window.map_title="This area have a lots of cacao plantations!"
+        $('.portfolio-modal .modal-content h2').removeClass('rus')
+        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>')
+    }
+else 
+    {
+        $('meta[property="og:title"]').attr('content', 'БУДЬ ИЗМЕНЕНИЕМ, которое хочешь видеть в мире');
+        $('meta[property="og:description"]').attr('content', 'сбор средств на создание ОткрытогоПространства в Арамболе (Гоа), интересные Какао-эксперименты, карточки с путешествий и разные задумки');
+        window.video_os='171524309'
+        window.video_sm='171524973'
+        window.map_title="В этом районе много какао-плантаций!"
+        $('#logo_moto_en').hide()
+        $('#logo_moto_ru').show()
+        $('section h2').addClass('rus')
+        $('.caption p').addClass('rus')
+        $('.portfolio-modal .modal-content h2').addClass('rus')
+        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedbacks.tene.space" onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();">Oтзывы</a>')
+    }
    //$("img").unveil();
    $('img.lazy').lazy({
-    delay: 800,
     //visibleOnly: true,
     threshold: 200,
+    delay: 200,
     afterLoad: function(element) {
             //console.warn(element)
         },
@@ -239,13 +380,54 @@ window.onhashchange = function() {
           $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
         });
 
-    $("#logo_moto").lettering('words').children("span").lettering();        
+    $("#logo_moto_ru").lettering('words').children("span").lettering();        
+    $("#logo_moto_en").lettering('words').children("span").lettering();        
     
     $('#menu_about').on('show.bs.dropdown', function (e) {
         console.warn('heeeey')
         e.stopPropagation()
     })
-    
+     $('#spacemonkey_blah').on('hide.bs.modal', function(){
+        $('#about_video iframe').attr('src','')
+     })
+    $('#spacemonkey_blah').on('show.bs.modal', function(){
+        console.warn('spacemonkey show modal> ' + window.video_sm)
+        var videoData = [
+        {
+            'videoURL':'http://vimeo.com/'+window.video_sm
+        }];
+
+        $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
+            $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
+            // $('#openspace_video iframe').load(function(){
+            //     player = document.querySelectorAll('iframe')[0];
+            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
+            //     $f(player).addEvent('ready', function(id){
+            //         var vimeoVideo = $f(id);
+            //         console.log('success');
+            //     });
+            // });
+        });
+    })
+    $('#OpenSpace').on('show.bs.modal', function(){
+        console.warn('open space modal> '+window.video_os)
+        var videoData = [
+        {
+            'videoURL':'http://vimeo.com/'+window.video_os
+        }];
+
+        $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
+            $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
+            // $('#openspace_video iframe').load(function(){
+            //     player = document.querySelectorAll('iframe')[0];
+            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
+            //     $f(player).addEvent('ready', function(id){
+            //         var vimeoVideo = $f(id);
+            //         console.log('success');
+            //     });
+            // });
+        });
+    })
     $('#menu_about').dropdown();
     $('.footable-last-column').on('click',function(e){
         console.warn(e)
@@ -329,12 +511,17 @@ var h = window.innerHeight
     
 
     $('.ribbon').on('mouseenter', function(e) {
-        if(w>641) $('.donate_bg').css('background-image','url(img/donate_bg_80.png) ');
+        console.warn('width1>'+w)
+        if(w>767) $('.donate_bg').css('background-image','url(img/donate_bg_80.png) ');
         else $('.donate_bg').css('background-image','url(img/donate_bg_62.png) ');
     })
     $('.ribbon').on('mouseleave', function(e) {
-        if(w>641) $('.donate_bg').css('background-image','url(img/donate_bg_pix_80.png) ');
+        console.warn('width2>'+w)
+        if(w>767) $('.donate_bg').css('background-image','url(img/donate_bg_pix_80.png) ');
          else $('.donate_bg').css('background-image','url(img/donate_bg_pix_62.png) ');
+    })
+    $('.ribbon').on('click',function(){
+        $('#donation').modal('show')
     })
 
     $(".pr.around.percent").setupProgressPie({
@@ -385,7 +572,7 @@ var h = window.innerHeight
     
         var videoData = [
         {
-            'videoURL':'http://vimeo.com/170254118'
+            'videoURL':'http://vimeo.com/'+window.video_sm
         }];
 
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -404,7 +591,7 @@ var h = window.innerHeight
         $('#OpenSpace').modal('show');
         var videoData = [
         {
-            'videoURL':'http://vimeo.com/169057943'
+            'videoURL':'http://vimeo.com/'+window.video_os
         }];
 
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -427,13 +614,17 @@ var h = window.innerHeight
             minZoom: 2,
             zoom: 9
         });
-        var circle = L.circle([12.56,75.39], 5000, {
+        window.circle = L.circle([12.56,75.39], 5000, {
             color: 'red',
             fillColor: '#f03',
             fillOpacity: 0.5
         }).addTo(map);
 
-        circle.bindPopup("This area have a lots of cacao plantations!");
+        window.circle.bindPopup(window.map_title);
+        window.circle.on('click',function(){
+            console.warn('popup clicked')
+            window.circle._popup.setContent(window.map_title)
+        })
 
         L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
@@ -497,14 +688,55 @@ var h = window.innerHeight
       if(page==1) $('.previous').addClass('disabled')
         if(page==numPages) $('.next').addClass('disabled')
     }
-
+function change_lang(lang)
+{
+    if(lang=='en')
+    {
+        $('meta[property="og:title"]').attr('content', 'BE THE CHANGE you want to see in the world');
+        $('meta[property="og:description"]').attr('content', 'fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas');
+        window.lang.change('en')
+        console.warn('video_os>'+window.video_os)
+        window.map_title="This area have a lots of cacao plantations!"
+        window.video_os='169057943'
+        window.video_sm='170254118'
+         $('#logo_moto_ru').hide()
+        $('#logo_moto_en').show()
+        $('section h2').removeClass('rus')
+        $('.caption p').removeClass('rus')
+        $('.portfolio-modal .modal-content h2').removeClass('rus')
+        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>')
+    }
+    else 
+    {
+        $('meta[property="og:title"]').attr('content', 'БУДЬ ИЗМЕНЕНИЕМ, которое хочешь видеть в мире');
+        $('meta[property="og:description"]').attr('content', 'сбор средств на создание ОткрытогоПространства в Арамболе (Гоа), интересные Какао-эксперименты, карточки с путешествий и разные задумки');
+        window.lang.change('ru')
+        console.warn('ru')
+        window.map_title="В этом районе много какао-плантаций!"
+        window.video_os='171524309'
+        window.video_sm='171524973'
+        console.warn('video_sm>'+window.video_sm)
+        $('#logo_moto_en').hide()
+        $('#logo_moto_ru').show()
+        $('section h2').addClass('rus')
+        $('.caption p').addClass('rus')
+        $('.portfolio-modal .modal-content h2').addClass('rus')
+        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedbacks.tene.space" onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();">Oтзывы</a>')
+    }
+}
 $(document).click(function(e) {
     var parent=e.target.offsetParent;
     //console.warn($(parent));
     var obj=e.target;
     //console.warn($(obj).text());
     var txt=$(obj).text();
-    
+
+    if($.trim(txt)=="ENG") {
+        change_lang('en')
+    }
+    if($.trim(txt)=="RUS") {
+        change_lang('ru')
+    }
     //if($(obj).hasClass())
     if($(parent).hasClass('footable-last-column'))
     {
@@ -517,10 +749,11 @@ $(document).click(function(e) {
         }
     if($(obj).attr('id')=='a_spacemonkey_blah' || txt=='blah-blah') 
     {
+  console.warn('open video >'+window.video_sm)
         $('#spacemonkey_blah').modal('show');
           var videoData = [
         {
-            'videoURL':'http://vimeo.com/170254118'
+            'videoURL':'http://vimeo.com/'+window.video_sm
         }];
 
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -551,7 +784,7 @@ $(document).click(function(e) {
             $('#OpenSpace').modal('show');
             var videoData = [
             {
-                'videoURL':'http://vimeo.com/169057943'
+                'videoURL':'http://vimeo.com/'+video_os
             }];
 
             $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
@@ -784,7 +1017,14 @@ $(function () { $('#collapseOne').collapse('hide')});
             onLoadStart:    function() { captionOff(); activityIndicatorOn(); },
             onLoadEnd:      function() { captionOn(); activityIndicatorOff(); }
         });
-
+var instanceC22 = $( 'a[data-imagelightbox="c22"]' ).imageLightbox(
+        {
+            quitOnDocClick: false,
+            onStart:        function() { overlayOn(); closeButtonOn( instanceC22 ); },
+            onEnd:          function() { captionOff(); overlayOff(); closeButtonOff(); activityIndicatorOff(); },
+            onLoadStart:    function() { captionOff(); activityIndicatorOn(); },
+            onLoadEnd:      function() { captionOn(); activityIndicatorOff(); }
+        });
         //  WITH CAPTION & ACTIVITY INDICATION
 
         $( 'a[data-imagelightbox="d"]' ).imageLightbox(

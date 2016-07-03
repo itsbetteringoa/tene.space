@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+<metadata>
+Created by FontForge 20120731 at Sat Jun 25 11:02:01 2016
+ By ,,,
+Copyright 2014 Adobe Systems Incorporated. All rights reserved.
+</metadata>
+<defs>
+<font id="Coda" horiz-adv-x="1024" >
+  <font-face 
+    font-family="Coda"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="0 0 0 0 0 0 0 0 0 0"
+    ascent="1536"
+    descent="-512"
+    bbox="164 -82 1346 1438"
+    underline-thickness="102"
+    underline-position="-102"
+    unicode-range="U+0020-0042"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name="B" unicode="B" horiz-adv-x="1509" 
+d="M164 0v1423h250v-92q71 54 130.5 80.5t131.5 26.5q158 0 269.5 -112.5t111.5 -270.5q0 -109 -60 -205q152 -42 250.5 -169t98.5 -288q0 -129 -64 -238.5t-173.5 -173t-238.5 -63.5q-164 0 -294 101t-162 253v-272h-250zM414 514q0 33 17.5 71t35.5 61.5t49 60.5
+q-16 7 -31 17t-35.5 26t-35.5 26v-262zM498 1055q0 -73 51 -124.5t125 -51.5q72 0 124 51.5t52 124.5q0 72 -52 123t-124 51q-73 0 -124.5 -51t-51.5 -123zM625 393q0 -101 72 -173.5t173 -72.5t172.5 72.5t71.5 173.5t-71.5 172.5t-172.5 71.5t-173 -71.5t-72 -172.5z" />
+    <glyph glyph-name="NULL" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="space" unicode=" " 
+ />
+  </font>
+</defs></svg>

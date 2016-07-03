@@ -219,6 +219,7 @@
                 makeupBalloon($target, $balloon, options);
                 $balloon.hide().css("visibility", "visible");
             } else {
+                $balloon.css(options.css)
                 makeupBalloon($target, $balloon, options);
             }
             $target.data("onTimer", setTimeout(function() {

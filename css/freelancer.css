@@ -19,16 +19,15 @@
 }
 
 @font-face {
-    font-family: 'stiff_staffheavy';
-    src: url('stiff_staff-webfont.eot');
-    src: url('stiff_staff-webfont.eot?#iefix') format('embedded-opentype'),
-         url('stiff_staff-webfont.woff2') format('woff2'),
-         url('stiff_staff-webfont.woff') format('woff'),
-         url('stiff_staff-webfont.ttf') format('truetype'),
-         url('stiff_staff-webfont.svg#stiff_staffheavy') format('svg');
-    font-weight: normal;
+    font-family: 'Stiff Staff';
+    src: url('subset-StiffStaff-Heavy.eot');
+    src: url('subset-StiffStaff-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('subset-StiffStaff-Heavy.woff2') format('woff2'),
+        url('subset-StiffStaff-Heavy.woff') format('woff'),
+        url('subset-StiffStaff-Heavy.ttf') format('truetype'),
+        url('subset-StiffStaff-Heavy.svg#StiffStaff-Heavy') format('svg');
+    font-weight: 900;
     font-style: normal;
-
 }
 
 @font-face {
@@ -45,42 +44,39 @@
 }
 
 @font-face {
-    font-family: 'aileronsregular';
-    src: url('ailerons-typeface-webfont.eot');
-    src: url('ailerons-typeface-webfont.eot?#iefix') format('embedded-opentype'),
-         url('ailerons-typeface-webfont.woff2') format('woff2'),
-         url('ailerons-typeface-webfont.woff') format('woff'),
-         url('ailerons-typeface-webfont.ttf') format('truetype'),
-         url('ailerons-typeface-webfont.svg#aileronsregular') format('svg');
+    font-family: 'Ailerons';
+    src: url('subset-Ailerons-Regular.eot');
+    src: url('subset-Ailerons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-Ailerons-Regular.woff2') format('woff2'),
+        url('subset-Ailerons-Regular.woff') format('woff'),
+        url('subset-Ailerons-Regular.ttf') format('truetype'),
+        url('subset-Ailerons-Regular.svg#Ailerons-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+} 
 
+@font-face {
+    font-family: 'Besom 2';
+    src: url('subset-Besom.eot');
+    src: url('subset-Besom.eot?#iefix') format('embedded-opentype'),
+        url('subset-Besom.woff2') format('woff2'),
+        url('subset-Besom.woff') format('woff'),
+        url('subset-Besom.ttf') format('truetype'),
+        url('subset-Besom.svg#Besom') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'besom_2regular';
-    src: url('besom-free-font-webfont.eot');
-    src: url('besom-free-font-webfont.eot?#iefix') format('embedded-opentype'),
-         url('besom-free-font-webfont.woff2') format('woff2'),
-         url('besom-free-font-webfont.woff') format('woff'),
-         url('besom-free-font-webfont.ttf') format('truetype'),
-         url('besom-free-font-webfont.svg#besom_2regular') format('svg');
+    font-family: 'BlackCasper';
+    src: url('subset-BlackCasper.eot');
+    src: url('subset-BlackCasper.eot?#iefix') format('embedded-opentype'),
+        url('subset-BlackCasper.woff2') format('woff2'),
+        url('subset-BlackCasper.woff') format('woff'),
+        url('subset-BlackCasper.ttf') format('truetype'),
+        url('subset-BlackCasper.svg#BlackCasper') format('svg');
     font-weight: normal;
     font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'slim_joeregular';
-    src: url('slim_joe-webfont.eot');
-    src: url('slim_joe-webfont.eot?#iefix') format('embedded-opentype'),
-         url('slim_joe-webfont.woff2') format('woff2'),
-         url('slim_joe-webfont.woff') format('woff'),
-         url('slim_joe-webfont.ttf') format('truetype'),
-         url('slim_joe-webfont.svg#slim_joeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 @font-face {
@@ -98,42 +94,39 @@
 
 
 @font-face {
-    font-family: 'pirouregular';
-    src: url('pirou-regular-webfont.eot');
-    src: url('pirou-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('pirou-regular-webfont.woff2') format('woff2'),
-         url('pirou-regular-webfont.woff') format('woff'),
-         url('pirou-regular-webfont.ttf') format('truetype'),
-         url('pirou-regular-webfont.svg#pirouregular') format('svg');
+    font-family: 'Pirou';
+    src: url('subset-Pirou-Regular.eot');
+    src: url('subset-Pirou-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-Pirou-Regular.woff2') format('woff2'),
+        url('subset-Pirou-Regular.woff') format('woff'),
+        url('subset-Pirou-Regular.ttf') format('truetype'),
+        url('subset-Pirou-Regular.svg#Pirou-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'tagusregular';
-    src: url('tagus_free-webfont.eot');
-    src: url('tagus_free-webfont.eot?#iefix') format('embedded-opentype'),
-         url('tagus_free-webfont.woff2') format('woff2'),
-         url('tagus_free-webfont.woff') format('woff'),
-         url('tagus_free-webfont.ttf') format('truetype'),
-         url('tagus_free-webfont.svg#tagusregular') format('svg');
+    font-family: 'Tagus';
+    src: url('subset-Tagus.eot');
+    src: url('subset-Tagus.eot?#iefix') format('embedded-opentype'),
+        url('subset-Tagus.woff2') format('woff2'),
+        url('subset-Tagus.woff') format('woff'),
+        url('subset-Tagus.ttf') format('truetype'),
+        url('subset-Tagus.svg#Tagus') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'codaregular';
-    src: url('coda-webfont.eot');
-    src: url('coda-webfont.eot?#iefix') format('embedded-opentype'),
-         url('coda-webfont.woff2') format('woff2'),
-         url('coda-webfont.woff') format('woff'),
-         url('coda-webfont.ttf') format('truetype'),
-         url('coda-webfont.svg#codaregular') format('svg');
+    font-family: 'Coda';
+    src: url('subset-Coda.eot');
+    src: url('subset-Coda.eot?#iefix') format('embedded-opentype'),
+        url('subset-Coda.woff2') format('woff2'),
+        url('subset-Coda.woff') format('woff'),
+        url('subset-Coda.ttf') format('truetype'),
+        url('subset-Coda.svg#Coda') format('svg');
     font-weight: normal;
     font-style: normal;
-
 } 
 
 @font-face {
@@ -149,16 +142,135 @@
 
 }
 
- img.lazy {
-        
-        /* optional way, set loading as background */
-        background-image: url('img/preloader2.gif');
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-.modal {
-    overflow-y: scroll !important;
+/* cyrillic fonts */
+@font-face {
+    font-family: 'B52';
+    src: url('subset-B52.eot');
+    src: url('subset-B52.eot?#iefix') format('embedded-opentype'),
+        url('subset-B52.woff2') format('woff2'),
+        url('subset-B52.woff') format('woff'),
+        url('subset-B52.ttf') format('truetype'),
+        url('subset-B52.svg#B52') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Barocco Initial';
+    src: url('subset-BaroccoInitial.eot');
+    src: url('subset-BaroccoInitial.eot?#iefix') format('embedded-opentype'),
+        url('subset-BaroccoInitial.woff2') format('woff2'),
+        url('subset-BaroccoInitial.woff') format('woff'),
+        url('subset-BaroccoInitial.ttf') format('truetype'),
+        url('subset-BaroccoInitial.svg#BaroccoInitial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grunge';
+    src: url('subset-Grunge.eot');
+    src: url('subset-Grunge.eot?#iefix') format('embedded-opentype'),
+        url('subset-Grunge.woff2') format('woff2'),
+        url('subset-Grunge.woff') format('woff'),
+        url('subset-Grunge.ttf') format('truetype'),
+        url('subset-Grunge.svg#Grunge') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Hair-2';
+    src: url('subset-Hair-2.eot');
+    src: url('subset-Hair-2.eot?#iefix') format('embedded-opentype'),
+        url('subset-Hair-2.woff2') format('woff2'),
+        url('subset-Hair-2.woff') format('woff'),
+        url('subset-Hair-2.ttf') format('truetype'),
+        url('subset-Hair-2.svg#Hair-2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harlequinade';
+    src: url('subset-Harlequinade.eot');
+    src: url('subset-Harlequinade.eot?#iefix') format('embedded-opentype'),
+        url('subset-Harlequinade.woff2') format('woff2'),
+        url('subset-Harlequinade.woff') format('woff'),
+        url('subset-Harlequinade.ttf') format('truetype'),
+        url('subset-Harlequinade.svg#Harlequinade') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Herold';
+    src: url('subset-HeroldNormal.eot');
+    src: url('subset-HeroldNormal.eot?#iefix') format('embedded-opentype'),
+        url('subset-HeroldNormal.woff2') format('woff2'),
+        url('subset-HeroldNormal.woff') format('woff'),
+        url('subset-HeroldNormal.ttf') format('truetype'),
+        url('subset-HeroldNormal.svg#HeroldNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+@font-face {
+    font-family: 'Izhitsa';
+    src: url('subset-Izhitsa.eot');
+    src: url('subset-Izhitsa.eot?#iefix') format('embedded-opentype'),
+        url('subset-Izhitsa.woff2') format('woff2'),
+        url('subset-Izhitsa.woff') format('woff'),
+        url('subset-Izhitsa.ttf') format('truetype'),
+        url('subset-Izhitsa.svg#Izhitsa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Junegull';
+    src: url('subset-Junegull-Regular.eot');
+    src: url('subset-Junegull-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-Junegull-Regular.woff2') format('woff2'),
+        url('subset-Junegull-Regular.woff') format('woff'),
+        url('subset-Junegull-Regular.ttf') format('truetype'),
+        url('subset-Junegull-Regular.svg#Junegull-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kremlin Orthodox Church';
+    src: url('subset-KremlinOrthodoxChurch.eot');
+    src: url('subset-KremlinOrthodoxChurch.eot?#iefix') format('embedded-opentype'),
+        url('subset-KremlinOrthodoxChurch.woff2') format('woff2'),
+        url('subset-KremlinOrthodoxChurch.woff') format('woff'),
+        url('subset-KremlinOrthodoxChurch.ttf') format('truetype'),
+        url('subset-KremlinOrthodoxChurch.svg#KremlinOrthodoxChurch') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Molot';
+    src: url('hinted-subset-Molot.eot');
+    src: local('Molot'),
+        url('hinted-subset-Molot.eot?#iefix') format('embedded-opentype'),
+        url('hinted-subset-Molot.woff2') format('woff2'),
+        url('hinted-subset-Molot.woff') format('woff'),
+        url('hinted-subset-Molot.ttf') format('truetype'),
+        url('hinted-subset-Molot.svg#Molot') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RodchenkoCTT';
+    src: url('subset-RodchenkoC.eot');
+    src: url('subset-RodchenkoC.eot?#iefix') format('embedded-opentype'),
+        url('subset-RodchenkoC.woff2') format('woff2'),
+        url('subset-RodchenkoC.woff') format('woff'),
+        url('subset-RodchenkoC.ttf') format('truetype'),
+        url('subset-RodchenkoC.svg#RodchenkoC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, *:before, *:after{
   margin: 0;
   padding: 0;
@@ -276,7 +388,9 @@
     top: -20px;
     /* width and height can be anything, as long as they're equal */
 }
-
+.modal {
+    overflow-y: scroll !important;
+}
 .nihil {
         text-align: left !important;
     font-family: Courier New, Courier, monospace;
@@ -358,7 +472,7 @@
             
         }
 
-#logo_moto {
+#logo_moto_en {
     font-weight: normal;
     text-transform: uppercase;
     font-family: 'helv_childrenregular','HelveticaNeue-Bold','League Gothic','Impact',sans-serif;
@@ -369,14 +483,14 @@
     text-shadow: #c44032 -4px 4px 0;
     margin-top: 30px;
 }
-#logo_moto span {
+#logo_moto_en span,#logo_moto_ru span  {
     display: inline-block;
     position: relative;
     letter-spacing: -1px;
     -webkit-transition: all 0.2s ease-out;
 }
 
-#logo_moto .word1 span:hover,#logo_moto .word2 span:hover, #logo_moto .word3 span:hover {	
+#logo_moto_en .word1 span:hover,#logo_moto_en .word2 span:hover, #logo_moto_en .word3 span:hover {	
     top: 3px !important;
 }
 
@@ -421,10 +535,10 @@
     background-position: left center;
     margin: 0 2px;
 }
-.lang_switch.rus {
+.lang_switch.ru {
     background-image: url(../img/flags/ru.png );
 }
-.lang_switch.eng {
+.lang_switch.en {
     background-image: url(../img/flags/gb.png );
 }
 .fader { display: inline-block; }
@@ -454,6 +568,7 @@ padding: 0px !important;
     left: 10% !important;
     right: 10% !important;
 }
+
 /* Sepia 
 .hover09  img {
   -webkit-filter: sepia(100%) blur(3px);
@@ -466,6 +581,9 @@ padding: 0px !important;
   filter: sepia(0) blur(0);
 }
 */
+.modal {
+     overflow-y: scroll !important;
+ }
 .hover09 {
   margin-top: 20px;
   height: auto;
@@ -489,6 +607,9 @@ padding: 0px !important;
     .pr.around span.outer {
         line-height: 22px;
         top: -57px !important;
+    }
+    #logo_moto_ru {
+        font-size: 42px !important;
     }
     .cacao_gallery img {
         float: left;
@@ -514,7 +635,7 @@ padding: 0px !important;
     }
     
     .nihil {
-        font-size: 0.4em !important;
+        font-size: 0.3em !important;
     }
     .portfolio-modal .modal-content h2 {
         font-size: 1.4em !important;
@@ -577,9 +698,32 @@ padding: 0px !important;
             padding: 15px 0 !important;
         }
     }
-@media (min-width: 768px) and (max-width: 991px) {
-   .navbar-nav>li {
+@media (min-width: 768px) and (max-width: 850px) { 
+.navbar-nav>li {
+    font-size: 12px !important;
+   }
+   .navbar-nav>li>a {
+        padding: 6px !important;
+        margin: 10px 0 !important;
+    }
+    .caption p.rus {
+    font-size: 33px !important;
+    padding: 0 0 12px !important;
+    margin: 5px !important;
+    line-height: 27px !important;
+        }
+     .caption p {
+        font-size: 38px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {  
+    .navbar-nav>li {
     font-size: 14px !important;
+   }
+} 
+@media (min-width: 851px) and (max-width: 991px) {
+   .navbar-nav>li {
+    font-size: 12px !important;
    }
     .navbar-nav>li>a {
         padding: 6px !important;
@@ -603,17 +747,71 @@ padding: 0px !important;
 
     }
 }
-.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .caret {
     border-top: 4px solid !important;
 }
 .share42init span {
     -webkit-backface-visibility: hidden;
 }
-@media(max-width:768px) {
+@media(max-width:767px) {
     .navbar-middle {
         top: -60px !important;
     }
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        top: 100%;
+        left: 0;
+    }
+    .donate_bg:hover {
+        background-image: url(../img/donate_bg_62.png) !important;
+    }
+    
+    .dropdown-menu>li>a {
+        text-align: center;
+    }
+    .donate_bg {
+            -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        width: 60px;
+        height: 60px;
+        background: url(../img/donate_bg_pix_62.png);
+        position: relative;
+        margin: 0 auto;
+        z-index: 222;
+        cursor: pointer;
+        top: 0px;
+    }
+    .ribbon {
+        top: -110px !important;
+            width: 1.8em !important;
+        height: 7em !important;
+    }
+    .ribbon:hover {
+    top: -8px !important;
+    }
+    .ribbon i {
+        width: 70% !important;
+        height: 100%;        
+    }
+    .ribbon i span {
+        margin-top: 1em !important;
+    }
+}
+@media(max-width:768px) {
+    .caption p.rus {
+    font-size: 33px !important;
+    padding: 0 0 12px !important;
+    margin: 5px !important;
+    line-height: 27px !important;
+        }
     .bs-callout {
         font-size: 16px !important;
     }
@@ -656,7 +854,7 @@ padding: 0px !important;
         margin-bottom: 1px !important;
     }
     .nihil {
-        font-size: 1.1em ;
+        font-size: 0.5em ;
     }
     .modal-body p {
         font-size: 16px !important;
@@ -670,25 +868,7 @@ padding: 0px !important;
     #spacemonkey_blah a {
         font-size: 18px !important;
     }
-    .donate_bg:hover {
-        background-image: url(../img/donate_bg_62.png) !important;
-    }
-    .navbar-nav .dropdown-menu {
-        position: static;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        top: 100%;
-        left: 0;
-    }
-
-    .dropdown-menu>li>a {
-        text-align: center;
-    }
+    
     .caption p {
         font-size: 40px;
     }
@@ -697,13 +877,14 @@ padding: 0px !important;
         font: 4px/2px monospace !important;
         font-family: 'Courier New', monospace, sans-serif !important;
     }
-    #logo_moto {
+    #logo_moto_en {
     	font-size: 48px;
     }
     .lang_buttons {
         float: left;
         margin: 9px 5px 5px;
         padding: 5px;
+
     }
     .lang_buttons .lang_txt {
         display: none;
@@ -711,33 +892,7 @@ padding: 0px !important;
     .lang_buttons .btn {
         padding: 4px;
     }
-    .donate_bg {
-            -webkit-transition: .5s ease-in-out;
-        transition: .5s ease-in-out;
-        width: 60px;
-        height: 60px;
-        background: url(../img/donate_bg_pix_62.png);
-        position: relative;
-        margin: 0 auto;
-        z-index: 222;
-        cursor: pointer;
-        top: 0px;
-    }
-    .ribbon {
-        top: -110px !important;
-            width: 1.8em !important;
-        height: 7em !important;
-    }
-    .ribbon:hover {
-    top: -8px !important;
-    }
-    .ribbon i {
-        width: 70% !important;
-        height: 100%;        
-    }
-    .ribbon i span {
-        margin-top: 1em !important;
-    }
+    
     s:nth-of-type(1) {
         margin-left: -1.0em !important;
         left: 0 ;
@@ -796,86 +951,174 @@ padding: 0px !important;
         font-family: monospace, sans-serif !important;
     }    
 }
-
+.lang_buttons {
+    z-index: 1;
+}
 i.fa.fa-external-link {
     color: skyBlue;
 }
-#logo_moto .word1 .char2, #logo_moto .word3 .char4 {
+/* БУДЬ ИЗМЕНЕНИЕМ start */
+#logo_moto_ru .word1 .char1 {
+    top: 2px;
+    -webkit-transform: rotate(-10deg);
+    font-family: 'Grunge';
+    font-size: 0.5em;
+}
+#logo_moto_ru .word1 .char2 {
+    top: 4px;
+    -webkit-transform: rotate(-10deg);
+    font-family: 'B52';
+}
+#logo_moto_ru .word1 .char3 {
+    -webkit-transform: rotate(16deg);
+    font-family: 'Hair-2';
+    top: -3px;
+}
+#logo_moto_ru .word1 .char4 {
+    -webkit-transform: rotate(0deg);
+    font-family: 'Harlequinade';
+    font-size: 0.8em;
+    top: -9px;
+}
+#logo_moto_ru .word2 .char1 {
+    -webkit-transform: rotate(-10deg);
+    font-family: 'Molot';
+    top: 3px;
+}
+#logo_moto_ru .word2 .char2 {
+    -webkit-transform: rotate(3deg);
+    font-family: 'Herold';
+    top: 9px;
+}
+#logo_moto_ru .word2 .char3 {
+    -webkit-transform: rotate(15deg);
+    font-family: 'Kremlin Orthodox Church';
+    top: -3px;
+}
+#logo_moto_ru .word2 .char4 {
+    -webkit-transform: rotate(-5deg);
+    font-family: 'Barocco Initial';
+    top: 2px;
+}
+#logo_moto_ru .word2 .char5 {
+    -webkit-transform: rotate(0deg);
+    font-family: 'BlackCasper';
+    top: 5px;
+}
+#logo_moto_ru .word2 .char6 {
+    -webkit-transform: rotate(-10deg);
+    font-family: 'Izhitsa';
+    top: -2px;
+}
+#logo_moto_ru .word2 .char7 {
+    -webkit-transform: rotate(10deg);
+    font-family: 'Besom 2';
+    top: -6px;
+}
+#logo_moto_ru .word2 .char8 {
+    -webkit-transform: rotate(16deg);
+    font-family: 'RodchenkoCTT';
+    top: 4px;
+}
+#logo_moto_ru .word2 .char9 {
+    -webkit-transform: rotate(3deg);
+    font-family: 'Pirou';
+    top: 1px;
+}
+#logo_moto_ru .word2 .char10 {
+    -webkit-transform: rotate(-14deg);
+    font-family: 'Stiff Staff';
+    font-size: 1.2em;
+    top: -4px;
+}
+#logo_moto_ru
+{
+    text-transform: none !important;
+    font-size: 65px;
+    color: red;
+    text-shadow: #c44032 -4px 4px 0;
+    margin-bottom: -30px;
+}
+
+/* БУДЬ ИЗМЕНЕНИЕМ end */
+
+/* BE THE CHANGE start */
+#logo_moto_en .word1 .char2, #logo_moto_en .word3 .char4, #logo_moto_ru .word1 .char2,#logo_moto_ru .word2 .char5 {
     color: orange;
     text-shadow: #e36b23 -4px 4px 0;
 }
-#logo_moto .word1 .char1 {
+#logo_moto_en .word1 .char1 {
     -webkit-transform: rotate(-10deg);
-    font-family: 'codaregular';
+    font-family: 'Coda';
 }
-#logo_moto .word1 .char2 {
+#logo_moto_en .word1 .char2 {
     top: 6px;
-    font-family: 'slim_joeregular';
+    font-family: 'BlackCasper';
 }
-#logo_moto .word2 .char1 {
+#logo_moto_en .word2 .char1 {
     top: -3px;
     -webkit-transform: rotate(9deg);
-    font-family: 'besom_2regular';
+    font-family: 'Besom 2';
 }
-#logo_moto .word2 .char2 {
+#logo_moto_en .word2 .char2 {
     top: 0px;
     font-family: 'big_johnregular';
 }
-#logo_moto .word2 .char3 {
+#logo_moto_en .word2 .char3 {
     top: -7px;
     -webkit-transform: rotate(-6deg);
-    font-family: 'pirouregular'; 
+    font-family: 'Pirou'; 
 }
-#logo_moto .word3 .char1 {
+#logo_moto_en .word3 .char1 {
     top: 6px;
     -webkit-transform: rotate(12deg);
-    font-family: 'tagusregular';
+    font-family: 'Tagus';
 }
-#logo_moto .word3 .char2 {
+#logo_moto_en .word3 .char2 {
 	top: 0px;
     -webkit-transform: rotate(-4deg);
     font-family: 'helv_childrenregular';
 }
-#logo_moto .word3 .char3 {
+#logo_moto_en .word3 .char3 {
 	top: -12px;
-    font-family: 'aileronsregular';
+    font-family: 'Ailerons';
    
 }
-#logo_moto .word3 .char4 {
+#logo_moto_en .word3 .char4 {
 	-webkit-transform: rotate(5deg);
     font-family: 'oswaldbold';
 }
-#logo_moto .word3 .char5 {
+#logo_moto_en .word3 .char5 {
 	 top: -3px;
     -webkit-transform: rotate(-8deg);
     font-family: 'TkachenkoSketch4F-Bold';
 }
-#logo_moto .word3 .char6 {
+#logo_moto_en .word3 .char6 {
 	 top: 8px;
     -webkit-transform: rotate(-3deg);
-    font-family: 'stiff_staffheavy';
+    font-family: 'Stiff Staff';
 }
-#logo_moto .word2 .char1, #logo_moto .word3 .char5 {
+#logo_moto_en .word2 .char1, #logo_moto_en .word3 .char5,#logo_moto_ru .word1 .char3,#logo_moto_ru .word2 .char6 {
     color: yellow;
     text-shadow: #e6c92e -4px 4px 0;
 }
 
-#logo_moto .word2 .char2, #logo_moto .word3 .char6 {
+#logo_moto_en .word2 .char2, #logo_moto_en .word3 .char6,#logo_moto_ru .word1 .char4,#logo_moto_ru .word2 .char7 {
     color: green;
     text-shadow: #5da028 -4px 4px 0;
 }
 
-#logo_moto .word2 .char3 {
+#logo_moto_en .word2 .char3,#logo_moto_ru .word2 .char1,#logo_moto_ru .word2 .char8 {
     color: lightblue;
     text-shadow: #4584be -4px 4px 0;
 }
 
-#logo_moto .word3 .char1 {
+#logo_moto_en .word3 .char1,#logo_moto_ru .word2 .char2,#logo_moto_ru .word2 .char9 {
     color: blue;
     text-shadow: #2f597f  -4px 4px 0;
 }
 
-#logo_moto .word3 .char2 {
+#logo_moto_en .word3 .char2,#logo_moto_ru .word2 .char3,#logo_moto_ru .word2 .char10 {
     color: violet;
     text-shadow: #4a4d88 -4px 4px 0;
 }
@@ -1211,13 +1454,23 @@ header .container {
 section {
     padding: 0px 0 30px;
 }
-
+.caption p.rus {
+        font-size: 53px;
+            padding: 0 0 12px !important;
+    margin: 5px !important;
+    line-height: 47px;
+}
+.portfolio-modal .modal-content h2.rus {
+    font-family: 'Molot' !important;
+}
 section h2 {
     margin: 0;
     font-size: 3em;
     font-family: 'archiveregular';
 }
-
+section h2.rus {
+    font-family: 'Junegull' !important;
+}
 section.success {
     color: #fff;
     background: #18bc9c;
@@ -1308,7 +1561,7 @@ section.success a.active {
     border-radius:4px;
     box-shadow:none;
     margin-top:0px;
-    width:170px;
+    width:190px;
 }
 
 .dropdown ul.dropdown-menu:before {
@@ -1589,7 +1842,7 @@ footer .container {
 .footer-below .pull-center {
     margin-top: 5px;
     font-size: 20px;
-    font-family: 'aileronsregular';
+    font-family: 'Ailerons';
     margin-left: -83px;
 }
 .footer-below a {
@@ -1877,7 +2130,7 @@ table.donation_table tr td a:hover, .proj_details_my a:hover {
     clear: both;
     min-height: 90px;
 }
-.future_plans .list-group-item {
+.future_plans #sm3 .list-group-item {
     clear: both;
     min-height: 160px;
 }
@@ -1893,8 +2146,12 @@ span.pp.crowd {
     position: relative;
     top: -4px;
 }
+a.list-group-item {
+    cursor: pointer !important;
+}
 .p_10 {
     height: 10.5px;
+    display: block;
 }
 .cacao_gallery {
     text-align: center;
