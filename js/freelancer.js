@@ -68,7 +68,7 @@ catch (e) {
             //console.warn(el);
             el.dispatchEvent(ev);
         }
-window.curNumber, window.curNumber_sel
+window.curNumber, window.curNumber_sel, window.stop_click=0
 
         function changeColor(curNumber){            
             window.curNumber++;
@@ -101,7 +101,7 @@ window.curNumber, window.curNumber_sel
 
             $("div#ascii_logo").removeClass("op_color"+prev_n).addClass("op_color"+window.curNumber_sel);
           
-            click1(2,2);
+            if(window.stop_click==0) click1(2,2);
             
             var range = rangy.createRange();
             // select again
@@ -208,16 +208,6 @@ function hideModals(cur) {
         if(value!=cur) $(value).modal('hide')
     })
 }
-var language = window.navigator.userLanguage || window.navigator.language
-if(language.indexOf('ru')==0) {
-    Cookies.set('langCookie','ru')
-    change_lang('ru')
-}
-else 
-    {
-        Cookies.set('langCookie','en')
-        change_lang('en')
-    }
 
 // Create a closure
 (function(){
@@ -237,8 +227,60 @@ else
 })();
 
 var video_os, video_sm, map_title, circle
+
 $(document).ready(function(){  
 
+var language = window.navigator.userLanguage || window.navigator.language
+if(Cookies.get('langCookie')!='en' && Cookies.get('langCookie')!='ru')
+{
+    if(language.indexOf('ru')==0) {
+        Cookies.set('langCookie','ru')
+        change_lang('ru')
+    }
+    else 
+        {
+            Cookies.set('langCookie','en')
+            change_lang('en')
+        }
+}
+else 
+{
+var lang=Cookies.get('langCookie')
+var btn=$('.lang_switch.'+lang).closest('.btn')
+
+btn.button('toggle')
+if(lang=='en') 
+    {
+        //window.lang.change('en')
+        $('meta[property="og:title"]').attr('content', 'BE THE CHANGE you want to see in the world');
+        $('meta[property="og:description"]').attr('content', 'fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas');
+        window.video_os='169057943'
+        window.video_sm='170254118'
+        $('#logo_moto_ru').hide()
+        $('#logo_moto_en').show()
+        $('section h2').removeClass('rus')
+        $('.caption p').removeClass('rus')
+        window.map_title="This area have a lots of cacao plantations!"
+        $('.portfolio-modal .modal-content h2').removeClass('rus')
+        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>')
+    }
+else 
+    {
+        //window.lang.change('ru')
+        $('meta[property="og:title"]').attr('content', 'БУДЬ ИЗМЕНЕНИЕМ, которое хочешь видеть в мире');
+        $('meta[property="og:description"]').attr('content', 'сбор средств на создание ОткрытогоПространства в Арамболе (Гоа), интересные Какао-эксперименты, карточки с путешествий и разные задумки');
+        window.video_os='171524309'
+        window.video_sm='171524973'
+
+        window.map_title="В этом районе много какао-плантаций!"
+        $('#logo_moto_en').hide()
+        $('#logo_moto_ru').show()
+        $('section h2').addClass('rus')
+        $('.caption p').addClass('rus')
+        $('.portfolio-modal .modal-content h2').addClass('rus')
+        $('#link_feedback').replaceWith('<a id="link_feedback"  onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();">Oтзывы</a>')
+    }
+}
     // Listen for resize changes
 window.addEventListener("resize", function() {
     // Get screen size (inner/outerWidth, inner/outerHeight)
@@ -331,38 +373,7 @@ window.onhashchange = function() {
     //         window.location.href = 'http://feedback.tene.space'
     //     }
     // })
-var lang=Cookies.get('langCookie')
-var btn=$('.lang_switch.'+lang).closest('.btn')
 
-btn.button('toggle')
-if(lang=='en') 
-    {
-        $('meta[property="og:title"]').attr('content', 'BE THE CHANGE you want to see in the world');
-        $('meta[property="og:description"]').attr('content', 'fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas');
-        window.video_os='169057943'
-        window.video_sm='170254118'
-        $('#logo_moto_ru').hide()
-        $('#logo_moto_en').show()
-        $('section h2').removeClass('rus')
-        $('.caption p').removeClass('rus')
-        window.map_title="This area have a lots of cacao plantations!"
-        $('.portfolio-modal .modal-content h2').removeClass('rus')
-        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>')
-    }
-else 
-    {
-        $('meta[property="og:title"]').attr('content', 'БУДЬ ИЗМЕНЕНИЕМ, которое хочешь видеть в мире');
-        $('meta[property="og:description"]').attr('content', 'сбор средств на создание ОткрытогоПространства в Арамболе (Гоа), интересные Какао-эксперименты, карточки с путешествий и разные задумки');
-        window.video_os='171524309'
-        window.video_sm='171524973'
-        window.map_title="В этом районе много какао-плантаций!"
-        $('#logo_moto_en').hide()
-        $('#logo_moto_ru').show()
-        $('section h2').addClass('rus')
-        $('.caption p').addClass('rus')
-        $('.portfolio-modal .modal-content h2').addClass('rus')
-        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedbacks.tene.space" onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();">Oтзывы</a>')
-    }
    //$("img").unveil();
    $('img.lazy').lazy({
     //visibleOnly: true,
@@ -721,16 +732,25 @@ function change_lang(lang)
         $('section h2').addClass('rus')
         $('.caption p').addClass('rus')
         $('.portfolio-modal .modal-content h2').addClass('rus')
-        $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedbacks.tene.space" onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();">Oтзывы</a>')
+        $('#link_feedback').replaceWith('<a id="link_feedback"  onclick="Reformal.widgetOpen();return false;" onmouseover="Reformal.widgetPreload();">Oтзывы</a>')
     }
 }
 $(document).click(function(e) {
     var parent=e.target.offsetParent;
     //console.warn($(parent));
     var obj=e.target;
-    //console.warn($(obj).text());
+    
     var txt=$(obj).text();
-
+    if($(obj).attr('id')=='link_feedback')
+    {
+        console.warn('link_feedbak')
+        window.stop_click=1 
+    }
+    if($(obj).attr('id')=='reformal_widget-overlay')
+    {
+        console.warn('reformal overlay')
+        window.stop_click=0
+    }
     if($.trim(txt)=="ENG") {
         change_lang('en')
     }

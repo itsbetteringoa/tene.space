@@ -280,7 +280,9 @@
   -webkit-transition: .15s ease-in;
   -moz-transition: .15s ease-in;
 }
-
+.navbar-default .navbar-nav>li>a {
+    cursor: pointer !important; 
+}
 .fancybox-custom .fancybox-skin {
             box-shadow: 0 0 50px #222;
         }
@@ -390,6 +392,7 @@
 }
 .modal {
     overflow-y: scroll !important;
+    /* position: absolute !important; */
 }
 .nihil {
         text-align: left !important;
@@ -490,7 +493,7 @@
     -webkit-transition: all 0.2s ease-out;
 }
 
-#logo_moto_en .word1 span:hover,#logo_moto_en .word2 span:hover, #logo_moto_en .word3 span:hover {	
+#logo_moto_en .word1 span:hover,#logo_moto_en .word2 span:hover, #logo_moto_en .word3 span:hover, #logo_moto_ru .word1 span:hover,#logo_moto_ru .word2 span:hover {	
     top: 3px !important;
 }
 
@@ -635,7 +638,7 @@ padding: 0px !important;
     }
     
     .nihil {
-        font-size: 0.3em !important;
+        font: 4px/2px 'Courier New', monospace !important;
     }
     .portfolio-modal .modal-content h2 {
         font-size: 1.4em !important;
@@ -961,72 +964,114 @@ i.fa.fa-external-link {
 #logo_moto_ru .word1 .char1 {
     top: 2px;
     -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+     -o-transform:rotate(-10deg);  
+  -ms-transform:rotate(-10deg); 
     font-family: 'Grunge';
     font-size: 0.5em;
 }
 #logo_moto_ru .word1 .char2 {
     top: 4px;
     -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+     -o-transform:rotate(-10deg);  
+  -ms-transform:rotate(-10deg); 
     font-family: 'B52';
 }
 #logo_moto_ru .word1 .char3 {
     -webkit-transform: rotate(16deg);
+    -moz-transform: rotate(16deg);
+     -o-transform:rotate(16deg);  
+  -ms-transform:rotate(16deg); 
     font-family: 'Hair-2';
     top: -3px;
 }
 #logo_moto_ru .word1 .char4 {
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+     -o-transform:rotate(0deg);  
+  -ms-transform:rotate(0deg); 
     font-family: 'Harlequinade';
     font-size: 0.8em;
     top: -9px;
 }
 #logo_moto_ru .word2 .char1 {
     -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+     -o-transform:rotate(-10deg);  
+  -ms-transform:rotate(-10deg); 
     font-family: 'Molot';
     top: 3px;
 }
 #logo_moto_ru .word2 .char2 {
     -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+     -o-transform:rotate(3deg);  
+  -ms-transform:rotate(3deg); 
     font-family: 'Herold';
     top: 9px;
 }
 #logo_moto_ru .word2 .char3 {
     -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+     -o-transform:rotate(15deg);  
+  -ms-transform:rotate(15deg); 
     font-family: 'Kremlin Orthodox Church';
     top: -3px;
 }
 #logo_moto_ru .word2 .char4 {
     -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+     -o-transform:rotate(-5deg);  
+  -ms-transform:rotate(-5deg); 
     font-family: 'Barocco Initial';
     top: 2px;
 }
 #logo_moto_ru .word2 .char5 {
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+     -o-transform:rotate(0deg);  
+  -ms-transform:rotate(0deg); 
     font-family: 'BlackCasper';
     top: 5px;
 }
 #logo_moto_ru .word2 .char6 {
     -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+     -o-transform:rotate(-10deg);  
+  -ms-transform:rotate(-10deg); 
     font-family: 'Izhitsa';
     top: -2px;
 }
 #logo_moto_ru .word2 .char7 {
     -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+     -o-transform:rotate(10deg);  
+  -ms-transform:rotate(10deg); 
     font-family: 'Besom 2';
     top: -6px;
 }
 #logo_moto_ru .word2 .char8 {
     -webkit-transform: rotate(16deg);
+    -moz-transform: rotate(16deg);
+     -o-transform:rotate(16deg);  
+  -ms-transform:rotate(16deg); 
     font-family: 'RodchenkoCTT';
     top: 4px;
 }
 #logo_moto_ru .word2 .char9 {
     -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+     -o-transform:rotate(3deg);  
+  -ms-transform:rotate(3deg); 
     font-family: 'Pirou';
     top: 1px;
 }
 #logo_moto_ru .word2 .char10 {
     -webkit-transform: rotate(-14deg);
+    -moz-transform: rotate(-14deg);
+     -o-transform:rotate(-14deg);  
+  -ms-transform:rotate(-14deg); 
     font-family: 'Stiff Staff';
     font-size: 1.2em;
     top: -4px;
@@ -1049,6 +1094,9 @@ i.fa.fa-external-link {
 }
 #logo_moto_en .word1 .char1 {
     -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+     -o-transform:rotate(-10deg);  
+  -ms-transform:rotate(-10deg); 
     font-family: 'Coda';
 }
 #logo_moto_en .word1 .char2 {
@@ -1058,6 +1106,9 @@ i.fa.fa-external-link {
 #logo_moto_en .word2 .char1 {
     top: -3px;
     -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+     -o-transform:rotate(9deg);  
+  -ms-transform:rotate(9deg); 
     font-family: 'Besom 2';
 }
 #logo_moto_en .word2 .char2 {
@@ -1067,16 +1118,25 @@ i.fa.fa-external-link {
 #logo_moto_en .word2 .char3 {
     top: -7px;
     -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+     -o-transform:rotate(-6deg);  
+  -ms-transform:rotate(-6deg); 
     font-family: 'Pirou'; 
 }
 #logo_moto_en .word3 .char1 {
     top: 6px;
     -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+     -o-transform:rotate(12deg);  
+  -ms-transform:rotate(12deg); 
     font-family: 'Tagus';
 }
 #logo_moto_en .word3 .char2 {
 	top: 0px;
     -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+     -o-transform:rotate(-4deg);  
+  -ms-transform:rotate(-4deg); 
     font-family: 'helv_childrenregular';
 }
 #logo_moto_en .word3 .char3 {
@@ -1086,16 +1146,25 @@ i.fa.fa-external-link {
 }
 #logo_moto_en .word3 .char4 {
 	-webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+     -o-transform:rotate(5deg);  
+  -ms-transform:rotate(5deg); 
     font-family: 'oswaldbold';
 }
 #logo_moto_en .word3 .char5 {
 	 top: -3px;
     -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+     -o-transform:rotate(-8deg);  
+  -ms-transform:rotate(-8deg); 
     font-family: 'TkachenkoSketch4F-Bold';
 }
 #logo_moto_en .word3 .char6 {
 	 top: 8px;
     -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+     -o-transform:rotate(-3deg);  
+  -ms-transform:rotate(-3deg); 
     font-family: 'Stiff Staff';
 }
 #logo_moto_en .word2 .char1, #logo_moto_en .word3 .char5,#logo_moto_ru .word1 .char3,#logo_moto_ru .word2 .char6 {
@@ -1728,6 +1797,9 @@ footer .footer-below {
 .scroll-top .btn:focus {
     outline: 0;
 }
+.modal-body {
+    height: 100% !important;
+}
 
 .portfolio-modal .modal-content {
     padding: 50px 0;
@@ -1738,6 +1810,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    position: relative;
 }
 
 #accordion h4 a {
@@ -1783,9 +1856,11 @@ footer .footer-below {
     height: 75px;
     margin-left: 35px;
     background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    behavior:url(-ms-transform.htc);
+            -moz-transform:rotate(45deg);
+            -webkit-transform:rotate(45deg);
+            -o-transform:rotate(45deg);
+            -ms-transform:rotate(45deg);
 }
 
 .portfolio-modal .close-modal .lr .rl {
@@ -1793,9 +1868,11 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+    behavior:url(-ms-transform.htc);
+            -moz-transform:rotate(90deg);
+            -webkit-transform:rotate(90deg);
+            -o-transform:rotate(90deg);
+            -ms-transform:rotate(90deg);
 }
 
 .portfolio-modal .modal-backdrop {

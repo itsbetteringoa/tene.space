@@ -30,7 +30,7 @@ $website_root_path=__DIR__;
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes">
     <meta name="description" lang="en" content="fundraising for OpenSpace in Arambol (Goa), interesting Cacao experiments, pictures from travels and other un-mainstream ideas">
     <meta name="author" content="tene.space.monkey">
     <meta property="og:image" content="http://tene.space/img/site_preview.jpg" />
