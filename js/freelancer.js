@@ -228,8 +228,23 @@ function hideModals(cur) {
 
 var video_os, video_sm, map_title, circle
 
-$(document).ready(function(){  
+function swapImages(min,max,type) {
+    var random = Math.floor(Math.random()*(max-min+1)+min);
+        //console.warn('random>'+random)
+        if(type=='openspace') $('#img_openspace').attr('src','img/portfolio/slideshow/openspace'+random+'.png')
+            else if(type=='travelpics') $('#img_images').attr('src','img/portfolio/slideshow/photos'+random+'.png')
+    //     $current = $('.portfolio img:visible');
+    // $current.hide();
+    // if($current.index() == random) {
+    //     random = ++random % 10;
+    // }
+    // $('.portfolio img').eq(random).show();
+}
 
+$(document).ready(function(){  
+// Run our swapImages() function every 5secs
+    setInterval('swapImages(1,10,\'openspace\')', 3500);
+    setInterval('swapImages(1,21,\'travelpics\')', 3200);
 var language = window.navigator.userLanguage || window.navigator.language
 if(Cookies.get('langCookie')!='en' && Cookies.get('langCookie')!='ru')
 {

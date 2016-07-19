@@ -167,10 +167,20 @@ $website_root_path=__DIR__;
             <!-- openspace start -->
             <div class="col-sm-4 portfolio-item">
                 <div class="hover09  text-center">
-                    <a href="#OpenSpace" lang="en" class="portfolio-link" title="OpenSpace in arambol, Goa for season 16-17" alt="OpenSpace in arambol, Goa for season 16-17">
+                    <a href="#OpenSpace" lang="en" class="portfolio-link portfolio" title="OpenSpace in arambol, Goa for season 16-17" alt="OpenSpace in arambol, Goa for season 16-17">
                         
-                            <img id="img_openspace" lang="en" data-src="img/portfolio/openspace.jpg" title="OpenSpace in arambol, Goa for season 16-17" width=360 height=260 class="lazy img-responsive" alt="OpenSpace project">
-                            <!-- <img id="img_openspace" src="img/portfolio/openspace.jpg" width=360 height=260 class="img-responsive" title="OpenSpace in arambol, Goa for season '16-'17" alt="OpenSpace project"></div> -->
+                            <img id="img_openspace" lang="en" data-src="img/portfolio/slideshow/openspace1.png" title="OpenSpace in arambol, Goa for season 16-17" width=360 height=260 class="lazy img-responsive " alt="OpenSpace project">
+                            <!-- 
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace2.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace3.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace4.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace5.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace6.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace7.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace8.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace9.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                            <img src="" alt="OpenSpace project" class=" img-responsive" width="360" height="260" data-src="img/portfolio/slideshow/openspace10.png" title="OpenSpace in arambol, Goa for season 16-17" id="img_openspace">
+                             --><!-- <img id="img_openspace" src="img/portfolio/openspace.jpg" width=360 height=260 class="img-responsive" title="OpenSpace in arambol, Goa for season '16-'17" alt="OpenSpace project"></div> -->
                         
                         <div class="caption carousel-caption">
                             <p lang="en">OpenSpace</p>
@@ -207,7 +217,7 @@ $website_root_path=__DIR__;
                             <!-- <img  id="img_images" src="img/portfolio/photos.jpg" width=360 height=260 class="img-responsive" alt="Images from journeys" title="images from journeys"></div> -->
                        
                         <div class="caption carousel-caption">
-                            <p lang="en">Images</p>
+                            <p lang="en">Travelpics</p>
                         </div>
                     </a>
                 </div>
@@ -246,11 +256,25 @@ $website_root_path=__DIR__;
 
             <div class="news_block ">
                 <div class="modal-mod">
-                    
+                    <div class = "bs-callout bs-callout-info" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>19/07/16</b>
+                        &mdash; <span lang="en" >Project previews made like slideshow (for OpenSpace and Travelography)</span>
+                    </div>
+                    <div class = "bs-callout bs-callout-info" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>19/07/16</b>
+                        &mdash; <span lang="en" data-lang-token="news5">Added Map feature to <a href="http://images.tene.space" alt="travel_pics" title="travel_pics" target="_blank">Travelography</a> </span>
+                    </div>
+                    <div class = "bs-callout bs-callout-warning" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>15/07/16</b>
+                        &mdash; <span lang="en" data-lang-token="news4">Hurrah! <b>55$</b> of <a href="https://www.generosity.com/community-fundraising/openspace-in-arambol-goa-india-2016-2017/" target="_blank" title="generosity" alt="generosity">donations</a>. first milestone is done </span>
+                    </div>
                     <div class = "bs-callout bs-callout-success" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>30/06/16</b>
-                        &mdash; <span lang="en">Russian version of whole site and videos released!</span>
+                        &mdash; <span lang="en">Russian version of whole site and video released!</span>
                     </div>
                     <div class = "bs-callout bs-callout-warning" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -260,18 +284,18 @@ $website_root_path=__DIR__;
                     <div class = "bs-callout bs-callout-success" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>18/06/16</b>
-                        &mdash; <span lang="en" data-lang-token="news2">Main site started ! english versioin with responsive design</span>
+                        &mdash; <span lang="en" data-lang-token="news2">Main site started ! english version with responsive design</span>
                     </div>
                     <div class = "bs-callout bs-callout-info" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>14/06/16</b>
-                        &mdash; <span lang="en" data-lang-token="news3">Gallery with travel images started (in english version for now)</span>
+                        &mdash; <span lang="en" data-lang-token="news3"><a href="http://images.tene.space" alt="travel_pics" title="travel_pics" target="_blank">Gallery</a> with travel images started (in english version for now)</span>
                     </div>
                 </div>
                 <!-- <div class = "alert alert-warning">Warning ! Dont submit this.</div>
             <div class = "alert alert-danger">Error ! Change few things.</div>
             -->
-            <!--
+            
             <ul class = "pager">
                 <li class = "previous">
                     <a >&larr; Older</a>
@@ -280,7 +304,7 @@ $website_root_path=__DIR__;
                     <a >Newer &rarr;</a>
                 </li>
             </ul>
-            -->
+            
         </div>
 
     </div>
@@ -324,7 +348,7 @@ $website_root_path=__DIR__;
        src="img/wtfpl-badge.png"
        width="88" height="31" alt="WTFPL" title="Do What the Fuck You Want to Public License" />
     </a>
-    <span class="pull-center">06/2016</span>
+    <span class="pull-center">07/2016</span>
 </div>
 </div>
 </div>
