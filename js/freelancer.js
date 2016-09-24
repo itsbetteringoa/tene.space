@@ -275,6 +275,7 @@ if(lang=='en')
         $('#logo_moto_en').show()
         $('section h2').removeClass('rus')
         $('.caption p').removeClass('rus')
+        window.lng='en'
         window.map_title="This area have a lots of cacao plantations!"
         $('.portfolio-modal .modal-content h2').removeClass('rus')
         $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>')
@@ -286,6 +287,7 @@ else
         $('meta[property="og:description"]').attr('content', 'сбор средств на создание ОткрытогоПространства в Арамболе (Гоа), интересные Какао-эксперименты, карточки с путешествий и разные задумки');
         window.video_os='171524309'
         window.video_sm='171524973'
+        window.lng='ru'
 
         window.map_title="В этом районе много какао-плантаций!"
         $('#logo_moto_en').hide()
@@ -422,37 +424,63 @@ window.onhashchange = function() {
         {
             'videoURL':'http://vimeo.com/'+window.video_sm
         }];
-
-        $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
-            $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
-            // $('#openspace_video iframe').load(function(){
-            //     player = document.querySelectorAll('iframe')[0];
-            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
-            //     $f(player).addEvent('ready', function(id){
-            //         var vimeoVideo = $f(id);
-            //         console.log('success');
-            //     });
-            // });
+        if($('#geoip').value=="Indonesia")
+        {
+jwplayer('about_video').setup({
+        // URL to the video file
+        file: 'http://old.ambientlounge.ru/ab_'+window.lng+'.mp4',
+        // URL to the image that should be shown before the video is started
+        image: 'http://tene.space/img/video_spacemonkey.jpg',
+        title: '',
+        width: '100%',
+        aspectratio: '16:9'
+    });
+        }
+        else 
+        {
+       $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
+           $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
+            $('#openspace_video iframe').load(function(){
+                player = document.querySelectorAll('iframe')[0];
+                $('#openspace_video iframe').attr('id', videoData[0]['id']);
+                $f(player).addEvent('ready', function(id){
+                    var vimeoVideo = $f(id);
+                    console.log('success');
+                });
+            });
         });
+   }
     })
     $('#OpenSpace').on('show.bs.modal', function(){
         console.warn('open space modal> '+window.video_os)
+        console.warn('language>>>>'+window.lng);
         var videoData = [
         {
             'videoURL':'http://vimeo.com/'+window.video_os
         }];
-
-        $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
-            $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
-            // $('#openspace_video iframe').load(function(){
-            //     player = document.querySelectorAll('iframe')[0];
-            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
-            //     $f(player).addEvent('ready', function(id){
-            //         var vimeoVideo = $f(id);
-            //         console.log('success');
-            //     });
-            // });
+        if($('#geoip').value=="Indonesia")
+        {
+jwplayer('openspace_video').setup({
+        // URL to the video file
+        file: 'http://old.ambientlounge.ru/os_'+window.lng+'.mp4',
+        image: 'http://tene.space/img/video_OpenSpace.jpg',
+        title: '',
+        width: '100%',
+        aspectratio: '16:9'
+    });
+} else {
+       $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
+           $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
+            $('#openspace_video iframe').load(function(){
+                player = document.querySelectorAll('iframe')[0];
+                $('#openspace_video iframe').attr('id', videoData[0]['id']);
+                $f(player).addEvent('ready', function(id){
+                    var vimeoVideo = $f(id);
+                    console.log('success');
+                });
+            });
         });
+   }
     })
     $('#menu_about').dropdown();
     $('.footable-last-column').on('click',function(e){
@@ -600,18 +628,30 @@ var h = window.innerHeight
         {
             'videoURL':'http://vimeo.com/'+window.video_sm
         }];
-
+        if($('#geoip').value=="Indonesia")
+        {
+jwplayer('about_video').setup({
+        // URL to the video file
+        file: 'http://old.ambientlounge.ru/ab_'+window.lng+'.mp4',
+        // URL to the image that should be shown before the video is started
+        image: 'http://tene.space/img/video_spacemonkey.jpg',
+        title: '',
+        width: '100%',
+        aspectratio: '16:9'
+    });
+} else {
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
-            $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
-            // $('#openspace_video iframe').load(function(){
-            //     player = document.querySelectorAll('iframe')[0];
-            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
-            //     $f(player).addEvent('ready', function(id){
-            //         var vimeoVideo = $f(id);
-            //         console.log('success');
-            //     });
-            // });
-        });
+           $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
+            $('#openspace_video iframe').load(function(){
+                player = document.querySelectorAll('iframe')[0];
+                $('#openspace_video iframe').attr('id', videoData[0]['id']);
+                $f(player).addEvent('ready', function(id){
+                    var vimeoVideo = $f(id);
+                    console.log('success');
+                });
+            });
+       });
+     }
     } 
     if(window.location.href.indexOf('#openspace') != -1 || window.location.href.indexOf('#OpenSpace') != -1) {
         $('#OpenSpace').modal('show');
@@ -619,18 +659,31 @@ var h = window.innerHeight
         {
             'videoURL':'http://vimeo.com/'+window.video_os
         }];
-
-        $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
-            $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
-            // $('#openspace_video iframe').load(function(){
-            //     player = document.querySelectorAll('iframe')[0];
-            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
-            //     $f(player).addEvent('ready', function(id){
-            //         var vimeoVideo = $f(id);
-            //         console.log('success');
-            //     });
-            // });
+        console.warn('lang>>>>>'+window.lng);
+if($('#geoip').value=="Indonesia")
+        {
+jwplayer('openspace_video').setup({
+        // URL to the video file
+        file: 'http://old.ambientlounge.ru/os_'+window.lng+'.mp4',
+        // URL to the image that should be shown before the video is started
+        image: 'http://tene.space/img/video_OpenSpace.jpg',
+        title: '',
+        width: '100%',
+        aspectratio: '16:9'
+    });
+} else {
+       $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
+           $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
+            $('#openspace_video iframe').load(function(){
+                player = document.querySelectorAll('iframe')[0];
+                $('#openspace_video iframe').attr('id', videoData[0]['id']);
+                $f(player).addEvent('ready', function(id){
+                    var vimeoVideo = $f(id);
+                    console.log('success');
+                });
+            });
         });
+   }
     } 
     if(window.location.href.indexOf('#cacao') != -1) {
         $('#cacao').modal('show');
@@ -652,9 +705,9 @@ var h = window.innerHeight
             window.circle._popup.setContent(window.map_title)
         })
 
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
+        L.tileLayer( 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+            //subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
 
         setTimeout(function(){ map.invalidateSize()}, 400);
@@ -729,6 +782,7 @@ function change_lang(lang)
         $('#logo_moto_en').show()
         $('section h2').removeClass('rus')
         $('.caption p').removeClass('rus')
+        window.lng='en'
         $('.portfolio-modal .modal-content h2').removeClass('rus')
         $('#link_feedback').replaceWith('<a id="link_feedback" href="http://feedback.tene.space" id="link_feedback" lang="en">Feedback</a>')
     }
@@ -741,6 +795,7 @@ function change_lang(lang)
         window.map_title="В этом районе много какао-плантаций!"
         window.video_os='171524309'
         window.video_sm='171524973'
+        window.lng='ru'
         console.warn('video_sm>'+window.video_sm)
         $('#logo_moto_en').hide()
         $('#logo_moto_ru').show()
@@ -790,18 +845,30 @@ $(document).click(function(e) {
         {
             'videoURL':'http://vimeo.com/'+window.video_sm
         }];
-
+        if($('#geoip').value=="Indonesia")
+        {
+jwplayer('about_video').setup({
+        // URL to the video file
+        file: 'http://old.ambientlounge.ru/ab_'+window.lng+'.mp4',
+        // URL to the image that should be shown before the video is started
+        image: 'http://tene.space/img/video_spacemonkey.jpg',
+        title: '',
+        width: '100%',
+        aspectratio: '16:9'
+    });
+} else {
         $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
-            $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
-            // $('#openspace_video iframe').load(function(){
-            //     player = document.querySelectorAll('iframe')[0];
-            //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
-            //     $f(player).addEvent('ready', function(id){
-            //         var vimeoVideo = $f(id);
-            //         console.log('success');
-            //     });
-            // });
-        });
+           $('#about_video').html(data.html); //puts an iframe embed from vimeo's json
+            $('#openspace_video iframe').load(function(){
+                player = document.querySelectorAll('iframe')[0];
+                $('#openspace_video iframe').attr('id', videoData[0]['id']);
+                $f(player).addEvent('ready', function(id){
+                    var vimeoVideo = $f(id);
+                    console.log('success');
+                });
+            });
+       });
+    }
     }
     if($(obj).attr('id')=='img_other_stuff' || txt=='Other_stuff') 
     {
@@ -821,18 +888,30 @@ $(document).click(function(e) {
             {
                 'videoURL':'http://vimeo.com/'+video_os
             }];
-
+if($('#geoip').value=="Indonesia")
+        {
+jwplayer('openspace_video').setup({
+        // URL to the video file
+        file: 'http://old.ambientlounge.ru/os_'+window.lng+'.mp4',
+        // URL to the image that should be shown before the video is started
+        image: 'http://tene.space/img/video_OpenSpace.jpg',
+        title: '',
+        width: '100%',
+        aspectratio: '16:9'
+    });
+} else {
             $.getJSON('http://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoData[0]['videoURL']) + '&api=1&width=641&callback=?', function(data){
-                $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
-                // $('#openspace_video iframe').load(function(){
-                //     player = document.querySelectorAll('iframe')[0];
-                //     $('#openspace_video iframe').attr('id', videoData[0]['id']);
-                //     $f(player).addEvent('ready', function(id){
-                //         var vimeoVideo = $f(id);
-                //         console.log('success');
-                //     });
-                // });
+               $('#openspace_video').html(data.html); //puts an iframe embed from vimeo's json
+                $('#openspace_video iframe').load(function(){
+                    player = document.querySelectorAll('iframe')[0];
+                    $('#openspace_video iframe').attr('id', videoData[0]['id']);
+                    $f(player).addEvent('ready', function(id){
+                        var vimeoVideo = $f(id);
+                        console.log('success');
+                    });
+                });
             });
+        }
         }
     if($(obj).attr('id')=='img_cacao' || txt=='Cacao') {
         $('#cacao').modal('show');
@@ -850,10 +929,14 @@ $(document).click(function(e) {
  
         circle.bindPopup("This area have a lots of cacao plantations!");   
 
-        L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
-            subdomains: ['otile1','otile2','otile3','otile4']
+         L.tileLayer( 'http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+            //subdomains: ['otile1','otile2','otile3','otile4']
         }).addTo( map );
+        // L.tileLayer( 'http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', {
+        //     attribution: '&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">',
+        //     subdomains: ['otile1','otile2','otile3','otile4']
+        // }).addTo( map );
 
         setTimeout(function(){ map.invalidateSize()}, 400);
     }

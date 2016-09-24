@@ -430,6 +430,10 @@
                 <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/cacao_experiment1.JPG">
                   <img class="lazy" lang="en" data-src="img/cacao/cacao_experiment1_s.JPG" alt="choco balls consists of dates + oats + cashew + honey (inspired by 'yoga bars')" title="choco balls consists of dates + oats + cashew + honey (inspired by 'yoga bars')" />    
                 </a>
+
+                <a class="fancybox-thumbs" data-imagelightbox="c1"  href="img/cacao/10_b.jpg">
+                  <img class="lazy" lang="en" data-src="img/cacao/10_s.jpg" alt="choco log consists of cookies + butter + sugar + milk" title="choco log consists of cookies + butter + sugar + milk"/>    
+                </a>
               </p>
 
               <button type="button" class="btn btn-default" data-dismiss="modal"> <i class="fa fa-times"></i>

@@ -11,7 +11,8 @@
     "js/min/jquery-progresspiesvg-controlIcons-min.js",
      "js/jquery.lazy.min.js",
     'js/js.cookie.js',
-    'ClickMap/js/clickmap.js'
+    'ClickMap/js/clickmap.js',
+    'js/MCK8hplLEeOY0CIACmOLpg.js'
    
         //'js/cloudinary_js-master/js/jquery.cloudinary.js'
 

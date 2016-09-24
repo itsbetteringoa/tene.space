@@ -15,12 +15,12 @@ $vars = array(
 $minified = new Minifier( $vars );
 
 $website_root_path=__DIR__;
-// require($website_root_path . '/geoip.inc');
-// $ip=$_SERVER['REMOTE_ADDR'];
-// $gi=geoip_open($website_root_path . '/GeoIP.dat',GEOIP_STANDARD);
-// echo geoip_country_code_by_addr($gi, $ip) . " ";
-// echo geoip_country_name_by_addr($gi, $ip);
-// geoip_close($gi);
+require($website_root_path . '/geoip.inc');
+$ip=$_SERVER['REMOTE_ADDR'];
+$gi=geoip_open($website_root_path . '/GeoIP.dat',GEOIP_STANDARD);
+//echo geoip_country_code_by_addr($gi, $ip) . " ";
+//echo geoip_country_name_by_addr($gi, $ip);
+
 //die();
 ?>
 <!DOCTYPE html>
@@ -49,7 +49,8 @@ $website_root_path=__DIR__;
     <?php include('header_scripts.php'); ?></head>
 
 <body id="page-top" class="index">
-
+<input type="hidden" name="geoip" id="geoip" value="<?php echo geoip_country_name_by_addr($gi, $ip); ?>">
+<?php geoip_close($gi); ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -254,14 +255,34 @@ $website_root_path=__DIR__;
         </div>
         <div class="row">
 
-            <div class="news_block ">
+            <div class="news_block "> 
                 <div class="modal-mod">
+                    <div class = "bs-callout bs-callout-info" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>24/09/16</b>
+                        &mdash; <span lang="en" data-lang-token="news7">Finally got one year indian business-visa. it means that i can do my projects much more seriously and confidently (i guess). Was already visited Auroville to get more ideas /inspirations about community structure and way of living. + had visited Aurospirul farm to find out the way of growing and producing spirulina and a price for Mother culture (culture medium) </span>
+                    </div> 
+                    <div class = "bs-callout bs-callout-warning" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>08/08/16</b>
+                        &mdash; <span lang="en" data-lang-token="news6">Added some snaps from Bali in <a href="http://images.tene.space" alt="travel_pics" title="travel_pics" target="_blank">Travelography</a></span>
+                    </div>  
+                    <div class = "bs-callout bs-callout-info" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>08/08/16</b>
+                        &mdash; <span lang="en" >Unfortunately Vimeo is blocked in Indonesia (and it could be also in other countries), so i switched to Jwplayer and self-hosted video-files for now</span>
+                    </div>
+                    <div class = "bs-callout bs-callout-info" >
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <b>02/08/16</b>
+                        &mdash; <span lang="en" >Added photo with chocolog in CACAO & changed album covers in Travelography</span>
+                    </div>
                     <div class = "bs-callout bs-callout-info" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>19/07/16</b>
                         &mdash; <span lang="en" >Project previews made like slideshow (for OpenSpace and Travelography)</span>
                     </div>
-                    <div class = "bs-callout bs-callout-info" >
+                    <div class = "bs-callout bs-callout-warning" >
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                         <b>19/07/16</b>
                         &mdash; <span lang="en" data-lang-token="news5">Added Map feature to <a href="http://images.tene.space" alt="travel_pics" title="travel_pics" target="_blank">Travelography</a> </span>
@@ -348,7 +369,7 @@ $website_root_path=__DIR__;
        src="img/wtfpl-badge.png"
        width="88" height="31" alt="WTFPL" title="Do What the Fuck You Want to Public License" />
     </a>
-    <span class="pull-center">07/2016</span>
+    <span class="pull-center">09/2016</span>
 </div>
 </div>
 </div>

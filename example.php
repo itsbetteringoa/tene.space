@@ -123,7 +123,8 @@ $minified = new Minifier( $vars );
 
 <?php
 //Output actions associated with the minification to the console
-$minified->logs();
+//$minified->logs();
 ?>
+<div itemscope itemtype="http://schema.org/VideoObject"><meta itemprop="uploadDate" content="2016-06-15T08:00:00+0800" /><meta itemprop="name" content="ar_eng.mp4" /><meta itemprop="description" content="hey, folks!&#10;&#10;If u found it touching somehow or u want to participate, u have few options:&#10;- come up with your feedback or any sort of info which could be Useful for project&#10;- spread a word&#10;- contact me directly for more details&#10;- DROP SOME COINS AS WELL -&gt; generosity.com/fundraisers/open-free-space-in-arambol-beach-goa-india-2016&#10;&#10;Contacts:&#10;skype: tene.space.monkey&#10;telegram: @tenespacemonkey&#10;email: monkey@tene.space&#10;web: http://tene.space/monkey" /><meta itemprop="contentUrl" content="http://test.ambientlounge.ru/ar_eng.mp4" /><script src="//content.jwplatform.com/players/qMVUcX1M-V03gG7U2.js"></script></div>
 </body>
 </html>
